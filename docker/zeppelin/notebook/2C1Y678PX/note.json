@@ -1,0 +1,85 @@
+{
+  "paragraphs": [
+    {
+      "text": "%spark\n// import needed for the .avro method to be added\nimport com.databricks.spark.avro._\nimport org.apache.spark.sql.SparkSession\nimport org.json4s._\nimport org.json4s.Formats._\nimport org.json4s.native.JsonMethods._\n\nimplicit val formats \u003d DefaultFormats\n\ncase class Input(val erpData: Map[String,String], val specData: Map[String,String], val prodData: org.json4s.JValue) {\n    def this(erpData: Map[String,String], specData: Map[String,String], prodData: String) \u003d {\n        this(erpData, specData, org.json4s.native.JsonMethods.parse(prodData))\n    }\n}\n\nval spark \u003d SparkSession.builder().master(\"local\").getOrCreate()\n\n\n// The Avro records get converted to Spark types, filtered, and\n// then written back out as Avro records\nval df \u003d spark.read.format(\"com.databricks.spark.avro\").avro(\"hdfs://hadoop:9000/test/part.task_GobblinKafkaQuickStart_1479203995509_0.avro\")\n// print schema\ndf.printSchema()\n\n// Parse DataFrame to DataSet\nval ds \u003d df.limit(2).as[Input]\n\n// do something with the dataframe\n// implement analysis part here\n\n// show dataframe\nds.show()",
+      "dateUpdated": "Nov 15, 2016 2:57:16 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {},
+          "map": {
+            "baseMapType": "Streets",
+            "isOnline": true,
+            "pinCols": []
+          }
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1479042353380_1396912896",
+      "id": "20161113-130553_1419716452",
+      "result": {
+        "code": "ERROR",
+        "type": "TEXT",
+        "msg": "\nimport com.databricks.spark.avro._\n\nimport org.apache.spark.sql.SparkSession\n\nimport org.json4s._\n\nimport org.json4s.Formats._\n\nimport org.json4s.native.JsonMethods._\n\nformats: org.json4s.DefaultFormats.type \u003d org.json4s.DefaultFormats$@238083a9\n\ndefined class Input\n\nspark: org.apache.spark.sql.SparkSession \u003d org.apache.spark.sql.SparkSession@dd75f11\n\ndf: org.apache.spark.sql.DataFrame \u003d [erpData: map\u003cstring,string\u003e, specData: map\u003cstring,string\u003e ... 1 more field]\nroot\n |-- erpData: map (nullable \u003d true)\n |    |-- key: string\n |    |-- value: string (valueContainsNull \u003d true)\n |-- specData: map (nullable \u003d true)\n |    |-- key: string\n |    |-- value: string (valueContainsNull \u003d true)\n |-- prodData: string (nullable \u003d true)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njava.lang.ClassNotFoundException: no Java class corresponding to class $iw found\n  at scala.reflect.runtime.JavaMirrors$JavaMirror$$anonfun$classToJava$1.scala$reflect$runtime$JavaMirrors$JavaMirror$$anonfun$$noClass$1(JavaMirrors.scala:1203)\n  at scala.reflect.runtime.JavaMirrors$JavaMirror$$anonfun$classToJava$1.apply(JavaMirrors.scala:1241)\n  at scala.reflect.runtime.JavaMirrors$JavaMirror$$anonfun$classToJava$1.apply(JavaMirrors.scala:1202)\n  at scala.reflect.runtime.TwoWayCaches$TwoWayCache$$anonfun$toJava$1.apply(TwoWayCaches.scala:50)\n  at scala.reflect.runtime.Gil$class.gilSynchronized(Gil.scala:19)\n  at scala.reflect.runtime.JavaUniverse.gilSynchronized(JavaUniverse.scala:16)\n  at scala.reflect.runtime.TwoWayCaches$TwoWayCache.toJava(TwoWayCaches.scala:45)\n  at scala.reflect.runtime.JavaMirrors$JavaMirror.classToJava(JavaMirrors.scala:1202)\n  at scala.reflect.runtime.JavaMirrors$JavaMirror$$anonfun$classToJava$1.apply(JavaMirrors.scala:1217)\n  at scala.reflect.runtime.JavaMirrors$JavaMirror$$anonfun$classToJava$1.apply(JavaMirrors.scala:1202)\n  at scala.reflect.runtime.TwoWayCaches$TwoWayCache$$anonfun$toJava$1.apply(TwoWayCaches.scala:50)\n  at scala.reflect.runtime.Gil$class.gilSynchronized(Gil.scala:19)\n  at scala.reflect.runtime.JavaUniverse.gilSynchronized(JavaUniverse.scala:16)\n  at scala.reflect.runtime.TwoWayCaches$TwoWayCache.toJava(TwoWayCaches.scala:45)\n  at scala.reflect.runtime.JavaMirrors$JavaMirror.classToJava(JavaMirrors.scala:1202)\n  at scala.reflect.runtime.JavaMirrors$JavaMirror$$anonfun$classToJava$1.apply(JavaMirrors.scala:1217)\n  at scala.reflect.runtime.JavaMirrors$JavaMirror$$anonfun$classToJava$1.apply(JavaMirrors.scala:1202)\n  at scala.reflect.runtime.TwoWayCaches$TwoWayCache$$anonfun$toJava$1.apply(TwoWayCaches.scala:50)\n  at scala.reflect.runtime.Gil$class.gilSynchronized(Gil.scala:19)\n  at scala.reflect.runtime.JavaUniverse.gilSynchronized(JavaUniverse.scala:16)\n  at scala.reflect.runtime.TwoWayCaches$TwoWayCache.toJava(TwoWayCaches.scala:45)\n  at scala.reflect.runtime.JavaMirrors$JavaMirror.classToJava(JavaMirrors.scala:1202)\n  at scala.reflect.runtime.JavaMirrors$JavaMirror$$anonfun$classToJava$1.apply(JavaMirrors.scala:1217)\n  at scala.reflect.runtime.JavaMirrors$JavaMirror$$anonfun$classToJava$1.apply(JavaMirrors.scala:1202)\n  at scala.reflect.runtime.TwoWayCaches$TwoWayCache$$anonfun$toJava$1.apply(TwoWayCaches.scala:50)\n  at scala.reflect.runtime.Gil$class.gilSynchronized(Gil.scala:19)\n  at scala.reflect.runtime.JavaUniverse.gilSynchronized(JavaUniverse.scala:16)\n  at scala.reflect.runtime.TwoWayCaches$TwoWayCache.toJava(TwoWayCaches.scala:45)\n  at scala.reflect.runtime.JavaMirrors$JavaMirror.classToJava(JavaMirrors.scala:1202)\n  at scala.reflect.runtime.JavaMirrors$JavaMirror$$anonfun$classToJava$1.apply(JavaMirrors.scala:1217)\n  at scala.reflect.runtime.JavaMirrors$JavaMirror$$anonfun$classToJava$1.apply(JavaMirrors.scala:1202)\n  at scala.reflect.runtime.TwoWayCaches$TwoWayCache$$anonfun$toJava$1.apply(TwoWayCaches.scala:50)\n  at scala.reflect.runtime.Gil$class.gilSynchronized(Gil.scala:19)\n  at scala.reflect.runtime.JavaUniverse.gilSynchronized(JavaUniverse.scala:16)\n  at scala.reflect.runtime.TwoWayCaches$TwoWayCache.toJava(TwoWayCaches.scala:45)\n  at scala.reflect.runtime.JavaMirrors$JavaMirror.classToJava(JavaMirrors.scala:1202)\n  at scala.reflect.runtime.JavaMirrors$JavaMirror.typeToJavaClass(JavaMirrors.scala:1300)\n  at scala.reflect.runtime.JavaMirrors$JavaMirror.runtimeClass(JavaMirrors.scala:192)\n  at scala.reflect.runtime.JavaMirrors$JavaMirror.runtimeClass(JavaMirrors.scala:54)\n  at org.apache.spark.sql.catalyst.encoders.ExpressionEncoder$.apply(ExpressionEncoder.scala:50)\n  at org.apache.spark.sql.Encoders$.product(Encoders.scala:274)\n  at org.apache.spark.sql.SQLImplicits.newProductEncoder(SQLImplicits.scala:47)\n  ... 70 elided\n"
+      },
+      "dateCreated": "Nov 13, 2016 1:05:53 AM",
+      "dateStarted": "Nov 15, 2016 3:05:10 PM",
+      "dateFinished": "Nov 15, 2016 3:05:17 PM",
+      "status": "ERROR",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%spark\n",
+      "dateUpdated": "Nov 13, 2016 1:21:46 AM",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1479043306907_-1264851682",
+      "id": "20161113-132146_932715752",
+      "dateCreated": "Nov 13, 2016 1:21:46 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "batch",
+  "id": "2C1Y678PX",
+  "angularObjects": {
+    "2BZQ5DT4V:shared_process": [],
+    "2BXMFZCAJ:shared_process": [],
+    "2BW89Y4UK:shared_process": [],
+    "2BZ9ZY71D:shared_process": [],
+    "2BYX4UNDQ:shared_process": [],
+    "2BWHF8GZR:shared_process": [],
+    "2BY9T52QY:shared_process": [],
+    "2BX4F4DBG:shared_process": [],
+    "2BW5AEJTQ:shared_process": [],
+    "2BW4Z1C24:shared_process": [],
+    "2BYV724CJ:shared_process": [],
+    "2BX5PB6ZW:shared_process": [],
+    "2BWRPAUMU:shared_process": [],
+    "2BY1QZ9ZG:shared_process": [],
+    "2BWQ9NG9N:shared_process": [],
+    "2BVY4TDC6:shared_process": [],
+    "2BVW2ABY5:shared_process": [],
+    "2BZCNUAXB:shared_process": []
+  },
+  "config": {
+    "looknfeel": "default"
+  },
+  "info": {}
+}

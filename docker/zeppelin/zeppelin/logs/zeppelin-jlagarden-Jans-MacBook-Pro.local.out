@@ -1,0 +1,67 @@
+ZEPPELIN_CLASSPATH: ::/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-server/target/lib/*:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-zengine/target/lib/*:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-interpreter/target/lib/*:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/*::/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/conf:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-interpreter/target/classes:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-zengine/target/classes:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-server/target/classes
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-server/target/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-server/target/lib/zeppelin-interpreter-0.7.0-SNAPSHOT.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-zengine/target/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-zengine/target/lib/zeppelin-interpreter-0.7.0-SNAPSHOT.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-interpreter/target/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Sep 27, 2016 5:43:46 PM com.sun.jersey.api.core.PackagesResourceConfig init
+INFORMATION: Scanning for root resource and provider classes in the packages:
+  org.apache.zeppelin.rest
+Sep 27, 2016 5:43:46 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFORMATION: Root resource classes found:
+  class org.apache.zeppelin.rest.LoginRestApi
+  class org.apache.zeppelin.rest.InterpreterRestApi
+  class org.apache.zeppelin.rest.CredentialRestApi
+  class org.apache.zeppelin.rest.HeliumRestApi
+  class org.apache.zeppelin.rest.ConfigurationsRestApi
+  class org.apache.zeppelin.rest.NotebookRestApi
+  class org.apache.zeppelin.rest.ZeppelinRestApi
+  class org.apache.zeppelin.rest.SecurityRestApi
+Sep 27, 2016 5:43:46 PM com.sun.jersey.api.core.ScanningResourceConfig init
+INFORMATION: No provider classes found.
+Sep 27, 2016 5:43:46 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFORMATION: Initiating Jersey application, version 'Jersey: 1.13 06/29/2012 05:14 PM'
+Sep 27, 2016 5:43:47 PM com.sun.jersey.spi.inject.Errors processErrorMessages
+WARNUNG: The following warnings have been detected with resource and/or provider classes:
+  WARNING: A HTTP GET method, public javax.ws.rs.core.Response org.apache.zeppelin.rest.CredentialRestApi.getCredentials(java.lang.String) throws java.io.IOException,java.lang.IllegalArgumentException, should not consume any entity.
+  WARNING: A HTTP GET method, public javax.ws.rs.core.Response org.apache.zeppelin.rest.InterpreterRestApi.listInterpreter(java.lang.String), should not consume any entity.
+  WARNING: A sub-resource method, public javax.ws.rs.core.Response org.apache.zeppelin.rest.NotebookRestApi.createNote(java.lang.String) throws java.io.IOException, with URI template, "/", is treated as a resource method
+  WARNING: A sub-resource method, public javax.ws.rs.core.Response org.apache.zeppelin.rest.NotebookRestApi.getNotebookList() throws java.io.IOException, with URI template, "/", is treated as a resource method
+Zeppelin is restarting
+ZEPPELIN_CLASSPATH: ::/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-server/target/lib/*:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-zengine/target/lib/*:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-interpreter/target/lib/*:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/*::/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/conf:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-interpreter/target/classes:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-zengine/target/classes:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-server/target/classes
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-server/target/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-server/target/lib/zeppelin-interpreter-0.7.0-SNAPSHOT.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-zengine/target/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-zengine/target/lib/zeppelin-interpreter-0.7.0-SNAPSHOT.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-interpreter/target/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Sep 27, 2016 5:46:36 PM com.sun.jersey.api.core.PackagesResourceConfig init
+INFORMATION: Scanning for root resource and provider classes in the packages:
+  org.apache.zeppelin.rest
+Sep 27, 2016 5:46:36 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFORMATION: Root resource classes found:
+  class org.apache.zeppelin.rest.HeliumRestApi
+  class org.apache.zeppelin.rest.ConfigurationsRestApi
+  class org.apache.zeppelin.rest.CredentialRestApi
+  class org.apache.zeppelin.rest.SecurityRestApi
+  class org.apache.zeppelin.rest.LoginRestApi
+  class org.apache.zeppelin.rest.InterpreterRestApi
+  class org.apache.zeppelin.rest.NotebookRestApi
+  class org.apache.zeppelin.rest.ZeppelinRestApi
+Sep 27, 2016 5:46:36 PM com.sun.jersey.api.core.ScanningResourceConfig init
+INFORMATION: No provider classes found.
+Sep 27, 2016 5:46:36 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFORMATION: Initiating Jersey application, version 'Jersey: 1.13 06/29/2012 05:14 PM'
+Sep 27, 2016 5:46:37 PM com.sun.jersey.spi.inject.Errors processErrorMessages
+WARNUNG: The following warnings have been detected with resource and/or provider classes:
+  WARNING: A HTTP GET method, public javax.ws.rs.core.Response org.apache.zeppelin.rest.CredentialRestApi.getCredentials(java.lang.String) throws java.io.IOException,java.lang.IllegalArgumentException, should not consume any entity.
+  WARNING: A HTTP GET method, public javax.ws.rs.core.Response org.apache.zeppelin.rest.InterpreterRestApi.listInterpreter(java.lang.String), should not consume any entity.
+  WARNING: A sub-resource method, public javax.ws.rs.core.Response org.apache.zeppelin.rest.NotebookRestApi.createNote(java.lang.String) throws java.io.IOException, with URI template, "/", is treated as a resource method
+  WARNING: A sub-resource method, public javax.ws.rs.core.Response org.apache.zeppelin.rest.NotebookRestApi.getNotebookList() throws java.io.IOException, with URI template, "/", is treated as a resource method

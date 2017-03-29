@@ -1,0 +1,109 @@
+version: '2'
+
+services:
+    kafka:
+        build: ./kafka
+        ports:
+            - "2181:2181"
+            - "9092:9092"
+        logging:
+            driver: json-file
+            options:
+                max-size: "50m"
+                max-file: "1"
+    node:
+        build: ./node
+        links:
+            - "kafka:kafka"
+        ports:
+            - "49160:8080"
+        logging:
+            driver: json-file
+            options:
+                max-size: "50m"
+                max-file: "1"
+    hadoop:
+        build: ./hadoop
+        ports:
+            - "50070:50070"
+            - "50075:50075"
+            - "50090:50090"
+            - "50105:50105"
+            - "50030:50030"
+            - "50060:50060"
+            - "9000:9000"
+        logging:
+            driver: json-file
+            options:
+                max-size: "50m"
+                max-file: "1"
+    spark:
+        build: ./spark
+        ports:
+            - "8080:8080"
+            - "7077:7077"
+        environment:
+            - JAVA_OPTS=-verbose:gc -Xms1G -Xmx1G
+        links:
+            - "hadoop:hadoop"
+#            - "postgresql:postgresql"
+        logging:
+            driver: json-file
+            options:
+                max-size: "50m"
+                max-file: "1"
+    zeppelin:
+        build: ./zeppelin
+        ports:
+            - "8000:8080"
+        links:
+            - "spark:spark"
+        environment:
+            - MASTER=spark://spark:7077
+        volumes:
+            - ./zeppelin/notebook:/zeppelin/notebook
+        logging:
+            driver: json-file
+            options:
+                max-size: "50m"
+                max-file: "1"
+    gobblin:
+        build: ./gobblin
+        links:
+            - "kafka:kafka"
+            - "hadoop:hadoop"
+            - "activemq:activemq"
+        logging:
+            driver: json-file
+            options:
+                max-size: "50m"
+                max-file: "1"
+    # postgresql:
+    #      build: ./postgresql
+    #      ports:
+    #          - "5432:5432"
+    #      logging:
+    #          driver: json-file
+    #          options:
+    #              max-size: "50m"
+    #              max-file: "1"
+    activemq:
+        build: ./activemq
+        ports:
+            - "61616:61616"
+        logging:
+            driver: json-file
+            options:
+                max-size: "50m"
+                max-file: "1"
+
+    taktstrasse:
+        build: ./taktstrasse
+        links:
+            - "kafka:kafka"
+            - "activemq:activemq"
+        logging:
+            driver: json-file
+            options:
+                max-size: "50m"
+                max-file: "1"

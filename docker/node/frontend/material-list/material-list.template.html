@@ -1,0 +1,50 @@
+<h1 class="page-header down">Details Material</h1>
+
+<md-list ng-cloak>
+
+  <md-list-item class="secondary-button-padding header">
+    <p style="width:12.5%">Material Number</p>
+    <p style="width:12.5%">Amount</p>
+    <p style="width:12.5%">Rejects</p>
+    <p style="width:12.5%">Average Production Time</p>
+    <p style="width:12.5%">Average Drilling Heat</p>
+    <p style="width:12.5%">Average Drilling Speed</p>
+    <p style="width:12.5%">Average Milling Heat</p>
+    <p style="width:12.5%">Average Milling Speed</p>
+
+    <md-divider></md-divider>
+
+  </md-list-item>
+
+  <md-divider></md-divider>
+
+
+  <md-list-item class="secondary-button-padding" ng-repeat="x in rcvdData.material track by $index">
+    <p style="width:12.5%">{{ x.number }}</p>
+    <p style="width:12.5%">{{ x.amount }}</p>
+    <p style="width:12.5%">{{ x.rejects }}</p>
+    <p style="width:12.5%">{{ x.prodtime }}</p>
+    <p style="width:12.5%">{{ x.avg_temperature_drilling }}</p>
+    <p style="width:12.5%">{{ x.avg_speed_drilling }}</p>
+    <p style="width:12.5%">{{ x.avg_temperature_milling }}</p>
+    <p style="width:12.5%">{{ x.avg_speed_milling }}</p>
+
+    <md-divider></md-divider>
+
+  </md-list-item>
+
+</md-list>
+
+
+
+<!--
+<table>
+  <tr ng-repeat="x in materialdata | orderBy : 'number'">
+    <td>{{ x.number }}</td>
+    <td>{{ x.amount }}</td>
+    <td>{{ x.rejects }}</td>
+    <td>{{ x.prodtime }}</td>
+
+  </tr>
+</table>
+-->

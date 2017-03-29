@@ -1,0 +1,222 @@
+2016-10-12 09:19:20,334 INFO  [main] kafka.utils.VerifiableProperties: Verifying properties
+2016-10-12 09:19:20,366 WARN  [main] kafka.utils.VerifiableProperties: Property bootstrap.servers is not valid
+2016-10-12 09:19:20,367 INFO  [main] kafka.utils.VerifiableProperties: Property client.id is overridden to ConsumerTest
+2016-10-12 09:19:20,367 INFO  [main] kafka.utils.VerifiableProperties: Property group.id is overridden to bla
+2016-10-12 09:19:20,367 WARN  [main] kafka.utils.VerifiableProperties: Property key.deserializer is not valid
+2016-10-12 09:19:20,367 INFO  [main] kafka.utils.VerifiableProperties: Property partition.assignment.strategy is overridden to range
+2016-10-12 09:19:20,367 WARN  [main] kafka.utils.VerifiableProperties: Property value.deserializer is not valid
+2016-10-12 09:19:20,367 INFO  [main] kafka.utils.VerifiableProperties: Property zookeeper.connect is overridden to 127.0.0.1:2181
+2016-10-12 09:19:20,367 INFO  [main] ConsumerTest: Starting
+2016-10-12 09:19:20,428 INFO  [main] kafka.consumer.ZookeeperConsumerConnector: [bla_Helge-2.local-1476256760427-204f8acc], Connecting to zookeeper instance at 127.0.0.1:2181
+2016-10-12 09:19:20,434 DEBUG [main] org.I0Itec.zkclient.ZkConnection: Creating new ZookKeeper instance to connect to 127.0.0.1:2181.
+2016-10-12 09:19:20,434 INFO  [ZkClient-EventThread-14-127.0.0.1:2181] org.I0Itec.zkclient.ZkEventThread: Starting ZkClient event thread.
+2016-10-12 09:19:20,455 DEBUG [main] org.I0Itec.zkclient.ZkClient: Awaiting connection to Zookeeper server
+2016-10-12 09:19:20,455 DEBUG [main] org.I0Itec.zkclient.ZkClient: Waiting for keeper state SyncConnected
+2016-10-12 09:19:20,546 DEBUG [main-EventThread] org.I0Itec.zkclient.ZkClient: Received event: WatchedEvent state:SyncConnected type:None path:null
+2016-10-12 09:19:20,546 INFO  [main-EventThread] org.I0Itec.zkclient.ZkClient: zookeeper state changed (SyncConnected)
+2016-10-12 09:19:20,546 DEBUG [main-EventThread] org.I0Itec.zkclient.ZkClient: Leaving process event
+2016-10-12 09:19:20,546 DEBUG [main] org.I0Itec.zkclient.ZkClient: State is SyncConnected
+2016-10-12 09:19:20,553 DEBUG [main] kafka.utils.KafkaScheduler: Initializing task scheduler.
+2016-10-12 09:19:20,554 INFO  [main] kafka.consumer.ZookeeperConsumerConnector: [bla_Helge-2.local-1476256760427-204f8acc], starting auto committer every 60000 ms
+2016-10-12 09:19:20,555 DEBUG [main] kafka.utils.KafkaScheduler: Scheduling task kafka-consumer-autocommit with initial delay 60000 ms and period 60000 ms.
+2016-10-12 09:19:20,575 DEBUG [main] kafka.consumer.ZookeeperConsumerConnector: [bla_Helge-2.local-1476256760427-204f8acc], entering consume 
+2016-10-12 09:19:20,594 INFO  [main] kafka.consumer.ZookeeperConsumerConnector: [bla_Helge-2.local-1476256760427-204f8acc], begin registering consumer bla_Helge-2.local-1476256760427-204f8acc in ZK
+2016-10-12 09:19:20,639 INFO  [main] kafka.consumer.ZookeeperConsumerConnector: [bla_Helge-2.local-1476256760427-204f8acc], end registering consumer bla_Helge-2.local-1476256760427-204f8acc in ZK
+2016-10-12 09:19:20,643 INFO  [bla_Helge-2.local-1476256760427-204f8acc_watcher_executor] kafka.consumer.ZookeeperConsumerConnector: [bla_Helge-2.local-1476256760427-204f8acc], starting watcher executor thread for consumer bla_Helge-2.local-1476256760427-204f8acc
+2016-10-12 09:19:20,651 DEBUG [main] kafka.consumer.ZookeeperConsumerConnector: [bla_Helge-2.local-1476256760427-204f8acc], Adding topicThreadId (prod,bla_Helge-2.local-1476256760427-204f8acc-0) and queue [] to topicThreadIdAndQueues data structure
+2016-10-12 09:19:20,654 DEBUG [main] kafka.consumer.ZookeeperConsumerConnector: [bla_Helge-2.local-1476256760427-204f8acc], adding topic prod and 1 streams to map.
+2016-10-12 09:19:20,664 DEBUG [main] org.I0Itec.zkclient.ZkClient: Subscribed data changes for /brokers/topics/prod
+2016-10-12 09:19:20,666 INFO  [main] kafka.consumer.ZookeeperConsumerConnector: [bla_Helge-2.local-1476256760427-204f8acc], begin rebalancing consumer bla_Helge-2.local-1476256760427-204f8acc try #0
+2016-10-12 09:19:20,764 INFO  [main] kafka.consumer.ConsumerFetcherManager: [ConsumerFetcherManager-1476256760550] Stopping leader finder thread
+2016-10-12 09:19:20,764 INFO  [main] kafka.consumer.ConsumerFetcherManager: [ConsumerFetcherManager-1476256760550] Stopping all fetchers
+2016-10-12 09:19:20,765 INFO  [main] kafka.consumer.ConsumerFetcherManager: [ConsumerFetcherManager-1476256760550] All connections stopped
+2016-10-12 09:19:20,765 INFO  [main] kafka.consumer.ZookeeperConsumerConnector: [bla_Helge-2.local-1476256760427-204f8acc], Cleared all relevant queues for this fetcher
+2016-10-12 09:19:20,766 DEBUG [main] kafka.consumer.ConsumerIterator: Clearing the current data chunk for this consumer iterator
+2016-10-12 09:19:20,766 INFO  [main] kafka.consumer.ZookeeperConsumerConnector: [bla_Helge-2.local-1476256760427-204f8acc], Cleared the data chunks in all the consumer message iterators
+2016-10-12 09:19:20,766 INFO  [main] kafka.consumer.ZookeeperConsumerConnector: [bla_Helge-2.local-1476256760427-204f8acc], Committing all offsets after clearing the fetcher queues
+2016-10-12 09:19:20,767 DEBUG [main] kafka.consumer.ZookeeperConsumerConnector: [bla_Helge-2.local-1476256760427-204f8acc], No updates to offsets since last commit.
+2016-10-12 09:19:20,767 INFO  [main] kafka.consumer.ZookeeperConsumerConnector: [bla_Helge-2.local-1476256760427-204f8acc], Releasing partition ownership
+2016-10-12 09:19:20,782 DEBUG [main] kafka.utils.ZkUtils$: Partition map for /brokers/topics/prod is Map(0 -> List(0))
+2016-10-12 09:19:20,783 DEBUG [main] kafka.utils.ZkUtils$: partition assignment of /brokers/topics/prod is Map(0 -> List(0))
+2016-10-12 09:19:20,795 INFO  [main] kafka.consumer.RangeAssignor: Consumer bla_Helge-2.local-1476256760427-204f8acc rebalancing the following partitions: ArrayBuffer(0) for topic prod with consumers: List(bla_Helge-2.local-1476256760427-204f8acc-0)
+2016-10-12 09:19:20,796 INFO  [main] kafka.consumer.RangeAssignor: bla_Helge-2.local-1476256760427-204f8acc-0 attempting to claim partition 0
+2016-10-12 09:19:20,809 DEBUG [main] kafka.consumer.PartitionTopicInfo: initial consumer offset of prod:0: fetched offset = 39: consumed offset = 39 is 39
+2016-10-12 09:19:20,810 DEBUG [main] kafka.consumer.PartitionTopicInfo: initial fetch offset of prod:0: fetched offset = 39: consumed offset = 39 is 39
+2016-10-12 09:19:20,810 DEBUG [main] kafka.consumer.ZookeeperConsumerConnector: [bla_Helge-2.local-1476256760427-204f8acc], prod:0: fetched offset = 39: consumed offset = 39 selected new offset 39
+2016-10-12 09:19:20,821 INFO  [main] kafka.consumer.ZookeeperConsumerConnector: [bla_Helge-2.local-1476256760427-204f8acc], bla_Helge-2.local-1476256760427-204f8acc-0 successfully owned partition 0 for topic prod
+2016-10-12 09:19:20,836 INFO  [main] kafka.consumer.ZookeeperConsumerConnector: [bla_Helge-2.local-1476256760427-204f8acc], Consumer bla_Helge-2.local-1476256760427-204f8acc selected partitions : prod:0: fetched offset = 39: consumed offset = 39
+2016-10-12 09:19:20,837 INFO  [bla_Helge-2.local-1476256760427-204f8acc-leader-finder-thread] kafka.consumer.ConsumerFetcherManager$LeaderFinderThread: [bla_Helge-2.local-1476256760427-204f8acc-leader-finder-thread], Starting 
+2016-10-12 09:19:20,839 INFO  [main] kafka.consumer.ZookeeperConsumerConnector: [bla_Helge-2.local-1476256760427-204f8acc], end rebalancing consumer bla_Helge-2.local-1476256760427-204f8acc try #0
+2016-10-12 09:19:20,850 INFO  [main] ConsumerTest: Exiting
+2016-10-12 09:19:20,858 INFO  [bla_Helge-2.local-1476256760427-204f8acc-leader-finder-thread] kafka.utils.VerifiableProperties: Verifying properties
+2016-10-12 09:19:20,859 INFO  [bla_Helge-2.local-1476256760427-204f8acc-leader-finder-thread] kafka.utils.VerifiableProperties: Property client.id is overridden to ConsumerTest
+2016-10-12 09:19:20,859 INFO  [bla_Helge-2.local-1476256760427-204f8acc-leader-finder-thread] kafka.utils.VerifiableProperties: Property metadata.broker.list is overridden to 141.72.149.148:9092
+2016-10-12 09:19:20,859 INFO  [bla_Helge-2.local-1476256760427-204f8acc-leader-finder-thread] kafka.utils.VerifiableProperties: Property request.timeout.ms is overridden to 30000
+2016-10-12 09:19:20,875 INFO  [bla_Helge-2.local-1476256760427-204f8acc-leader-finder-thread] kafka.client.ClientUtils$: Fetching metadata from broker id:0,host:141.72.149.148,port:9092 with correlation id 0 for 1 topic(s) Set(prod)
+2016-10-12 09:19:20,881 DEBUG [bla_Helge-2.local-1476256760427-204f8acc-leader-finder-thread] kafka.network.BlockingChannel: Created socket with SO_TIMEOUT = 30000 (requested 30000), SO_RCVBUF = 408300 (requested -1), SO_SNDBUF = 114324 (requested 102400), connectTimeoutMs = 30000.
+2016-10-12 09:19:20,882 INFO  [bla_Helge-2.local-1476256760427-204f8acc-leader-finder-thread] kafka.producer.SyncProducer: Connected to 141.72.149.148:9092 for producing
+2016-10-12 09:19:20,897 INFO  [bla_Helge-2.local-1476256760427-204f8acc-leader-finder-thread] kafka.producer.SyncProducer: Disconnecting from 141.72.149.148:9092
+2016-10-12 09:19:20,902 DEBUG [bla_Helge-2.local-1476256760427-204f8acc-leader-finder-thread] kafka.client.ClientUtils$: Successfully fetched metadata for 1 topic(s) Set(prod)
+2016-10-12 09:19:20,905 DEBUG [bla_Helge-2.local-1476256760427-204f8acc-leader-finder-thread] kafka.consumer.ConsumerFetcherManager$LeaderFinderThread: [bla_Helge-2.local-1476256760427-204f8acc-leader-finder-thread], {TopicMetadata for topic prod -> 
+Metadata for partition [prod,0] is 	partition 0	leader: 0 (141.72.149.148:9092)	replicas: 0 (141.72.149.148:9092)	isr: 0 (141.72.149.148:9092)	isUnderReplicated: false}
+2016-10-12 09:19:20,918 INFO  [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.ConsumerFetcherThread: [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0], Starting 
+2016-10-12 09:19:20,921 INFO  [bla_Helge-2.local-1476256760427-204f8acc-leader-finder-thread] kafka.consumer.ConsumerFetcherManager: [ConsumerFetcherManager-1476256760550] Added fetcher for partitions ArrayBuffer([[prod,0], initOffset 39 to broker id:0,host:141.72.149.148,port:9092] )
+2016-10-12 09:19:20,925 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.SimpleConsumer: Disconnecting from 141.72.149.148:9092
+2016-10-12 09:19:20,926 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.network.BlockingChannel: Created socket with SO_TIMEOUT = 30000 (requested 30000), SO_RCVBUF = 342972 (requested 65536), SO_SNDBUF = 146988 (requested -1), connectTimeoutMs = 30000.
+2016-10-12 09:19:20,949 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 51: consumed offset = 39) to 51
+2016-10-12 09:19:20,951 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 51: consumed offset = 40 to 40
+2016-10-12 09:19:20,953 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":125.14299999999999,"status":"GOOD","itemName":"MILLING_HEAT","timestamp":1476258396766}
+2016-10-12 09:19:20,953 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 51: consumed offset = 41 to 41
+2016-10-12 09:19:20,953 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":11500,"status":"GOOD","itemName":"MILLING_SPEED","timestamp":1476258436796}
+2016-10-12 09:19:20,954 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 51: consumed offset = 42 to 42
+2016-10-12 09:19:20,954 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":163.23,"status":"GOOD","itemName":"MILLING_HEAT","timestamp":1476258446806}
+2016-10-12 09:19:20,954 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 51: consumed offset = 43 to 43
+2016-10-12 09:19:20,954 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":152.34799999999998,"status":"GOOD","itemName":"MILLING_HEAT","timestamp":1476258486826}
+2016-10-12 09:19:20,954 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 51: consumed offset = 44 to 44
+2016-10-12 09:19:20,954 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":0,"status":"GOOD","itemName":"MILLING_SPEED","timestamp":1476258536906}
+2016-10-12 09:19:20,954 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 51: consumed offset = 45 to 45
+2016-10-12 09:19:20,954 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":100.0,"status":"GOOD","itemName":"MILLING_HEAT","timestamp":1476258546936}
+2016-10-12 09:19:20,954 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 51: consumed offset = 46 to 46
+2016-10-12 09:19:20,955 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":38.8,"status":"GOOD","itemName":"MILLING_HEAT","timestamp":1476258577006}
+2016-10-12 09:19:20,955 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 51: consumed offset = 47 to 47
+2016-10-12 09:19:20,955 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":false,"status":"GOOD","itemName":"MILLING","timestamp":1476258587026}
+2016-10-12 09:19:20,955 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 51: consumed offset = 48 to 48
+2016-10-12 09:19:20,955 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":true,"status":"GOOD","itemName":"L3","timestamp":1476258627136}
+2016-10-12 09:19:20,955 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 51: consumed offset = 49 to 49
+2016-10-12 09:19:20,955 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":false,"status":"GOOD","itemName":"L4","timestamp":1476258677196}
+2016-10-12 09:19:20,955 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 51: consumed offset = 50 to 50
+2016-10-12 09:19:20,955 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":true,"status":"GOOD","itemName":"DRILLING","timestamp":1476258717276}
+2016-10-12 09:19:20,955 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 51: consumed offset = 51 to 51
+2016-10-12 09:19:20,955 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":11280,"status":"GOOD","itemName":"DRILLING_SPEED","timestamp":1476258727286}
+2016-10-12 09:19:22,781 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 52: consumed offset = 52 to 52
+2016-10-12 09:19:22,782 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 52: consumed offset = 52) to 52
+2016-10-12 09:19:22,782 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":104.9,"status":"GOOD","itemName":"DRILLING_HEAT","timestamp":1476258777346}
+2016-10-12 09:19:26,788 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 53: consumed offset = 53 to 53
+2016-10-12 09:19:26,788 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 53: consumed offset = 53) to 53
+2016-10-12 09:19:26,788 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":120.63499999999999,"status":"GOOD","itemName":"DRILLING_HEAT","timestamp":1476258817416}
+2016-10-12 09:19:31,794 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 54: consumed offset = 54 to 54
+2016-10-12 09:19:31,794 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 54: consumed offset = 54) to 54
+2016-10-12 09:19:31,794 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":14980,"status":"GOOD","itemName":"DRILLING_SPEED","timestamp":1476258867476}
+2016-10-12 09:19:32,797 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 55: consumed offset = 55) to 55
+2016-10-12 09:19:32,797 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 55: consumed offset = 55 to 55
+2016-10-12 09:19:32,798 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":157.35000000000002,"status":"GOOD","itemName":"DRILLING_HEAT","timestamp":1476258877506}
+2016-10-12 09:19:36,802 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 56: consumed offset = 56 to 56
+2016-10-12 09:19:36,802 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 56: consumed offset = 56) to 56
+2016-10-12 09:19:36,803 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":146.85999999999999,"status":"GOOD","itemName":"DRILLING_HEAT","timestamp":1476258917556}
+2016-10-12 09:19:40,811 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 57: consumed offset = 57 to 57
+2016-10-12 09:19:40,811 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 57: consumed offset = 57) to 57
+2016-10-12 09:19:40,811 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":0,"status":"GOOD","itemName":"DRILLING_SPEED","timestamp":1476258957636}
+2016-10-12 09:19:41,815 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 58: consumed offset = 58 to 58
+2016-10-12 09:19:41,815 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 58: consumed offset = 58) to 58
+2016-10-12 09:19:41,816 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":113.72,"status":"GOOD","itemName":"DRILLING_HEAT","timestamp":1476258967686}
+2016-10-12 09:19:42,819 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 59: consumed offset = 59 to 59
+2016-10-12 09:19:42,819 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 59: consumed offset = 59) to 59
+2016-10-12 09:19:42,819 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":false,"status":"GOOD","itemName":"DRILLING","timestamp":1476258977726}
+2016-10-12 09:19:45,826 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 60: consumed offset = 60 to 60
+2016-10-12 09:19:45,826 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 60: consumed offset = 60) to 60
+2016-10-12 09:19:45,826 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":true,"status":"GOOD","itemName":"L4","timestamp":1476259007806}
+2016-10-12 09:19:55,837 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 61: consumed offset = 61 to 61
+2016-10-12 09:19:55,838 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":false,"status":"GOOD","itemName":"L5","timestamp":1476259107916}
+2016-10-12 09:19:55,838 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 61: consumed offset = 61) to 61
+2016-10-12 09:19:58,840 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 62: consumed offset = 62 to 62
+2016-10-12 09:19:58,840 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 62: consumed offset = 62) to 62
+2016-10-12 09:19:58,840 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":true,"status":"GOOD","itemName":"L5","timestamp":1476259137946}
+2016-10-12 09:20:13,069 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 63: consumed offset = 63 to 63
+2016-10-12 09:20:13,069 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 63: consumed offset = 63) to 63
+2016-10-12 09:20:13,069 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":false,"status":"GOOD","itemName":"L1","timestamp":1476259278216}
+2016-10-12 09:20:16,070 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 64: consumed offset = 64 to 64
+2016-10-12 09:20:16,070 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 64: consumed offset = 64) to 64
+2016-10-12 09:20:16,070 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":true,"status":"GOOD","itemName":"L1","timestamp":1476259310226}
+2016-10-12 09:20:23,076 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 65: consumed offset = 65 to 65
+2016-10-12 09:20:23,076 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 65: consumed offset = 65) to 65
+2016-10-12 09:20:23,076 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":false,"status":"GOOD","itemName":"L2","timestamp":1476259380286}
+2016-10-12 09:20:26,083 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 66: consumed offset = 66 to 66
+2016-10-12 09:20:26,084 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 66: consumed offset = 66) to 66
+2016-10-12 09:20:26,084 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":true,"status":"GOOD","itemName":"L2","timestamp":1476259410366}
+2016-10-12 09:20:33,086 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 67: consumed offset = 67 to 67
+2016-10-12 09:20:33,086 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":false,"status":"GOOD","itemName":"L3","timestamp":1476259480396}
+2016-10-12 09:20:33,086 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 67: consumed offset = 67) to 67
+2016-10-12 09:20:36,093 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 68: consumed offset = 68 to 68
+2016-10-12 09:20:36,093 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 68: consumed offset = 68) to 68
+2016-10-12 09:20:36,093 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":true,"status":"GOOD","itemName":"MILLING","timestamp":1476259510466}
+2016-10-12 09:20:37,098 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 69: consumed offset = 69 to 69
+2016-10-12 09:20:37,098 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 69: consumed offset = 69) to 69
+2016-10-12 09:20:37,098 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":9850,"status":"GOOD","itemName":"MILLING_SPEED","timestamp":1476259520516}
+2016-10-12 09:20:42,103 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 70: consumed offset = 70 to 70
+2016-10-12 09:20:42,103 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 70: consumed offset = 70) to 70
+2016-10-12 09:20:42,103 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":107.84,"status":"GOOD","itemName":"MILLING_HEAT","timestamp":1476259570566}
+2016-10-12 09:20:47,111 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 71: consumed offset = 71 to 71
+2016-10-12 09:20:47,112 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 71: consumed offset = 71) to 71
+2016-10-12 09:20:47,112 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":124.01599999999999,"status":"GOOD","itemName":"MILLING_HEAT","timestamp":1476259620646}
+2016-10-12 09:20:51,118 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 72: consumed offset = 72 to 72
+2016-10-12 09:20:51,118 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 72: consumed offset = 72) to 72
+2016-10-12 09:20:51,119 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":11500,"status":"GOOD","itemName":"MILLING_SPEED","timestamp":1476259660726}
+2016-10-12 09:20:52,120 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 73: consumed offset = 73 to 73
+2016-10-12 09:20:52,120 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 73: consumed offset = 73) to 73
+2016-10-12 09:20:52,121 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":161.76,"status":"GOOD","itemName":"MILLING_HEAT","timestamp":1476259670736}
+2016-10-12 09:20:56,122 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 74: consumed offset = 74 to 74
+2016-10-12 09:20:56,122 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 74: consumed offset = 74) to 74
+2016-10-12 09:20:56,122 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":150.976,"status":"GOOD","itemName":"MILLING_HEAT","timestamp":1476259710756}
+2016-10-12 09:21:01,128 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 75: consumed offset = 75 to 75
+2016-10-12 09:21:01,128 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 75: consumed offset = 75) to 75
+2016-10-12 09:21:01,128 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":0,"status":"GOOD","itemName":"MILLING_SPEED","timestamp":1476259760806}
+2016-10-12 09:21:02,129 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 76: consumed offset = 76 to 76
+2016-10-12 09:21:02,129 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 76: consumed offset = 76) to 76
+2016-10-12 09:21:02,129 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":105.88,"status":"GOOD","itemName":"MILLING_HEAT","timestamp":1476259770826}
+2016-10-12 09:21:05,140 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 77: consumed offset = 77 to 77
+2016-10-12 09:21:05,140 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 77: consumed offset = 77) to 77
+2016-10-12 09:21:05,140 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":39.769999999999996,"status":"GOOD","itemName":"MILLING_HEAT","timestamp":1476259800916}
+2016-10-12 09:21:06,143 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 78: consumed offset = 78 to 78
+2016-10-12 09:21:06,143 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 78: consumed offset = 78) to 78
+2016-10-12 09:21:06,143 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":false,"status":"GOOD","itemName":"MILLING","timestamp":1476259810966}
+2016-10-12 09:21:10,152 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 79: consumed offset = 79 to 79
+2016-10-12 09:21:10,152 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 79: consumed offset = 79) to 79
+2016-10-12 09:21:10,152 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":true,"status":"GOOD","itemName":"L3","timestamp":1476259851066}
+2016-10-12 09:21:15,158 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 80: consumed offset = 80 to 80
+2016-10-12 09:21:15,158 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 80: consumed offset = 80) to 80
+2016-10-12 09:21:15,158 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":false,"status":"GOOD","itemName":"L4","timestamp":1476259901126}
+2016-10-12 09:21:19,166 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 81: consumed offset = 81 to 81
+2016-10-12 09:21:19,166 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 81: consumed offset = 81) to 81
+2016-10-12 09:21:19,166 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":true,"status":"GOOD","itemName":"DRILLING","timestamp":1476259941196}
+2016-10-12 09:21:20,170 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 82: consumed offset = 82 to 82
+2016-10-12 09:21:20,170 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 82: consumed offset = 82) to 82
+2016-10-12 09:21:20,170 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":11280,"status":"GOOD","itemName":"DRILLING_SPEED","timestamp":1476259951246}
+2016-10-12 09:21:25,175 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 83: consumed offset = 83 to 83
+2016-10-12 09:21:25,175 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 83: consumed offset = 83) to 83
+2016-10-12 09:21:25,175 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":113.72,"status":"GOOD","itemName":"DRILLING_HEAT","timestamp":1476260001286}
+2016-10-12 09:21:29,181 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 84: consumed offset = 84 to 84
+2016-10-12 09:21:29,181 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 84: consumed offset = 84) to 84
+2016-10-12 09:21:29,181 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":130.778,"status":"GOOD","itemName":"DRILLING_HEAT","timestamp":1476260041346}
+2016-10-12 09:21:34,186 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 85: consumed offset = 85 to 85
+2016-10-12 09:21:34,186 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 85: consumed offset = 85) to 85
+2016-10-12 09:21:34,187 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":14980,"status":"GOOD","itemName":"DRILLING_SPEED","timestamp":1476260091396}
+2016-10-12 09:21:35,191 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 86: consumed offset = 86 to 86
+2016-10-12 09:21:35,191 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 86: consumed offset = 86) to 86
+2016-10-12 09:21:35,192 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":170.57999999999998,"status":"GOOD","itemName":"DRILLING_HEAT","timestamp":1476260101426}
+2016-10-12 09:21:39,197 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 87: consumed offset = 87 to 87
+2016-10-12 09:21:39,197 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 87: consumed offset = 87) to 87
+2016-10-12 09:21:39,197 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":159.208,"status":"GOOD","itemName":"DRILLING_HEAT","timestamp":1476260141506}
+2016-10-12 09:21:43,202 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 88: consumed offset = 88 to 88
+2016-10-12 09:21:43,202 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 88: consumed offset = 88) to 88
+2016-10-12 09:21:43,202 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":0,"status":"GOOD","itemName":"DRILLING_SPEED","timestamp":1476260181566}
+2016-10-12 09:21:44,206 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 89: consumed offset = 89 to 89
+2016-10-12 09:21:44,206 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 89: consumed offset = 89) to 89
+2016-10-12 09:21:44,206 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":108.82,"status":"GOOD","itemName":"DRILLING_HEAT","timestamp":1476260191596}
+2016-10-12 09:21:45,207 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 90: consumed offset = 90 to 90
+2016-10-12 09:21:45,207 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 90: consumed offset = 90) to 90
+2016-10-12 09:21:45,207 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":false,"status":"GOOD","itemName":"DRILLING","timestamp":1476260201616}
+2016-10-12 09:21:48,210 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 91: consumed offset = 91 to 91
+2016-10-12 09:21:48,210 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 91: consumed offset = 91) to 91
+2016-10-12 09:21:48,211 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":true,"status":"GOOD","itemName":"L4","timestamp":1476260231636}
+2016-10-12 09:21:58,215 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 92: consumed offset = 92 to 92
+2016-10-12 09:21:58,215 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 92: consumed offset = 92) to 92
+2016-10-12 09:21:58,215 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":false,"status":"GOOD","itemName":"L5","timestamp":1476260331696}
+2016-10-12 09:22:01,225 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 93: consumed offset = 93 to 93
+2016-10-12 09:22:01,225 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 93: consumed offset = 93) to 93
+2016-10-12 09:22:01,225 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":true,"status":"GOOD","itemName":"L5","timestamp":1476260361776}
+2016-10-12 09:22:17,448 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 94: consumed offset = 94 to 94
+2016-10-12 09:22:17,448 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 94: consumed offset = 94) to 94
+2016-10-12 09:22:17,448 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":false,"status":"GOOD","itemName":"L1","timestamp":1476260521996}
+2016-10-12 09:22:20,450 DEBUG [pool-2-thread-1] kafka.consumer.PartitionTopicInfo: reset consume offset of prod:0: fetched offset = 95: consumed offset = 95 to 95
+2016-10-12 09:22:20,450 DEBUG [ConsumerFetcherThread-bla_Helge-2.local-1476256760427-204f8acc-0-0] kafka.consumer.PartitionTopicInfo: updated fetch offset of (prod:0: fetched offset = 95: consumed offset = 95) to 95
+2016-10-12 09:22:20,450 INFO  [pool-2-thread-1] ConsumerTest: Received: {"value":true,"status":"GOOD","itemName":"L1","timestamp":1476260554036}

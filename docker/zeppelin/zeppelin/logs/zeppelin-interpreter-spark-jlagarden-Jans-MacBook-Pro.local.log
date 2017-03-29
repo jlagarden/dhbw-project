@@ -1,0 +1,792 @@
+ INFO [2016-09-27 17:47:55,889] ({Thread-0} RemoteInterpreterServer.java[run]:90) - Starting remote interpreter server on port 59914
+ INFO [2016-09-27 17:47:56,718] ({pool-1-thread-3} RemoteInterpreterServer.java[createInterpreter]:186) - Instantiate interpreter org.apache.zeppelin.spark.SparkInterpreter
+ INFO [2016-09-27 17:47:56,791] ({pool-1-thread-3} RemoteInterpreterServer.java[createInterpreter]:186) - Instantiate interpreter org.apache.zeppelin.spark.SparkSqlInterpreter
+ INFO [2016-09-27 17:47:56,801] ({pool-1-thread-3} RemoteInterpreterServer.java[createInterpreter]:186) - Instantiate interpreter org.apache.zeppelin.spark.DepInterpreter
+ INFO [2016-09-27 17:47:56,857] ({pool-1-thread-3} RemoteInterpreterServer.java[createInterpreter]:186) - Instantiate interpreter org.apache.zeppelin.spark.PySparkInterpreter
+ INFO [2016-09-27 17:47:56,982] ({pool-2-thread-3} SchedulerFactory.java[jobStarted]:131) - Job remoteInterpretJob_1474991276980 started by scheduler org.apache.zeppelin.spark.SparkInterpreter120467922
+ INFO [2016-09-27 17:48:05,868] ({pool-2-thread-3} SparkInterpreter.java[createSparkSession]:301) - ------ Create new SparkContext spark://127.0.0.1:7077 -------
+ WARN [2016-09-27 17:48:05,878] ({pool-2-thread-3} SparkInterpreter.java[setupConfForSparkR]:524) - sparkr.zip is not found, sparkr may not work.
+ INFO [2016-09-27 17:48:06,279] ({pool-2-thread-3} Logging.scala[logInfo]:54) - Running Spark version 2.0.0
+ WARN [2016-09-27 17:48:07,685] ({pool-2-thread-3} NativeCodeLoader.java[<clinit>]:62) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+ WARN [2016-09-27 17:48:07,875] ({pool-2-thread-3} Logging.scala[logWarning]:66) - 
+SPARK_CLASSPATH was detected (set to ':/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/interpreter/spark/dep/*:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/interpreter/spark/*:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-interpreter/target/lib/*::/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-interpreter/target/classes:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-interpreter/target/test-classes:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-zengine/target/test-classes').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --driver-class-path to augment the driver classpath
+ - spark.executor.extraClassPath to augment the executor classpath
+        
+ WARN [2016-09-27 17:48:07,877] ({pool-2-thread-3} Logging.scala[logWarning]:66) - Setting 'spark.executor.extraClassPath' to ':/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/interpreter/spark/dep/*:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/interpreter/spark/*:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-interpreter/target/lib/*::/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-interpreter/target/classes:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-interpreter/target/test-classes:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-zengine/target/test-classes' as a work-around.
+ WARN [2016-09-27 17:48:07,877] ({pool-2-thread-3} Logging.scala[logWarning]:66) - Setting 'spark.driver.extraClassPath' to ':/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/interpreter/spark/dep/*:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/interpreter/spark/*:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-interpreter/target/lib/*::/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-interpreter/target/classes:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-interpreter/target/test-classes:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-zengine/target/test-classes' as a work-around.
+ INFO [2016-09-27 17:48:13,056] ({pool-2-thread-3} Logging.scala[logInfo]:54) - Changing view acls to: jlagarden
+ INFO [2016-09-27 17:48:13,059] ({pool-2-thread-3} Logging.scala[logInfo]:54) - Changing modify acls to: jlagarden
+ INFO [2016-09-27 17:48:13,062] ({pool-2-thread-3} Logging.scala[logInfo]:54) - Changing view acls groups to: 
+ INFO [2016-09-27 17:48:13,068] ({pool-2-thread-3} Logging.scala[logInfo]:54) - Changing modify acls groups to: 
+ INFO [2016-09-27 17:48:13,069] ({pool-2-thread-3} Logging.scala[logInfo]:54) - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(jlagarden); groups with view permissions: Set(); users  with modify permissions: Set(jlagarden); groups with modify permissions: Set()
+ INFO [2016-09-27 17:48:14,249] ({pool-2-thread-3} Logging.scala[logInfo]:54) - Successfully started service 'sparkDriver' on port 59950.
+ INFO [2016-09-27 17:48:14,378] ({pool-2-thread-3} Logging.scala[logInfo]:54) - Registering MapOutputTracker
+ INFO [2016-09-27 17:48:14,434] ({pool-2-thread-3} Logging.scala[logInfo]:54) - Registering BlockManagerMaster
+ INFO [2016-09-27 17:48:14,468] ({pool-2-thread-3} Logging.scala[logInfo]:54) - Created local directory at /private/var/folders/zn/94z6lqqn2tx7_9kw24557wgh000101/T/blockmgr-4916c482-0da3-401c-a84a-737eb8aa4cc3
+ INFO [2016-09-27 17:48:14,501] ({pool-2-thread-3} Logging.scala[logInfo]:54) - MemoryStore started with capacity 912.3 MB
+ INFO [2016-09-27 17:48:14,694] ({pool-2-thread-3} Logging.scala[logInfo]:54) - Registering OutputCommitCoordinator
+ INFO [2016-09-27 17:48:15,148] ({pool-2-thread-3} Log.java[initialized]:186) - Logging initialized @20161ms
+ INFO [2016-09-27 17:48:15,415] ({pool-2-thread-3} Server.java[doStart]:327) - jetty-9.2.z-SNAPSHOT
+ INFO [2016-09-27 17:48:15,488] ({pool-2-thread-3} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@64dc930d{/jobs,null,AVAILABLE}
+ INFO [2016-09-27 17:48:15,489] ({pool-2-thread-3} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@e4c7ba0{/jobs/json,null,AVAILABLE}
+ INFO [2016-09-27 17:48:15,495] ({pool-2-thread-3} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@2bfaa6a8{/jobs/job,null,AVAILABLE}
+ INFO [2016-09-27 17:48:15,495] ({pool-2-thread-3} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@28f01a09{/jobs/job/json,null,AVAILABLE}
+ INFO [2016-09-27 17:48:15,496] ({pool-2-thread-3} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@28b4b0e1{/stages,null,AVAILABLE}
+ INFO [2016-09-27 17:48:15,497] ({pool-2-thread-3} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@45c84f2c{/stages/json,null,AVAILABLE}
+ INFO [2016-09-27 17:48:15,498] ({pool-2-thread-3} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@3bf96edb{/stages/stage,null,AVAILABLE}
+ INFO [2016-09-27 17:48:15,548] ({pool-2-thread-3} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@13f10bff{/stages/stage/json,null,AVAILABLE}
+ INFO [2016-09-27 17:48:15,558] ({pool-2-thread-3} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@1ecf92d8{/stages/pool,null,AVAILABLE}
+ INFO [2016-09-27 17:48:15,559] ({pool-2-thread-3} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@19791f02{/stages/pool/json,null,AVAILABLE}
+ INFO [2016-09-27 17:48:15,561] ({pool-2-thread-3} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@69863540{/storage,null,AVAILABLE}
+ INFO [2016-09-27 17:48:15,561] ({pool-2-thread-3} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@7233757c{/storage/json,null,AVAILABLE}
+ INFO [2016-09-27 17:48:15,562] ({pool-2-thread-3} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@108860b0{/storage/rdd,null,AVAILABLE}
+ INFO [2016-09-27 17:48:15,563] ({pool-2-thread-3} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@4158ecac{/storage/rdd/json,null,AVAILABLE}
+ INFO [2016-09-27 17:48:15,563] ({pool-2-thread-3} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@19acfdf2{/environment,null,AVAILABLE}
+ INFO [2016-09-27 17:48:15,564] ({pool-2-thread-3} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@705de32e{/environment/json,null,AVAILABLE}
+ INFO [2016-09-27 17:48:15,564] ({pool-2-thread-3} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@23839075{/executors,null,AVAILABLE}
+ INFO [2016-09-27 17:48:15,565] ({pool-2-thread-3} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@25383525{/executors/json,null,AVAILABLE}
+ INFO [2016-09-27 17:48:15,565] ({pool-2-thread-3} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@5b851f1d{/executors/threadDump,null,AVAILABLE}
+ INFO [2016-09-27 17:48:15,566] ({pool-2-thread-3} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@44ded3d0{/executors/threadDump/json,null,AVAILABLE}
+ INFO [2016-09-27 17:48:15,580] ({pool-2-thread-3} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@7b61f306{/static,null,AVAILABLE}
+ INFO [2016-09-27 17:48:15,581] ({pool-2-thread-3} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@1f147052{/,null,AVAILABLE}
+ INFO [2016-09-27 17:48:15,582] ({pool-2-thread-3} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@6c9ae95a{/api,null,AVAILABLE}
+ INFO [2016-09-27 17:48:15,582] ({pool-2-thread-3} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@5ee8f74a{/stages/stage/kill,null,AVAILABLE}
+ INFO [2016-09-27 17:48:15,599] ({pool-2-thread-3} AbstractConnector.java[doStart]:266) - Started ServerConnector@175d5f5d{HTTP/1.1}{0.0.0.0:4040}
+ INFO [2016-09-27 17:48:15,601] ({pool-2-thread-3} Server.java[doStart]:379) - Started @20614ms
+ INFO [2016-09-27 17:48:15,601] ({pool-2-thread-3} Logging.scala[logInfo]:54) - Successfully started service 'SparkUI' on port 4040.
+ INFO [2016-09-27 17:48:15,609] ({pool-2-thread-3} Logging.scala[logInfo]:54) - Bound SparkUI to 0.0.0.0, and started at http://141.72.158.167:4040
+ INFO [2016-09-27 17:48:16,015] ({pool-2-thread-3} Logging.scala[logInfo]:54) - Copying /Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/interpreter/spark/pyspark/pyspark.zip to /private/var/folders/zn/94z6lqqn2tx7_9kw24557wgh000101/T/spark-7e21a4e1-d963-42a3-a2ac-6c890ea38502/userFiles-a1bdbf6e-afef-47fc-b5f6-b1261fc05e6e/pyspark.zip
+ INFO [2016-09-27 17:48:16,135] ({pool-2-thread-3} Logging.scala[logInfo]:54) - Added file file:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/interpreter/spark/pyspark/pyspark.zip at spark://141.72.158.167:59950/files/pyspark.zip with timestamp 1474991296012
+ INFO [2016-09-27 17:48:16,137] ({pool-2-thread-3} Logging.scala[logInfo]:54) - Copying /Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/interpreter/spark/pyspark/py4j-0.10.1-src.zip to /private/var/folders/zn/94z6lqqn2tx7_9kw24557wgh000101/T/spark-7e21a4e1-d963-42a3-a2ac-6c890ea38502/userFiles-a1bdbf6e-afef-47fc-b5f6-b1261fc05e6e/py4j-0.10.1-src.zip
+ INFO [2016-09-27 17:48:16,164] ({pool-2-thread-3} Logging.scala[logInfo]:54) - Added file file:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/interpreter/spark/pyspark/py4j-0.10.1-src.zip at spark://141.72.158.167:59950/files/py4j-0.10.1-src.zip with timestamp 1474991296136
+ INFO [2016-09-27 17:48:16,277] ({pool-2-thread-3} Logging.scala[logInfo]:54) - Created default pool default, schedulingMode: FIFO, minShare: 0, weight: 1
+ INFO [2016-09-27 17:48:16,475] ({appclient-register-master-threadpool-0} Logging.scala[logInfo]:54) - Connecting to master spark://127.0.0.1:7077...
+ WARN [2016-09-27 17:48:16,585] ({appclient-register-master-threadpool-0} Logging.scala[logWarning]:87) - Failed to connect to master 127.0.0.1:7077
+org.apache.spark.SparkException: Exception thrown in awaitResult
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:77)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:75)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at scala.PartialFunction$OrElse.apply(PartialFunction.scala:167)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:83)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:88)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:96)
+	at org.apache.spark.deploy.client.StandaloneAppClient$ClientEndpoint$$anonfun$tryRegisterAllMasters$1$$anon$1.run(StandaloneAppClient.scala:109)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Failed to connect to /127.0.0.1:7077
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:228)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:179)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.createClient(NettyRpcEnv.scala:197)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:191)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:187)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused: /127.0.0.1:7077
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:224)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:289)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:528)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:111)
+	... 1 more
+ INFO [2016-09-27 17:48:36,478] ({appclient-register-master-threadpool-0} Logging.scala[logInfo]:54) - Connecting to master spark://127.0.0.1:7077...
+ WARN [2016-09-27 17:48:36,491] ({appclient-register-master-threadpool-0} Logging.scala[logWarning]:87) - Failed to connect to master 127.0.0.1:7077
+org.apache.spark.SparkException: Exception thrown in awaitResult
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:77)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:75)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at scala.PartialFunction$OrElse.apply(PartialFunction.scala:167)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:83)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:88)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:96)
+	at org.apache.spark.deploy.client.StandaloneAppClient$ClientEndpoint$$anonfun$tryRegisterAllMasters$1$$anon$1.run(StandaloneAppClient.scala:109)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Failed to connect to /127.0.0.1:7077
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:228)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:179)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.createClient(NettyRpcEnv.scala:197)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:191)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:187)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused: /127.0.0.1:7077
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:224)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:289)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:528)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:111)
+	... 1 more
+ INFO [2016-09-27 17:48:56,483] ({appclient-register-master-threadpool-0} Logging.scala[logInfo]:54) - Connecting to master spark://127.0.0.1:7077...
+ WARN [2016-09-27 17:48:56,498] ({appclient-register-master-threadpool-0} Logging.scala[logWarning]:87) - Failed to connect to master 127.0.0.1:7077
+org.apache.spark.SparkException: Exception thrown in awaitResult
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:77)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:75)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at scala.PartialFunction$OrElse.apply(PartialFunction.scala:167)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:83)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:88)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:96)
+	at org.apache.spark.deploy.client.StandaloneAppClient$ClientEndpoint$$anonfun$tryRegisterAllMasters$1$$anon$1.run(StandaloneAppClient.scala:109)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Failed to connect to /127.0.0.1:7077
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:228)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:179)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.createClient(NettyRpcEnv.scala:197)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:191)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:187)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused: /127.0.0.1:7077
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:224)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:289)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:528)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:111)
+	... 1 more
+ERROR [2016-09-27 17:49:16,486] ({appclient-registration-retry-thread} Logging.scala[logError]:70) - Application has been killed. Reason: All masters are unresponsive! Giving up.
+ WARN [2016-09-27 17:49:16,486] ({pool-2-thread-3} Logging.scala[logWarning]:66) - Application ID is not initialized yet.
+ INFO [2016-09-27 17:49:16,504] ({appclient-registration-retry-thread} AbstractConnector.java[doStop]:306) - Stopped ServerConnector@175d5f5d{HTTP/1.1}{0.0.0.0:4040}
+ INFO [2016-09-27 17:49:16,505] ({pool-2-thread-3} Logging.scala[logInfo]:54) - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 59989.
+ INFO [2016-09-27 17:49:16,507] ({pool-2-thread-3} Logging.scala[logInfo]:54) - Server created on 141.72.158.167:59989
+ INFO [2016-09-27 17:49:16,509] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@5ee8f74a{/stages/stage/kill,null,UNAVAILABLE}
+ INFO [2016-09-27 17:49:16,510] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@6c9ae95a{/api,null,UNAVAILABLE}
+ INFO [2016-09-27 17:49:16,511] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@1f147052{/,null,UNAVAILABLE}
+ INFO [2016-09-27 17:49:16,512] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@7b61f306{/static,null,UNAVAILABLE}
+ INFO [2016-09-27 17:49:16,512] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@44ded3d0{/executors/threadDump/json,null,UNAVAILABLE}
+ INFO [2016-09-27 17:49:16,513] ({pool-2-thread-3} Logging.scala[logInfo]:54) - Registering BlockManager BlockManagerId(driver, 141.72.158.167, 59989)
+ INFO [2016-09-27 17:49:16,513] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@5b851f1d{/executors/threadDump,null,UNAVAILABLE}
+ INFO [2016-09-27 17:49:16,520] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@25383525{/executors/json,null,UNAVAILABLE}
+ INFO [2016-09-27 17:49:16,525] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@23839075{/executors,null,UNAVAILABLE}
+ INFO [2016-09-27 17:49:16,528] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@705de32e{/environment/json,null,UNAVAILABLE}
+ INFO [2016-09-27 17:49:16,529] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@19acfdf2{/environment,null,UNAVAILABLE}
+ INFO [2016-09-27 17:49:16,529] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@4158ecac{/storage/rdd/json,null,UNAVAILABLE}
+ INFO [2016-09-27 17:49:16,529] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Registering block manager 141.72.158.167:59989 with 912.3 MB RAM, BlockManagerId(driver, 141.72.158.167, 59989)
+ INFO [2016-09-27 17:49:16,535] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@108860b0{/storage/rdd,null,UNAVAILABLE}
+ INFO [2016-09-27 17:49:16,536] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@7233757c{/storage/json,null,UNAVAILABLE}
+ INFO [2016-09-27 17:49:16,537] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@69863540{/storage,null,UNAVAILABLE}
+ INFO [2016-09-27 17:49:16,538] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@19791f02{/stages/pool/json,null,UNAVAILABLE}
+ INFO [2016-09-27 17:49:16,539] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@1ecf92d8{/stages/pool,null,UNAVAILABLE}
+ INFO [2016-09-27 17:49:16,541] ({pool-2-thread-3} Logging.scala[logInfo]:54) - Registered BlockManager BlockManagerId(driver, 141.72.158.167, 59989)
+ INFO [2016-09-27 17:49:16,542] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@13f10bff{/stages/stage/json,null,UNAVAILABLE}
+ INFO [2016-09-27 17:49:16,543] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@3bf96edb{/stages/stage,null,UNAVAILABLE}
+ INFO [2016-09-27 17:49:16,544] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@45c84f2c{/stages/json,null,UNAVAILABLE}
+ INFO [2016-09-27 17:49:16,545] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@28b4b0e1{/stages,null,UNAVAILABLE}
+ INFO [2016-09-27 17:49:16,545] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@28f01a09{/jobs/job/json,null,UNAVAILABLE}
+ INFO [2016-09-27 17:49:16,546] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@2bfaa6a8{/jobs/job,null,UNAVAILABLE}
+ INFO [2016-09-27 17:49:16,546] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@e4c7ba0{/jobs/json,null,UNAVAILABLE}
+ INFO [2016-09-27 17:49:16,550] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@64dc930d{/jobs,null,UNAVAILABLE}
+ INFO [2016-09-27 17:49:16,560] ({appclient-registration-retry-thread} Logging.scala[logInfo]:54) - Stopped Spark web UI at http://141.72.158.167:4040
+ INFO [2016-09-27 17:49:16,602] ({appclient-registration-retry-thread} Logging.scala[logInfo]:54) - Shutting down all executors
+ INFO [2016-09-27 17:49:16,614] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Asking each executor to shut down
+ WARN [2016-09-27 17:49:16,626] ({dispatcher-event-loop-0} Logging.scala[logWarning]:66) - Drop UnregisterApplication(null) because has not yet connected to master
+ERROR [2016-09-27 17:49:16,651] ({appclient-registration-retry-thread} Logging.scala[logError]:91) - Error communicating with MapOutputTracker
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1326)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait(Promise.scala:208)
+	at scala.concurrent.impl.Promise$DefaultPromise.ready(Promise.scala:218)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:223)
+	at scala.concurrent.Await$$anonfun$result$1.apply(package.scala:190)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:53)
+	at scala.concurrent.Await$.result(package.scala:190)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:81)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:102)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:78)
+	at org.apache.spark.MapOutputTracker.askTracker(MapOutputTracker.scala:100)
+	at org.apache.spark.MapOutputTracker.sendTracker(MapOutputTracker.scala:110)
+	at org.apache.spark.MapOutputTrackerMaster.stop(MapOutputTracker.scala:580)
+	at org.apache.spark.SparkEnv.stop(SparkEnv.scala:84)
+	at org.apache.spark.SparkContext$$anonfun$stop$11.apply$mcV$sp(SparkContext.scala:1795)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1267)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:1794)
+	at org.apache.spark.scheduler.cluster.StandaloneSchedulerBackend.dead(StandaloneSchedulerBackend.scala:140)
+	at org.apache.spark.deploy.client.StandaloneAppClient$ClientEndpoint.markDead(StandaloneAppClient.scala:263)
+	at org.apache.spark.deploy.client.StandaloneAppClient$ClientEndpoint$$anon$2.run(StandaloneAppClient.scala:134)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+ INFO [2016-09-27 17:49:16,658] ({dispatcher-event-loop-2} Logging.scala[logInfo]:54) - MapOutputTrackerMasterEndpoint stopped!
+ERROR [2016-09-27 17:49:16,656] ({appclient-registration-retry-thread} Logging.scala[logError]:91) - Uncaught exception in thread appclient-registration-retry-thread
+org.apache.spark.SparkException: Error communicating with MapOutputTracker
+	at org.apache.spark.MapOutputTracker.askTracker(MapOutputTracker.scala:104)
+	at org.apache.spark.MapOutputTracker.sendTracker(MapOutputTracker.scala:110)
+	at org.apache.spark.MapOutputTrackerMaster.stop(MapOutputTracker.scala:580)
+	at org.apache.spark.SparkEnv.stop(SparkEnv.scala:84)
+	at org.apache.spark.SparkContext$$anonfun$stop$11.apply$mcV$sp(SparkContext.scala:1795)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1267)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:1794)
+	at org.apache.spark.scheduler.cluster.StandaloneSchedulerBackend.dead(StandaloneSchedulerBackend.scala:140)
+	at org.apache.spark.deploy.client.StandaloneAppClient$ClientEndpoint.markDead(StandaloneAppClient.scala:263)
+	at org.apache.spark.deploy.client.StandaloneAppClient$ClientEndpoint$$anon$2.run(StandaloneAppClient.scala:134)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1326)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait(Promise.scala:208)
+	at scala.concurrent.impl.Promise$DefaultPromise.ready(Promise.scala:218)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:223)
+	at scala.concurrent.Await$$anonfun$result$1.apply(package.scala:190)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:53)
+	at scala.concurrent.Await$.result(package.scala:190)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:81)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:102)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:78)
+	at org.apache.spark.MapOutputTracker.askTracker(MapOutputTracker.scala:100)
+	... 16 more
+ INFO [2016-09-27 17:49:17,021] ({pool-2-thread-3} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@47e57633{/metrics/json,null,AVAILABLE}
+ERROR [2016-09-27 17:49:17,036] ({pool-2-thread-3} Logging.scala[logError]:91) - Error initializing SparkContext.
+java.lang.NullPointerException
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:549)
+	at org.apache.spark.SparkContext$.getOrCreate(SparkContext.scala:2256)
+	at org.apache.spark.sql.SparkSession$Builder$$anonfun$8.apply(SparkSession.scala:831)
+	at org.apache.spark.sql.SparkSession$Builder$$anonfun$8.apply(SparkSession.scala:823)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.apache.spark.sql.SparkSession$Builder.getOrCreate(SparkSession.scala:823)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.zeppelin.spark.Utils.invokeMethod(Utils.java:38)
+	at org.apache.zeppelin.spark.Utils.invokeMethod(Utils.java:33)
+	at org.apache.zeppelin.spark.SparkInterpreter.createSparkSession(SparkInterpreter.java:340)
+	at org.apache.zeppelin.spark.SparkInterpreter.getSparkSession(SparkInterpreter.java:220)
+	at org.apache.zeppelin.spark.SparkInterpreter.open(SparkInterpreter.java:765)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.open(LazyOpenInterpreter.java:69)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:93)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:390)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:176)
+	at org.apache.zeppelin.scheduler.FIFOScheduler$1.run(FIFOScheduler.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+ INFO [2016-09-27 17:49:17,037] ({pool-2-thread-3} Logging.scala[logInfo]:54) - SparkContext already stopped.
+ERROR [2016-09-27 17:49:17,038] ({pool-2-thread-3} Utils.java[invokeMethod]:40) - 
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.zeppelin.spark.Utils.invokeMethod(Utils.java:38)
+	at org.apache.zeppelin.spark.Utils.invokeMethod(Utils.java:33)
+	at org.apache.zeppelin.spark.SparkInterpreter.createSparkSession(SparkInterpreter.java:340)
+	at org.apache.zeppelin.spark.SparkInterpreter.getSparkSession(SparkInterpreter.java:220)
+	at org.apache.zeppelin.spark.SparkInterpreter.open(SparkInterpreter.java:765)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.open(LazyOpenInterpreter.java:69)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:93)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:390)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:176)
+	at org.apache.zeppelin.scheduler.FIFOScheduler$1.run(FIFOScheduler.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:549)
+	at org.apache.spark.SparkContext$.getOrCreate(SparkContext.scala:2256)
+	at org.apache.spark.sql.SparkSession$Builder$$anonfun$8.apply(SparkSession.scala:831)
+	at org.apache.spark.sql.SparkSession$Builder$$anonfun$8.apply(SparkSession.scala:823)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.apache.spark.sql.SparkSession$Builder.getOrCreate(SparkSession.scala:823)
+	... 21 more
+ INFO [2016-09-27 17:49:17,038] ({appclient-registration-retry-thread} Logging.scala[logInfo]:54) - Successfully stopped SparkContext
+ INFO [2016-09-27 17:49:17,039] ({pool-2-thread-3} SparkInterpreter.java[createSparkSession]:341) - Created Spark session with Hive support
+ERROR [2016-09-27 17:49:17,043] ({pool-2-thread-3} Job.java[run]:182) - Job failed
+java.lang.NullPointerException
+	at org.apache.zeppelin.spark.Utils.invokeMethod(Utils.java:38)
+	at org.apache.zeppelin.spark.Utils.invokeMethod(Utils.java:33)
+	at org.apache.zeppelin.spark.SparkInterpreter.createSparkContext_2(SparkInterpreter.java:370)
+	at org.apache.zeppelin.spark.SparkInterpreter.createSparkContext(SparkInterpreter.java:359)
+	at org.apache.zeppelin.spark.SparkInterpreter.getSparkContext(SparkInterpreter.java:141)
+	at org.apache.zeppelin.spark.SparkInterpreter.open(SparkInterpreter.java:767)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.open(LazyOpenInterpreter.java:69)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:93)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:390)
+	at org.apache.zeppelin.scheduler.Job.run(Job.java:176)
+	at org.apache.zeppelin.scheduler.FIFOScheduler$1.run(FIFOScheduler.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+ INFO [2016-09-27 17:49:17,222] ({pool-2-thread-3} SchedulerFactory.java[jobFinished]:137) - Job remoteInterpretJob_1474991276980 finished by scheduler org.apache.zeppelin.spark.SparkInterpreter120467922
+ INFO [2016-09-27 17:49:19,289] ({pool-1-thread-1} SparkInterpreter.java[createSparkSession]:301) - ------ Create new SparkContext spark://127.0.0.1:7077 -------
+ WARN [2016-09-27 17:49:19,290] ({pool-1-thread-1} SparkInterpreter.java[setupConfForSparkR]:524) - sparkr.zip is not found, sparkr may not work.
+ WARN [2016-09-27 17:49:19,300] ({pool-1-thread-1} Logging.scala[logWarning]:66) - Another SparkContext is being constructed (or threw an exception in its constructor).  This may indicate an error, since only one SparkContext may be running in this JVM (see SPARK-2243). The other SparkContext was created at:
+org.apache.spark.sql.SparkSession$Builder.getOrCreate(SparkSession.scala:823)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:497)
+org.apache.zeppelin.spark.Utils.invokeMethod(Utils.java:38)
+org.apache.zeppelin.spark.Utils.invokeMethod(Utils.java:33)
+org.apache.zeppelin.spark.SparkInterpreter.createSparkSession(SparkInterpreter.java:340)
+org.apache.zeppelin.spark.SparkInterpreter.getSparkSession(SparkInterpreter.java:220)
+org.apache.zeppelin.spark.SparkInterpreter.open(SparkInterpreter.java:765)
+org.apache.zeppelin.interpreter.LazyOpenInterpreter.open(LazyOpenInterpreter.java:69)
+org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:93)
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:390)
+org.apache.zeppelin.scheduler.Job.run(Job.java:176)
+org.apache.zeppelin.scheduler.FIFOScheduler$1.run(FIFOScheduler.java:139)
+java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+java.util.concurrent.FutureTask.run(FutureTask.java:266)
+java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+ INFO [2016-09-27 17:49:19,300] ({pool-1-thread-1} Logging.scala[logInfo]:54) - Running Spark version 2.0.0
+ WARN [2016-09-27 17:49:19,304] ({pool-1-thread-1} Logging.scala[logWarning]:66) - 
+SPARK_CLASSPATH was detected (set to ':/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/interpreter/spark/dep/*:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/interpreter/spark/*:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-interpreter/target/lib/*::/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-interpreter/target/classes:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-interpreter/target/test-classes:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-zengine/target/test-classes').
+This is deprecated in Spark 1.0+.
+
+Please instead use:
+ - ./spark-submit with --driver-class-path to augment the driver classpath
+ - spark.executor.extraClassPath to augment the executor classpath
+        
+ WARN [2016-09-27 17:49:19,305] ({pool-1-thread-1} Logging.scala[logWarning]:66) - Setting 'spark.executor.extraClassPath' to ':/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/interpreter/spark/dep/*:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/interpreter/spark/*:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-interpreter/target/lib/*::/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-interpreter/target/classes:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-interpreter/target/test-classes:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-zengine/target/test-classes' as a work-around.
+ WARN [2016-09-27 17:49:19,305] ({pool-1-thread-1} Logging.scala[logWarning]:66) - Setting 'spark.driver.extraClassPath' to ':/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/interpreter/spark/dep/*:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/interpreter/spark/*:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-interpreter/target/lib/*::/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-interpreter/target/classes:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-interpreter/target/test-classes:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-zengine/target/test-classes' as a work-around.
+ INFO [2016-09-27 17:49:19,307] ({pool-1-thread-1} Logging.scala[logInfo]:54) - Changing view acls to: jlagarden
+ INFO [2016-09-27 17:49:19,307] ({pool-1-thread-1} Logging.scala[logInfo]:54) - Changing modify acls to: jlagarden
+ INFO [2016-09-27 17:49:19,308] ({pool-1-thread-1} Logging.scala[logInfo]:54) - Changing view acls groups to: 
+ INFO [2016-09-27 17:49:19,308] ({pool-1-thread-1} Logging.scala[logInfo]:54) - Changing modify acls groups to: 
+ INFO [2016-09-27 17:49:19,308] ({pool-1-thread-1} Logging.scala[logInfo]:54) - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(jlagarden); groups with view permissions: Set(); users  with modify permissions: Set(jlagarden); groups with modify permissions: Set()
+ INFO [2016-09-27 17:49:19,359] ({pool-1-thread-1} Logging.scala[logInfo]:54) - Successfully started service 'sparkDriver' on port 60021.
+ INFO [2016-09-27 17:49:19,363] ({pool-1-thread-1} Logging.scala[logInfo]:54) - Registering MapOutputTracker
+ INFO [2016-09-27 17:49:19,366] ({pool-1-thread-1} Logging.scala[logInfo]:54) - Registering BlockManagerMaster
+ INFO [2016-09-27 17:49:19,368] ({pool-1-thread-1} Logging.scala[logInfo]:54) - Created local directory at /private/var/folders/zn/94z6lqqn2tx7_9kw24557wgh000101/T/blockmgr-8c149829-2e54-4207-b5e5-c6d010175e6b
+ INFO [2016-09-27 17:49:19,370] ({pool-1-thread-1} Logging.scala[logInfo]:54) - MemoryStore started with capacity 912.3 MB
+ INFO [2016-09-27 17:49:19,372] ({pool-1-thread-1} Logging.scala[logInfo]:54) - Registering OutputCommitCoordinator
+ INFO [2016-09-27 17:49:19,394] ({pool-1-thread-1} Server.java[doStart]:327) - jetty-9.2.z-SNAPSHOT
+ INFO [2016-09-27 17:49:19,398] ({pool-1-thread-1} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@1fac84eb{/jobs,null,AVAILABLE}
+ INFO [2016-09-27 17:49:19,399] ({pool-1-thread-1} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@2f86325{/jobs/json,null,AVAILABLE}
+ INFO [2016-09-27 17:49:19,401] ({pool-1-thread-1} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@56361d3a{/jobs/job,null,AVAILABLE}
+ INFO [2016-09-27 17:49:19,401] ({pool-1-thread-1} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@797eed2d{/jobs/job/json,null,AVAILABLE}
+ INFO [2016-09-27 17:49:19,402] ({pool-1-thread-1} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@20eb535{/stages,null,AVAILABLE}
+ INFO [2016-09-27 17:49:19,402] ({pool-1-thread-1} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@432e0f1a{/stages/json,null,AVAILABLE}
+ INFO [2016-09-27 17:49:19,404] ({pool-1-thread-1} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@25171588{/stages/stage,null,AVAILABLE}
+ INFO [2016-09-27 17:49:19,404] ({pool-1-thread-1} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@2b8e9382{/stages/stage/json,null,AVAILABLE}
+ INFO [2016-09-27 17:49:19,405] ({pool-1-thread-1} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@5cde2cdb{/stages/pool,null,AVAILABLE}
+ INFO [2016-09-27 17:49:19,406] ({pool-1-thread-1} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@6fbbbe85{/stages/pool/json,null,AVAILABLE}
+ INFO [2016-09-27 17:49:19,407] ({pool-1-thread-1} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@721d4daf{/storage,null,AVAILABLE}
+ INFO [2016-09-27 17:49:19,408] ({pool-1-thread-1} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@2d50c2ed{/storage/json,null,AVAILABLE}
+ INFO [2016-09-27 17:49:19,409] ({pool-1-thread-1} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@c59b68{/storage/rdd,null,AVAILABLE}
+ INFO [2016-09-27 17:49:19,409] ({pool-1-thread-1} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@32b85263{/storage/rdd/json,null,AVAILABLE}
+ INFO [2016-09-27 17:49:19,410] ({pool-1-thread-1} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@2ad001ae{/environment,null,AVAILABLE}
+ INFO [2016-09-27 17:49:19,410] ({pool-1-thread-1} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@1bcf9b3{/environment/json,null,AVAILABLE}
+ INFO [2016-09-27 17:49:19,411] ({pool-1-thread-1} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@2d0e2c37{/executors,null,AVAILABLE}
+ INFO [2016-09-27 17:49:19,411] ({pool-1-thread-1} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@5d5548bf{/executors/json,null,AVAILABLE}
+ INFO [2016-09-27 17:49:19,412] ({pool-1-thread-1} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@77a2efca{/executors/threadDump,null,AVAILABLE}
+ INFO [2016-09-27 17:49:19,412] ({pool-1-thread-1} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@11b5f1ec{/executors/threadDump/json,null,AVAILABLE}
+ INFO [2016-09-27 17:49:19,413] ({pool-1-thread-1} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@4d860879{/static,null,AVAILABLE}
+ INFO [2016-09-27 17:49:19,414] ({pool-1-thread-1} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@3a61a1c6{/,null,AVAILABLE}
+ INFO [2016-09-27 17:49:19,415] ({pool-1-thread-1} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@5addd5ff{/api,null,AVAILABLE}
+ INFO [2016-09-27 17:49:19,416] ({pool-1-thread-1} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@645965d9{/stages/stage/kill,null,AVAILABLE}
+ INFO [2016-09-27 17:49:19,417] ({pool-1-thread-1} AbstractConnector.java[doStart]:266) - Started ServerConnector@1ea2bf81{HTTP/1.1}{0.0.0.0:4040}
+ INFO [2016-09-27 17:49:19,418] ({pool-1-thread-1} Server.java[doStart]:379) - Started @84429ms
+ INFO [2016-09-27 17:49:19,418] ({pool-1-thread-1} Logging.scala[logInfo]:54) - Successfully started service 'SparkUI' on port 4040.
+ INFO [2016-09-27 17:49:19,418] ({pool-1-thread-1} Logging.scala[logInfo]:54) - Bound SparkUI to 0.0.0.0, and started at http://141.72.158.167:4040
+ INFO [2016-09-27 17:49:19,477] ({pool-1-thread-1} Logging.scala[logInfo]:54) - Copying /Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/interpreter/spark/pyspark/pyspark.zip to /private/var/folders/zn/94z6lqqn2tx7_9kw24557wgh000101/T/spark-7e21a4e1-d963-42a3-a2ac-6c890ea38502/userFiles-ed9e466b-181a-4990-89e4-b722e83ecf35/pyspark.zip
+ INFO [2016-09-27 17:49:19,502] ({pool-1-thread-1} Logging.scala[logInfo]:54) - Added file file:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/interpreter/spark/pyspark/pyspark.zip at spark://141.72.158.167:60021/files/pyspark.zip with timestamp 1474991359477
+ INFO [2016-09-27 17:49:19,503] ({pool-1-thread-1} Logging.scala[logInfo]:54) - Copying /Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/interpreter/spark/pyspark/py4j-0.10.1-src.zip to /private/var/folders/zn/94z6lqqn2tx7_9kw24557wgh000101/T/spark-7e21a4e1-d963-42a3-a2ac-6c890ea38502/userFiles-ed9e466b-181a-4990-89e4-b722e83ecf35/py4j-0.10.1-src.zip
+ INFO [2016-09-27 17:49:19,515] ({pool-1-thread-1} Logging.scala[logInfo]:54) - Added file file:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/interpreter/spark/pyspark/py4j-0.10.1-src.zip at spark://141.72.158.167:60021/files/py4j-0.10.1-src.zip with timestamp 1474991359503
+ INFO [2016-09-27 17:49:19,518] ({pool-1-thread-1} Logging.scala[logInfo]:54) - Created default pool default, schedulingMode: FIFO, minShare: 0, weight: 1
+ INFO [2016-09-27 17:49:19,522] ({appclient-register-master-threadpool-0} Logging.scala[logInfo]:54) - Connecting to master spark://127.0.0.1:7077...
+ WARN [2016-09-27 17:49:19,527] ({appclient-register-master-threadpool-0} Logging.scala[logWarning]:87) - Failed to connect to master 127.0.0.1:7077
+org.apache.spark.SparkException: Exception thrown in awaitResult
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:77)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:75)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at scala.PartialFunction$OrElse.apply(PartialFunction.scala:167)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:83)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:88)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:96)
+	at org.apache.spark.deploy.client.StandaloneAppClient$ClientEndpoint$$anonfun$tryRegisterAllMasters$1$$anon$1.run(StandaloneAppClient.scala:109)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Failed to connect to /127.0.0.1:7077
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:228)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:179)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.createClient(NettyRpcEnv.scala:197)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:191)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:187)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused: /127.0.0.1:7077
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:224)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:289)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:528)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:111)
+	... 1 more
+ INFO [2016-09-27 17:49:39,524] ({appclient-register-master-threadpool-0} Logging.scala[logInfo]:54) - Connecting to master spark://127.0.0.1:7077...
+ WARN [2016-09-27 17:49:39,532] ({appclient-register-master-threadpool-0} Logging.scala[logWarning]:87) - Failed to connect to master 127.0.0.1:7077
+org.apache.spark.SparkException: Exception thrown in awaitResult
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:77)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:75)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at scala.PartialFunction$OrElse.apply(PartialFunction.scala:167)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:83)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:88)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:96)
+	at org.apache.spark.deploy.client.StandaloneAppClient$ClientEndpoint$$anonfun$tryRegisterAllMasters$1$$anon$1.run(StandaloneAppClient.scala:109)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Failed to connect to /127.0.0.1:7077
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:228)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:179)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.createClient(NettyRpcEnv.scala:197)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:191)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:187)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused: /127.0.0.1:7077
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:224)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:289)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:528)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:111)
+	... 1 more
+ INFO [2016-09-27 17:49:59,423] ({appclient-register-master-threadpool-0} Logging.scala[logInfo]:54) - Connecting to master spark://127.0.0.1:7077...
+ WARN [2016-09-27 17:49:59,432] ({appclient-register-master-threadpool-0} Logging.scala[logWarning]:87) - Failed to connect to master 127.0.0.1:7077
+org.apache.spark.SparkException: Exception thrown in awaitResult
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:77)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$1.applyOrElse(RpcTimeout.scala:75)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:59)
+	at scala.PartialFunction$OrElse.apply(PartialFunction.scala:167)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:83)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:88)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:96)
+	at org.apache.spark.deploy.client.StandaloneAppClient$ClientEndpoint$$anonfun$tryRegisterAllMasters$1$$anon$1.run(StandaloneAppClient.scala:109)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Failed to connect to /127.0.0.1:7077
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:228)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:179)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.createClient(NettyRpcEnv.scala:197)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:191)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:187)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused: /127.0.0.1:7077
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:224)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:289)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:528)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:111)
+	... 1 more
+ERROR [2016-09-27 17:50:19,433] ({appclient-registration-retry-thread} Logging.scala[logError]:70) - Application has been killed. Reason: All masters are unresponsive! Giving up.
+ WARN [2016-09-27 17:50:19,434] ({pool-1-thread-1} Logging.scala[logWarning]:66) - Application ID is not initialized yet.
+ INFO [2016-09-27 17:50:19,439] ({appclient-registration-retry-thread} AbstractConnector.java[doStop]:306) - Stopped ServerConnector@1ea2bf81{HTTP/1.1}{0.0.0.0:4040}
+ INFO [2016-09-27 17:50:19,441] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@645965d9{/stages/stage/kill,null,UNAVAILABLE}
+ INFO [2016-09-27 17:50:19,442] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@5addd5ff{/api,null,UNAVAILABLE}
+ INFO [2016-09-27 17:50:19,442] ({pool-1-thread-1} Logging.scala[logInfo]:54) - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 60112.
+ INFO [2016-09-27 17:50:19,443] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@3a61a1c6{/,null,UNAVAILABLE}
+ INFO [2016-09-27 17:50:19,443] ({pool-1-thread-1} Logging.scala[logInfo]:54) - Server created on 141.72.158.167:60112
+ INFO [2016-09-27 17:50:19,444] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@4d860879{/static,null,UNAVAILABLE}
+ INFO [2016-09-27 17:50:19,444] ({pool-1-thread-1} Logging.scala[logInfo]:54) - Registering BlockManager BlockManagerId(driver, 141.72.158.167, 60112)
+ INFO [2016-09-27 17:50:19,444] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@11b5f1ec{/executors/threadDump/json,null,UNAVAILABLE}
+ INFO [2016-09-27 17:50:19,445] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@77a2efca{/executors/threadDump,null,UNAVAILABLE}
+ INFO [2016-09-27 17:50:19,446] ({dispatcher-event-loop-0} Logging.scala[logInfo]:54) - Registering block manager 141.72.158.167:60112 with 912.3 MB RAM, BlockManagerId(driver, 141.72.158.167, 60112)
+ INFO [2016-09-27 17:50:19,446] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@5d5548bf{/executors/json,null,UNAVAILABLE}
+ INFO [2016-09-27 17:50:19,447] ({pool-1-thread-1} Logging.scala[logInfo]:54) - Registered BlockManager BlockManagerId(driver, 141.72.158.167, 60112)
+ INFO [2016-09-27 17:50:19,447] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@2d0e2c37{/executors,null,UNAVAILABLE}
+ INFO [2016-09-27 17:50:19,448] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@1bcf9b3{/environment/json,null,UNAVAILABLE}
+ INFO [2016-09-27 17:50:19,448] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@2ad001ae{/environment,null,UNAVAILABLE}
+ INFO [2016-09-27 17:50:19,449] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@32b85263{/storage/rdd/json,null,UNAVAILABLE}
+ INFO [2016-09-27 17:50:19,449] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@c59b68{/storage/rdd,null,UNAVAILABLE}
+ INFO [2016-09-27 17:50:19,450] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@2d50c2ed{/storage/json,null,UNAVAILABLE}
+ INFO [2016-09-27 17:50:19,450] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@721d4daf{/storage,null,UNAVAILABLE}
+ INFO [2016-09-27 17:50:19,450] ({pool-1-thread-1} ContextHandler.java[doStart]:744) - Started o.s.j.s.ServletContextHandler@6835f105{/metrics/json,null,AVAILABLE}
+ INFO [2016-09-27 17:50:19,451] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@6fbbbe85{/stages/pool/json,null,UNAVAILABLE}
+ INFO [2016-09-27 17:50:19,451] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@5cde2cdb{/stages/pool,null,UNAVAILABLE}
+ INFO [2016-09-27 17:50:19,452] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@2b8e9382{/stages/stage/json,null,UNAVAILABLE}
+ INFO [2016-09-27 17:50:19,453] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@25171588{/stages/stage,null,UNAVAILABLE}
+ERROR [2016-09-27 17:50:19,454] ({pool-1-thread-1} Logging.scala[logError]:91) - Error initializing SparkContext.
+java.lang.IllegalStateException: Cannot call methods on a stopped SparkContext.
+This stopped SparkContext was created at:
+
+org.apache.spark.sql.SparkSession$Builder.getOrCreate(SparkSession.scala:823)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:497)
+org.apache.zeppelin.spark.Utils.invokeMethod(Utils.java:38)
+org.apache.zeppelin.spark.Utils.invokeMethod(Utils.java:33)
+org.apache.zeppelin.spark.SparkInterpreter.createSparkSession(SparkInterpreter.java:340)
+org.apache.zeppelin.spark.SparkInterpreter.getSparkSession(SparkInterpreter.java:220)
+org.apache.zeppelin.spark.SparkInterpreter.open(SparkInterpreter.java:765)
+org.apache.zeppelin.interpreter.LazyOpenInterpreter.open(LazyOpenInterpreter.java:69)
+org.apache.zeppelin.interpreter.LazyOpenInterpreter.getProgress(LazyOpenInterpreter.java:110)
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer.getProgress(RemoteInterpreterServer.java:454)
+org.apache.zeppelin.interpreter.thrift.RemoteInterpreterService$Processor$getProgress.getResult(RemoteInterpreterService.java:1701)
+org.apache.zeppelin.interpreter.thrift.RemoteInterpreterService$Processor$getProgress.getResult(RemoteInterpreterService.java:1686)
+org.apache.thrift.ProcessFunction.process(ProcessFunction.java:39)
+org.apache.thrift.TBaseProcessor.process(TBaseProcessor.java:39)
+org.apache.thrift.server.TThreadPoolServer$WorkerProcess.run(TThreadPoolServer.java:285)
+java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+
+The currently active SparkContext was created at:
+
+(No active SparkContext.)
+         
+	at org.apache.spark.SparkContext.assertNotStopped(SparkContext.scala:104)
+	at org.apache.spark.SparkContext.getSchedulingMode(SparkContext.scala:1637)
+	at org.apache.spark.SparkContext.postEnvironmentUpdate(SparkContext.scala:2160)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:545)
+	at org.apache.spark.SparkContext$.getOrCreate(SparkContext.scala:2256)
+	at org.apache.spark.sql.SparkSession$Builder$$anonfun$8.apply(SparkSession.scala:831)
+	at org.apache.spark.sql.SparkSession$Builder$$anonfun$8.apply(SparkSession.scala:823)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.apache.spark.sql.SparkSession$Builder.getOrCreate(SparkSession.scala:823)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.zeppelin.spark.Utils.invokeMethod(Utils.java:38)
+	at org.apache.zeppelin.spark.Utils.invokeMethod(Utils.java:33)
+	at org.apache.zeppelin.spark.SparkInterpreter.createSparkSession(SparkInterpreter.java:340)
+	at org.apache.zeppelin.spark.SparkInterpreter.getSparkSession(SparkInterpreter.java:220)
+	at org.apache.zeppelin.spark.SparkInterpreter.open(SparkInterpreter.java:765)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.open(LazyOpenInterpreter.java:69)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.getProgress(LazyOpenInterpreter.java:110)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer.getProgress(RemoteInterpreterServer.java:454)
+	at org.apache.zeppelin.interpreter.thrift.RemoteInterpreterService$Processor$getProgress.getResult(RemoteInterpreterService.java:1701)
+	at org.apache.zeppelin.interpreter.thrift.RemoteInterpreterService$Processor$getProgress.getResult(RemoteInterpreterService.java:1686)
+	at org.apache.thrift.ProcessFunction.process(ProcessFunction.java:39)
+	at org.apache.thrift.TBaseProcessor.process(TBaseProcessor.java:39)
+	at org.apache.thrift.server.TThreadPoolServer$WorkerProcess.run(TThreadPoolServer.java:285)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+ INFO [2016-09-27 17:50:19,454] ({pool-1-thread-1} Logging.scala[logInfo]:54) - SparkContext already stopped.
+ERROR [2016-09-27 17:50:19,455] ({pool-1-thread-1} Utils.java[invokeMethod]:40) - 
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.zeppelin.spark.Utils.invokeMethod(Utils.java:38)
+	at org.apache.zeppelin.spark.Utils.invokeMethod(Utils.java:33)
+	at org.apache.zeppelin.spark.SparkInterpreter.createSparkSession(SparkInterpreter.java:340)
+	at org.apache.zeppelin.spark.SparkInterpreter.getSparkSession(SparkInterpreter.java:220)
+	at org.apache.zeppelin.spark.SparkInterpreter.open(SparkInterpreter.java:765)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.open(LazyOpenInterpreter.java:69)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.getProgress(LazyOpenInterpreter.java:110)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer.getProgress(RemoteInterpreterServer.java:454)
+	at org.apache.zeppelin.interpreter.thrift.RemoteInterpreterService$Processor$getProgress.getResult(RemoteInterpreterService.java:1701)
+	at org.apache.zeppelin.interpreter.thrift.RemoteInterpreterService$Processor$getProgress.getResult(RemoteInterpreterService.java:1686)
+	at org.apache.thrift.ProcessFunction.process(ProcessFunction.java:39)
+	at org.apache.thrift.TBaseProcessor.process(TBaseProcessor.java:39)
+	at org.apache.thrift.server.TThreadPoolServer$WorkerProcess.run(TThreadPoolServer.java:285)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalStateException: Cannot call methods on a stopped SparkContext.
+This stopped SparkContext was created at:
+
+org.apache.spark.sql.SparkSession$Builder.getOrCreate(SparkSession.scala:823)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:497)
+org.apache.zeppelin.spark.Utils.invokeMethod(Utils.java:38)
+org.apache.zeppelin.spark.Utils.invokeMethod(Utils.java:33)
+org.apache.zeppelin.spark.SparkInterpreter.createSparkSession(SparkInterpreter.java:340)
+org.apache.zeppelin.spark.SparkInterpreter.getSparkSession(SparkInterpreter.java:220)
+org.apache.zeppelin.spark.SparkInterpreter.open(SparkInterpreter.java:765)
+org.apache.zeppelin.interpreter.LazyOpenInterpreter.open(LazyOpenInterpreter.java:69)
+org.apache.zeppelin.interpreter.LazyOpenInterpreter.getProgress(LazyOpenInterpreter.java:110)
+org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer.getProgress(RemoteInterpreterServer.java:454)
+org.apache.zeppelin.interpreter.thrift.RemoteInterpreterService$Processor$getProgress.getResult(RemoteInterpreterService.java:1701)
+org.apache.zeppelin.interpreter.thrift.RemoteInterpreterService$Processor$getProgress.getResult(RemoteInterpreterService.java:1686)
+org.apache.thrift.ProcessFunction.process(ProcessFunction.java:39)
+org.apache.thrift.TBaseProcessor.process(TBaseProcessor.java:39)
+org.apache.thrift.server.TThreadPoolServer$WorkerProcess.run(TThreadPoolServer.java:285)
+java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+
+The currently active SparkContext was created at:
+
+(No active SparkContext.)
+         
+	at org.apache.spark.SparkContext.assertNotStopped(SparkContext.scala:104)
+	at org.apache.spark.SparkContext.getSchedulingMode(SparkContext.scala:1637)
+	at org.apache.spark.SparkContext.postEnvironmentUpdate(SparkContext.scala:2160)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:545)
+	at org.apache.spark.SparkContext$.getOrCreate(SparkContext.scala:2256)
+	at org.apache.spark.sql.SparkSession$Builder$$anonfun$8.apply(SparkSession.scala:831)
+	at org.apache.spark.sql.SparkSession$Builder$$anonfun$8.apply(SparkSession.scala:823)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.apache.spark.sql.SparkSession$Builder.getOrCreate(SparkSession.scala:823)
+	... 20 more
+ INFO [2016-09-27 17:50:19,454] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@432e0f1a{/stages/json,null,UNAVAILABLE}
+ INFO [2016-09-27 17:50:19,456] ({pool-1-thread-1} SparkInterpreter.java[createSparkSession]:341) - Created Spark session with Hive support
+ INFO [2016-09-27 17:50:19,458] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@20eb535{/stages,null,UNAVAILABLE}
+ERROR [2016-09-27 17:50:19,458] ({pool-1-thread-1} TThreadPoolServer.java[run]:296) - Error occurred during processing of message.
+java.lang.NullPointerException
+	at org.apache.zeppelin.spark.Utils.invokeMethod(Utils.java:38)
+	at org.apache.zeppelin.spark.Utils.invokeMethod(Utils.java:33)
+	at org.apache.zeppelin.spark.SparkInterpreter.createSparkContext_2(SparkInterpreter.java:370)
+	at org.apache.zeppelin.spark.SparkInterpreter.createSparkContext(SparkInterpreter.java:359)
+	at org.apache.zeppelin.spark.SparkInterpreter.getSparkContext(SparkInterpreter.java:141)
+	at org.apache.zeppelin.spark.SparkInterpreter.open(SparkInterpreter.java:767)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.open(LazyOpenInterpreter.java:69)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.getProgress(LazyOpenInterpreter.java:110)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer.getProgress(RemoteInterpreterServer.java:454)
+	at org.apache.zeppelin.interpreter.thrift.RemoteInterpreterService$Processor$getProgress.getResult(RemoteInterpreterService.java:1701)
+	at org.apache.zeppelin.interpreter.thrift.RemoteInterpreterService$Processor$getProgress.getResult(RemoteInterpreterService.java:1686)
+	at org.apache.thrift.ProcessFunction.process(ProcessFunction.java:39)
+	at org.apache.thrift.TBaseProcessor.process(TBaseProcessor.java:39)
+	at org.apache.thrift.server.TThreadPoolServer$WorkerProcess.run(TThreadPoolServer.java:285)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+ INFO [2016-09-27 17:50:19,458] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@797eed2d{/jobs/job/json,null,UNAVAILABLE}
+ INFO [2016-09-27 17:50:19,459] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@56361d3a{/jobs/job,null,UNAVAILABLE}
+ INFO [2016-09-27 17:50:19,459] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@2f86325{/jobs/json,null,UNAVAILABLE}
+ INFO [2016-09-27 17:50:19,459] ({appclient-registration-retry-thread} ContextHandler.java[doStop]:865) - Stopped o.s.j.s.ServletContextHandler@1fac84eb{/jobs,null,UNAVAILABLE}
+ INFO [2016-09-27 17:50:19,461] ({appclient-registration-retry-thread} Logging.scala[logInfo]:54) - Stopped Spark web UI at http://141.72.158.167:4040
+ INFO [2016-09-27 17:50:19,464] ({appclient-registration-retry-thread} Logging.scala[logInfo]:54) - Shutting down all executors
+ INFO [2016-09-27 17:50:19,465] ({dispatcher-event-loop-1} Logging.scala[logInfo]:54) - Asking each executor to shut down
+ WARN [2016-09-27 17:50:19,466] ({dispatcher-event-loop-0} Logging.scala[logWarning]:66) - Drop UnregisterApplication(null) because has not yet connected to master
+ERROR [2016-09-27 17:50:19,466] ({appclient-registration-retry-thread} Logging.scala[logError]:91) - Error communicating with MapOutputTracker
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1326)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait(Promise.scala:208)
+	at scala.concurrent.impl.Promise$DefaultPromise.ready(Promise.scala:218)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:223)
+	at scala.concurrent.Await$$anonfun$result$1.apply(package.scala:190)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:53)
+	at scala.concurrent.Await$.result(package.scala:190)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:81)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:102)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:78)
+	at org.apache.spark.MapOutputTracker.askTracker(MapOutputTracker.scala:100)
+	at org.apache.spark.MapOutputTracker.sendTracker(MapOutputTracker.scala:110)
+	at org.apache.spark.MapOutputTrackerMaster.stop(MapOutputTracker.scala:580)
+	at org.apache.spark.SparkEnv.stop(SparkEnv.scala:84)
+	at org.apache.spark.SparkContext$$anonfun$stop$11.apply$mcV$sp(SparkContext.scala:1795)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1267)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:1794)
+	at org.apache.spark.scheduler.cluster.StandaloneSchedulerBackend.dead(StandaloneSchedulerBackend.scala:140)
+	at org.apache.spark.deploy.client.StandaloneAppClient$ClientEndpoint.markDead(StandaloneAppClient.scala:263)
+	at org.apache.spark.deploy.client.StandaloneAppClient$ClientEndpoint$$anon$2.run(StandaloneAppClient.scala:134)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [2016-09-27 17:50:19,468] ({appclient-registration-retry-thread} Logging.scala[logError]:91) - Uncaught exception in thread appclient-registration-retry-thread
+org.apache.spark.SparkException: Error communicating with MapOutputTracker
+	at org.apache.spark.MapOutputTracker.askTracker(MapOutputTracker.scala:104)
+	at org.apache.spark.MapOutputTracker.sendTracker(MapOutputTracker.scala:110)
+	at org.apache.spark.MapOutputTrackerMaster.stop(MapOutputTracker.scala:580)
+	at org.apache.spark.SparkEnv.stop(SparkEnv.scala:84)
+	at org.apache.spark.SparkContext$$anonfun$stop$11.apply$mcV$sp(SparkContext.scala:1795)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1267)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:1794)
+	at org.apache.spark.scheduler.cluster.StandaloneSchedulerBackend.dead(StandaloneSchedulerBackend.scala:140)
+	at org.apache.spark.deploy.client.StandaloneAppClient$ClientEndpoint.markDead(StandaloneAppClient.scala:263)
+	at org.apache.spark.deploy.client.StandaloneAppClient$ClientEndpoint$$anon$2.run(StandaloneAppClient.scala:134)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1326)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait(Promise.scala:208)
+	at scala.concurrent.impl.Promise$DefaultPromise.ready(Promise.scala:218)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:223)
+	at scala.concurrent.Await$$anonfun$result$1.apply(package.scala:190)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:53)
+	at scala.concurrent.Await$.result(package.scala:190)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:81)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:102)
+	at org.apache.spark.rpc.RpcEndpointRef.askWithRetry(RpcEndpointRef.scala:78)
+	at org.apache.spark.MapOutputTracker.askTracker(MapOutputTracker.scala:100)
+	... 16 more
+ INFO [2016-09-27 17:50:19,467] ({dispatcher-event-loop-2} Logging.scala[logInfo]:54) - MapOutputTrackerMasterEndpoint stopped!
+ INFO [2016-09-27 17:50:19,469] ({appclient-registration-retry-thread} Logging.scala[logInfo]:54) - Successfully stopped SparkContext
+ INFO [2016-09-27 18:04:37,789] ({pool-1-thread-8} InterpreterGroup.java[close]:140) - Close interpreter group 2BWJ3Q3MT:shared_process
+ INFO [2016-09-27 18:04:37,794] ({pool-1-thread-8} InterpreterGroup.java[destroy]:204) - Destroy interpreter group 2BWJ3Q3MT:shared_process
+ INFO [2016-09-27 18:04:39,910] ({Thread-2} Logging.scala[logInfo]:54) - Shutdown hook called
+ INFO [2016-09-27 18:04:39,915] ({Thread-2} Logging.scala[logInfo]:54) - Shutdown hook called
+ INFO [2016-09-27 18:04:39,916] ({Thread-2} Logging.scala[logInfo]:54) - Shutdown hook called
+ INFO [2016-09-27 18:04:39,918] ({Thread-2} Logging.scala[logInfo]:54) - Deleting directory /private/var/folders/zn/94z6lqqn2tx7_9kw24557wgh000101/T/spark-7e21a4e1-d963-42a3-a2ac-6c890ea38502/userFiles-a1bdbf6e-afef-47fc-b5f6-b1261fc05e6e
+ INFO [2016-09-27 18:04:39,919] ({Thread-2} Logging.scala[logInfo]:54) - Deleting directory /private/var/folders/zn/94z6lqqn2tx7_9kw24557wgh000101/T/spark-7e21a4e1-d963-42a3-a2ac-6c890ea38502
+ INFO [2016-09-27 18:04:39,920] ({Thread-2} Logging.scala[logInfo]:54) - Deleting directory /private/var/folders/zn/94z6lqqn2tx7_9kw24557wgh000101/T/spark-bf45d1ef-e2ad-4cb9-91f1-c5b5c4a9a4b3
+ INFO [2016-09-27 18:04:39,921] ({Thread-2} Logging.scala[logInfo]:54) - Deleting directory /private/var/folders/zn/94z6lqqn2tx7_9kw24557wgh000101/T/spark-7e21a4e1-d963-42a3-a2ac-6c890ea38502/userFiles-ed9e466b-181a-4990-89e4-b722e83ecf35

@@ -1,0 +1,7 @@
+docker stop kafka && docker rm kafka && docker run --name kafka -d -p 2181:2181 -p 9092:9092 --env ADVERTISED_HOST=141.72.149.148 --env ADVERTISED_PORT=9092 spotify/kafka
+
+docker stop activemq && docker rm activemq && docker run --name='activemq' -P webcenter/activemq:latest
+
+java -jar TaktstrasseOpcServer-0.0.1-SNAPSHOT.jar  -o /Users/helgedickel/github/DHBW\ WWI14SEA\ Projekt/DHBW-WWI14SEA-Projekt/tmp -d 1000 -amqp tcp://127.0.0.1:61616 -kafka localhost:9092 -topic prod
+
+

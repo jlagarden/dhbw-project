@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Patua One';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Patua-One.eot);
+  src: local('Patua One'), local('PatuaOne-Regular'), url(../fonts/Patua-One.eot?#iefix) format('embedded-opentype'), url(../fonts/Patua-One.woff) format('woff'), url(../fonts/Patua-One.ttf) format('truetype'), url(../fonts/Patua-One.svg#PatuaOne) format('svg');
+}
+
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlBhdHVhLU9uZS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSx5QkFBeUI7RUFDekIsbUJBQW1CO0VBQ25CLGlCQUFpQjtFQUNqQixpQ0FBaUM7RUFDakMsb1FBQW9RO0NBQ3JRIiwiZmlsZSI6IlBhdHVhLU9uZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6ICdQYXR1YSBPbmUnO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG4gIGZvbnQtd2VpZ2h0OiA0MDA7XG4gIHNyYzogdXJsKC4uL2ZvbnRzL1BhdHVhLU9uZS5lb3QpO1xuICBzcmM6IGxvY2FsKCdQYXR1YSBPbmUnKSwgbG9jYWwoJ1BhdHVhT25lLVJlZ3VsYXInKSwgdXJsKC4uL2ZvbnRzL1BhdHVhLU9uZS5lb3Q/I2llZml4KSBmb3JtYXQoJ2VtYmVkZGVkLW9wZW50eXBlJyksIHVybCguLi9mb250cy9QYXR1YS1PbmUud29mZikgZm9ybWF0KCd3b2ZmJyksIHVybCguLi9mb250cy9QYXR1YS1PbmUudHRmKSBmb3JtYXQoJ3RydWV0eXBlJyksIHVybCguLi9mb250cy9QYXR1YS1PbmUuc3ZnI1BhdHVhT25lKSBmb3JtYXQoJ3N2ZycpO1xufVxuXG4iXX0= */

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html ng-app="dashboardApp">
+<head>
+  <meta charset="utf-8">
+  <title>My Factory</title>
+
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css" />
+
+
+    <link rel="stylesheet" href="app.css" />
+
+
+
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./resources/c3/c3.min.js"></script>
+    <link href="./resources/c3/c3.min.css" rel="stylesheet" type="text/css">
+
+
+      <script src="socket.io/socket.io.js"></script>
+
+
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="resources/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+
+
+      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.js"></script>
+
+
+
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="material-list/material-list.module.js"></script>
+    <script src="material-list/material-list.component.js"></script>
+    <script src="customer-list/customer-list.module.js"></script>
+    <script src="customer-list/customer-list.component.js"></script>
+<!--    <script src="result-charts/result-charts.module.js"></script>
+    <script src="result-charts/result-charts.component.js"></script> -->
+    <script src="dashboard-overview/dashboard-overview.module.js"></script>
+    <script src="dashboard-overview/dashboard-overview.component.js"></script>
+
+    <script src="directives/widget.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <i class="material-icons md-light">location_city</i>
+            <a class="navbar-brand" href="#">My Factory 4.0</a>
+          </a>
+        </div>
+
+        <!--
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+      -->
+      </div>
+    </nav>
+
+
+
+        <div class="container-fluid">
+          <div class="row">
+
+            <div class="col-sm-3 col-md-2 sidebar">
+              <ul class="nav nav-sidebar">
+                <li><a href="#dashboard">Dashboard</a></li>
+          <!--      <li><a href="#charts">Charts</a></li> -->
+                <li><a href="#material">Material</a></li>
+                <li><a href="#customer">Customer</a></li>
+              </ul>
+
+            </div>
+
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+<!--
+              <h2 class="page-header down">Dashboard</h2>
+
+
+              <div ng-controller="myCtrl">
+                <p>{{ x1 }}</p>
+                <p>{{ x2 }}</p>
+              </div>
+-->
+
+              <div>
+                <div ng-view></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+  </body>
+</hmtl>

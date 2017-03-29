@@ -1,0 +1,242 @@
+Helge-2:DHBW-WWI14SEA-Projekt helgedickel$ java -jar TaktstrasseOpcServer-0.0.1-SNAPSHOT.jar  -o /Users/helgedickel/github/DHBW\ WWI14SEA\ Projekt/DHBW-WWI14SEA-Projekt/tmp -d 1000 -amqp tcp://127.0.0.1:61616 -kafka localhost:9092 -topic prod
+2016-10-12 09:15:37,568 DEBUG [main] dhbw.i4.simulation.taktstrasse.Main: Delay before simulation starts: 1000ms
+2016-10-12 09:15:38,571 DEBUG [main] dhbw.i4.simulation.taktstrasse.Main: Starting simulation engine.
+2016-10-12 09:15:38,571 DEBUG [main] dhbw.i4.simulation.taktstrasse.Server: Simulation started.
+2016-10-12 09:15:38,571 DEBUG [main] dhbw.i4.simulation.taktstrasse.Server: Requesting next production part.
+2016-10-12 09:15:38,574 DEBUG [main] dhbw.i4.simulation.taktstrasse.Server: Waiting for production line to become ready.
+2016-10-12 09:15:38,684 WARN  [Thread-1] org.apache.kafka.clients.producer.ProducerConfig: The configuration group.id = null was supplied but isn't a known config.
+2016-10-12 09:15:38,684 WARN  [Thread-1] org.apache.kafka.clients.producer.ProducerConfig: The configuration group.id = null was supplied but isn't a known config.
+2016-10-12 09:15:38,684 INFO  [Thread-1] dhbw.i4.simulation.taktstrasse.Part: Kafka-Producer is configured.
+javax.jms.JMSException: Could not connect to broker URL: tcp://127.0.0.1:61616. Reason: java.net.ConnectException: Connection refused
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:360)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:305)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:245)
+	at dhbw.i4.simulation.taktstrasse.Part.sendERPToQueue(Part.java:438)
+	at dhbw.i4.simulation.taktstrasse.Part.run(Part.java:79)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.activemq.transport.tcp.TcpTransport.connect(TcpTransport.java:501)
+	at org.apache.activemq.transport.tcp.TcpTransport.doStart(TcpTransport.java:464)
+	at org.apache.activemq.util.ServiceSupport.start(ServiceSupport.java:55)
+	at org.apache.activemq.transport.AbstractInactivityMonitor.start(AbstractInactivityMonitor.java:138)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.WireFormatNegotiator.start(WireFormatNegotiator.java:72)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:340)
+	... 5 more
+2016-10-12 09:15:38,935 DEBUG [Thread-1] dhbw.i4.simulation.taktstrasse.Part: ERP notified about the production of order number 64177d76-0315-40d3-8ffd-8dd59faaf707
+2016-10-12 09:15:38,935 DEBUG [Thread-1] dhbw.i4.simulation.taktstrasse.Part: Starting part production of 64177d76-0315-40d3-8ffd-8dd59faaf707
+2016-10-12 09:15:39,401 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:15:42,380 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:15:49,394 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:15:52,394 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:15:59,398 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:16:02,400 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:16:03,405 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:16:08,418 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:16:13,425 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:16:20,431 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:16:21,436 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:16:28,439 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:16:34,445 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:16:35,447 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:16:38,455 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:16:39,457 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:16:43,463 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:16:48,469 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:16:52,478 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:16:53,483 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:16:58,493 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:17:03,502 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:17:10,504 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:17:11,505 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:17:18,515 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:17:23,523 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:17:24,527 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:17:25,527 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:17:28,532 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:17:38,540 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:17:41,544 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:17:42,545 DEBUG [Thread-1] dhbw.i4.simulation.taktstrasse.Part: Finished production of 64177d76-0315-40d3-8ffd-8dd59faaf707
+2016-10-12 09:17:42,545 DEBUG [Thread-1] dhbw.i4.simulation.taktstrasse.Part: Ready for spectral analysis of part 64177d76-0315-40d3-8ffd-8dd59faaf707
+2016-10-12 09:17:47,547 DEBUG [Thread-1] dhbw.i4.simulation.taktstrasse.Part: Spectral analysis running ...
+2016-10-12 09:18:06,555 DEBUG [Thread-1] dhbw.i4.simulation.taktstrasse.Part: File written to /Users/helgedickel/github/DHBW WWI14SEA Projekt/DHBW-WWI14SEA-Projekt/tmp/1a000095116a45b9b65404e1e9294dc0.erp
+2016-10-12 09:18:06,555 DEBUG [Thread-1] dhbw.i4.simulation.taktstrasse.Part: Finished.
+2016-10-12 09:18:06,555 DEBUG [main] dhbw.i4.simulation.taktstrasse.Server: Requesting next production part.
+2016-10-12 09:18:06,556 DEBUG [main] dhbw.i4.simulation.taktstrasse.Server: Waiting for production line to become ready.
+2016-10-12 09:18:06,561 WARN  [Thread-2] org.apache.kafka.clients.producer.ProducerConfig: The configuration group.id = null was supplied but isn't a known config.
+2016-10-12 09:18:06,561 WARN  [Thread-2] org.apache.kafka.clients.producer.ProducerConfig: The configuration group.id = null was supplied but isn't a known config.
+2016-10-12 09:18:06,561 INFO  [Thread-2] dhbw.i4.simulation.taktstrasse.Part: Kafka-Producer is configured.
+javax.jms.JMSException: Could not connect to broker URL: tcp://127.0.0.1:61616. Reason: java.net.ConnectException: Connection refused
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:360)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:305)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:245)
+	at dhbw.i4.simulation.taktstrasse.Part.sendERPToQueue(Part.java:438)
+	at dhbw.i4.simulation.taktstrasse.Part.run(Part.java:79)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.activemq.transport.tcp.TcpTransport.connect(TcpTransport.java:501)
+	at org.apache.activemq.transport.tcp.TcpTransport.doStart(TcpTransport.java:464)
+	at org.apache.activemq.util.ServiceSupport.start(ServiceSupport.java:55)
+	at org.apache.activemq.transport.AbstractInactivityMonitor.start(AbstractInactivityMonitor.java:138)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.WireFormatNegotiator.start(WireFormatNegotiator.java:72)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:340)
+	... 5 more
+2016-10-12 09:18:06,567 DEBUG [Thread-2] dhbw.i4.simulation.taktstrasse.Part: ERP notified about the production of order number a862f621-3b32-4fdc-b02f-0ef09e8ee3da
+2016-10-12 09:18:10,569 DEBUG [Thread-2] dhbw.i4.simulation.taktstrasse.Part: Starting part production of a862f621-3b32-4fdc-b02f-0ef09e8ee3da
+2016-10-12 09:18:10,683 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:18:13,687 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:18:20,693 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:18:23,696 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:18:30,703 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:18:33,707 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:18:34,711 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:18:39,714 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:18:44,724 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:18:48,726 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:18:49,726 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:18:53,728 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:18:58,737 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:18:59,739 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:19:02,746 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:19:03,748 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:19:07,759 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:19:12,765 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:19:16,773 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:19:17,776 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:19:22,780 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:19:26,787 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:19:31,794 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:19:32,797 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:19:36,802 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:19:40,810 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:19:41,815 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:19:42,819 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:19:45,826 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:19:55,837 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:19:58,840 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:19:59,839 DEBUG [Thread-2] dhbw.i4.simulation.taktstrasse.Part: Finished production of a862f621-3b32-4fdc-b02f-0ef09e8ee3da
+2016-10-12 09:19:59,839 DEBUG [Thread-2] dhbw.i4.simulation.taktstrasse.Part: Ready for spectral analysis of part a862f621-3b32-4fdc-b02f-0ef09e8ee3da
+2016-10-12 09:20:05,844 DEBUG [Thread-2] dhbw.i4.simulation.taktstrasse.Part: Spectral analysis running ...
+2016-10-12 09:20:11,848 DEBUG [Thread-2] dhbw.i4.simulation.taktstrasse.Part: File written to /Users/helgedickel/github/DHBW WWI14SEA Projekt/DHBW-WWI14SEA-Projekt/tmp/053034191d1f46528809f3cb4335a26f.erp
+2016-10-12 09:20:12,853 DEBUG [Thread-2] dhbw.i4.simulation.taktstrasse.Part: Finished.
+2016-10-12 09:20:12,853 DEBUG [main] dhbw.i4.simulation.taktstrasse.Server: Requesting next production part.
+2016-10-12 09:20:12,853 DEBUG [main] dhbw.i4.simulation.taktstrasse.Server: Waiting for production line to become ready.
+2016-10-12 09:20:12,859 WARN  [Thread-3] org.apache.kafka.clients.producer.ProducerConfig: The configuration group.id = null was supplied but isn't a known config.
+2016-10-12 09:20:12,859 WARN  [Thread-3] org.apache.kafka.clients.producer.ProducerConfig: The configuration group.id = null was supplied but isn't a known config.
+2016-10-12 09:20:12,859 INFO  [Thread-3] dhbw.i4.simulation.taktstrasse.Part: Kafka-Producer is configured.
+javax.jms.JMSException: Could not connect to broker URL: tcp://127.0.0.1:61616. Reason: java.net.ConnectException: Connection refused
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:360)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:305)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:245)
+	at dhbw.i4.simulation.taktstrasse.Part.sendERPToQueue(Part.java:438)
+	at dhbw.i4.simulation.taktstrasse.Part.run(Part.java:79)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.activemq.transport.tcp.TcpTransport.connect(TcpTransport.java:501)
+	at org.apache.activemq.transport.tcp.TcpTransport.doStart(TcpTransport.java:464)
+	at org.apache.activemq.util.ServiceSupport.start(ServiceSupport.java:55)
+	at org.apache.activemq.transport.AbstractInactivityMonitor.start(AbstractInactivityMonitor.java:138)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.WireFormatNegotiator.start(WireFormatNegotiator.java:72)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:340)
+	... 5 more
+2016-10-12 09:20:12,864 DEBUG [Thread-3] dhbw.i4.simulation.taktstrasse.Part: ERP notified about the production of order number dcc52ae7-4c21-4b91-8788-913673462de9
+2016-10-12 09:20:12,864 DEBUG [Thread-3] dhbw.i4.simulation.taktstrasse.Part: Starting part production of dcc52ae7-4c21-4b91-8788-913673462de9
+2016-10-12 09:20:13,068 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:20:16,070 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:20:23,075 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:20:26,083 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:20:33,086 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:20:36,092 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:20:37,098 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:20:42,103 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:20:47,110 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:20:51,118 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:20:52,120 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:20:56,122 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:21:01,128 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:21:02,129 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:21:05,137 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:21:06,142 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:21:10,152 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:21:15,158 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:21:19,166 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:21:20,170 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:21:25,175 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:21:29,180 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:21:34,186 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:21:35,189 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:21:39,197 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:21:43,202 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:21:44,205 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:21:45,207 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:21:48,209 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:21:58,215 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:22:01,223 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:22:02,222 DEBUG [Thread-3] dhbw.i4.simulation.taktstrasse.Part: Finished production of dcc52ae7-4c21-4b91-8788-913673462de9
+2016-10-12 09:22:02,223 DEBUG [Thread-3] dhbw.i4.simulation.taktstrasse.Part: Ready for spectral analysis of part dcc52ae7-4c21-4b91-8788-913673462de9
+2016-10-12 09:22:10,225 DEBUG [Thread-3] dhbw.i4.simulation.taktstrasse.Part: Spectral analysis running ...
+2016-10-12 09:22:17,231 DEBUG [Thread-3] dhbw.i4.simulation.taktstrasse.Part: File written to /Users/helgedickel/github/DHBW WWI14SEA Projekt/DHBW-WWI14SEA-Projekt/tmp/cf791d18455d4b7585f5f8fdf977e870.erp
+2016-10-12 09:22:17,231 DEBUG [Thread-3] dhbw.i4.simulation.taktstrasse.Part: Finished.
+2016-10-12 09:22:17,231 DEBUG [main] dhbw.i4.simulation.taktstrasse.Server: Requesting next production part.
+2016-10-12 09:22:17,231 DEBUG [main] dhbw.i4.simulation.taktstrasse.Server: Waiting for production line to become ready.
+2016-10-12 09:22:17,236 WARN  [Thread-4] org.apache.kafka.clients.producer.ProducerConfig: The configuration group.id = null was supplied but isn't a known config.
+2016-10-12 09:22:17,236 WARN  [Thread-4] org.apache.kafka.clients.producer.ProducerConfig: The configuration group.id = null was supplied but isn't a known config.
+2016-10-12 09:22:17,236 INFO  [Thread-4] dhbw.i4.simulation.taktstrasse.Part: Kafka-Producer is configured.
+javax.jms.JMSException: Could not connect to broker URL: tcp://127.0.0.1:61616. Reason: java.net.ConnectException: Connection refused
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:360)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:305)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:245)
+	at dhbw.i4.simulation.taktstrasse.Part.sendERPToQueue(Part.java:438)
+	at dhbw.i4.simulation.taktstrasse.Part.run(Part.java:79)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.activemq.transport.tcp.TcpTransport.connect(TcpTransport.java:501)
+	at org.apache.activemq.transport.tcp.TcpTransport.doStart(TcpTransport.java:464)
+	at org.apache.activemq.util.ServiceSupport.start(ServiceSupport.java:55)
+	at org.apache.activemq.transport.AbstractInactivityMonitor.start(AbstractInactivityMonitor.java:138)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.WireFormatNegotiator.start(WireFormatNegotiator.java:72)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:340)
+	... 5 more
+2016-10-12 09:22:17,241 DEBUG [Thread-4] dhbw.i4.simulation.taktstrasse.Part: ERP notified about the production of order number 65e39d0a-f047-44cd-9b49-4c4368936d57
+2016-10-12 09:22:17,242 DEBUG [Thread-4] dhbw.i4.simulation.taktstrasse.Part: Starting part production of 65e39d0a-f047-44cd-9b49-4c4368936d57
+2016-10-12 09:22:17,448 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.
+2016-10-12 09:22:20,449 DEBUG [kafka-producer-network-thread | Part] dhbw.i4.simulation.taktstrasse.Part: message sent.

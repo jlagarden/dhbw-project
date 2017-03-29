@@ -1,0 +1,6 @@
+[submodule "app"]
+	path = app
+	url = ./app
+[submodule "gobblin"]
+	path = gobblin
+	url = ./gobblin

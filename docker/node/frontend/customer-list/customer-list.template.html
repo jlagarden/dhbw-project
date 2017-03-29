@@ -1,0 +1,28 @@
+<h1 class="page-header down">Details Customer</h1>
+
+<md-list ng-cloak>
+
+  <md-list-item class="secondary-button-padding header">
+    <p style="width:20%">Customer Number</p>
+    <p style="width:20%">Amount of Orders</p>
+    <p style="width:20%">Amount Ordered Material</p>
+    <p style="width:20%">Average Rejects</p>
+    <p style="width:20%">Most Frequent Material</p>
+    <md-divider></md-divider>
+
+  </md-list-item>
+
+  <md-divider></md-divider>
+
+
+  <md-list-item class="secondary-button-padding" ng-repeat="x in rcvdData.customer track by $index">
+    <p style="width:20%">{{ x.number }}</p>
+    <p style="width:20%">{{ x.amountorders }}</p>
+    <p style="width:20%">{{ x.amountorderedmaterial }}</p>
+    <p style="width:20%">{{ x.avgrejects }}</p>
+    <p style="width:20%">{{ x.materialnumber }}</p>
+    <md-divider></md-divider>
+
+  </md-list-item>
+
+</md-list>

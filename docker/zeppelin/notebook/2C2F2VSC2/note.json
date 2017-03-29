@@ -1,0 +1,162 @@
+{
+  "paragraphs": [
+    {
+      "text": "%md\n#Spark Stream Processing\nBeispiel für die Verbindung zwischen Spark und Kafka",
+      "dateUpdated": "Nov 2, 2016 1:24:41 AM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {},
+          "map": {
+            "baseMapType": "Streets",
+            "isOnline": true,
+            "pinCols": []
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1478093081270_-1118585423",
+      "id": "20161102-124416_1700493493",
+      "result": {
+        "code": "SUCCESS",
+        "type": "HTML",
+        "msg": "\u003ch1\u003eSpark Stream Processing\u003c/h1\u003e\n\u003cp\u003eBeispiel für die Verbindung zwischen Spark und Kafka\u003c/p\u003e\n"
+      },
+      "dateCreated": "Nov 2, 2016 1:24:41 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%spark\nimport org.apache.kafka.common.serialization.StringDeserializer\nimport org.apache.spark.streaming._\nimport org.apache.spark.streaming.kafka010._\nimport org.apache.spark.streaming.kafka010.LocationStrategies.PreferConsistent\nimport org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe\n\nimport scala.collection.immutable.Queue\n\nimport net.liftweb.json._\nimport net.liftweb.json.JsonAST._\n\nimplicit val formats \u003d DefaultFormats\n\ncase class ERPData(customerNumber: String, materialNumber: String, orderNumber: String, timeStamp: String)\ncase class ProdData(val value: Any, val status: String, val itemName : String, val timestamp: Int)\ncase class SpecData(val em1: Double, val em2: Double,  val a1: Double,val a2: Double, val b2: Double, val b1: Double, val overallStatus: String, val ts_start: Double, val ts_stop: Double)\ncase class ItemData(val erpData: ERPData, val specData: SpecData, val prodData: scala.collection.immutable.Queue[ProdData])\n\n\ndef asJson(str: String) \u003d {\n    \n    val parsed \u003d parse(str)\n    parsed\n}\n\ndef getErpData(input: JValue) \u003d {\n  \n    val tmp \u003d (input \\ \"erpData\")\n    val customerNumber \u003d (tmp \\ \"customerNumber\").asInstanceOf[JString].s\n    val materialNumber \u003d (tmp \\ \"materialNumber\").asInstanceOf[JString].s\n    val orderNumber \u003d (tmp \\ \"orderNumber\").asInstanceOf[JString].s\n    val timeStamp \u003d (tmp \\ \"timeStamp\").asInstanceOf[JString].s\n    new ERPData(customerNumber, materialNumber, orderNumber, timeStamp)\n}\n\ndef getSpecData(input: JValue) \u003d {\n    val tmp \u003d (input \\ \"specData\")\n    val em1 \u003d (tmp \\ \"em1\").asInstanceOf[JDouble].num\n    val em2 \u003d (tmp \\ \"em2\").asInstanceOf[JDouble].num\n    val a1 \u003d (tmp \\ \"a1\").asInstanceOf[JDouble].num\n    val a2 \u003d (tmp \\ \"a2\").asInstanceOf[JDouble].num\n    val b2 \u003d (tmp \\ \"b2\").asInstanceOf[JDouble].num\n    val b1 \u003d (tmp \\ \"b1\").asInstanceOf[JDouble].num\n    val overallStatus \u003d (tmp \\ \"overallStatus\").asInstanceOf[JString].s\n    val ts_start \u003d (tmp \\ \"ts_start\").asInstanceOf[JDouble].num\n    val ts_stop \u003d (tmp \\ \"ts_stop\").asInstanceOf[JDouble].num\n    new SpecData(em1,em2,a1,a2,b2,b1,overallStatus,ts_start,ts_stop)\n}\n\n\nval kafkaParams \u003d Map[String, Object](\n  \"bootstrap.servers\" -\u003e \"kafka:9092\",\n  \"key.deserializer\" -\u003e classOf[StringDeserializer],\n  \"value.deserializer\" -\u003e classOf[StringDeserializer],\n  \"group.id\" -\u003e \"example\",\n  \"auto.offset.reset\" -\u003e \"latest\",\n  \"enable.auto.commit\" -\u003e (false: java.lang.Boolean)\n)\n\nval ssc \u003d new StreamingContext(sc, new Duration(10000))\n\nval topics \u003d Array(\"test\")\nval stream \u003d KafkaUtils.createDirectStream[String, String](\n  ssc,\n  PreferConsistent,\n  Subscribe[String, String](topics, kafkaParams)\n)\n\nval jsvals \u003d stream.map(record \u003d\u003e asJson(record.value))\njsvals.print()\nval erpstream \u003d jsvals.map(record \u003d\u003e getErpData(record))\nval specstream \u003d jsvals.map(record \u003d\u003e getSpecData(record))\nspecstream.print()\nerpstream.print()\n\nssc.start()\nssc.awaitTermination()\n",
+      "dateUpdated": "Nov 14, 2016 6:14:04 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 410.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {},
+          "map": {
+            "baseMapType": "Streets",
+            "isOnline": true,
+            "pinCols": []
+          }
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1478093081282_-1135514375",
+      "id": "20161102-124357_1650446365",
+      "result": {
+        "code": "ERROR",
+        "type": "TEXT",
+        "msg": "\nimport org.apache.kafka.common.serialization.StringDeserializer\n\nimport org.apache.spark.streaming._\n\nimport org.apache.spark.streaming.kafka010._\n\nimport org.apache.spark.streaming.kafka010.LocationStrategies.PreferConsistent\n\nimport org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe\n\nimport scala.collection.immutable.Queue\n\nimport net.liftweb.json._\n\nimport net.liftweb.json.JsonAST._\n\nformats: net.liftweb.json.DefaultFormats.type \u003d net.liftweb.json.DefaultFormats$@7793b82\n\ndefined class ERPData\n\ndefined class ProdData\n\ndefined class SpecData\n\ndefined class ItemData\n\nasJson: (str: String)net.liftweb.json.JValue\n\ngetErpData: (input: net.liftweb.json.JsonAST.JValue)ERPData\n\ngetSpecData: (input: net.liftweb.json.JsonAST.JValue)SpecData\n\nkafkaParams: scala.collection.immutable.Map[String,Object] \u003d Map(key.deserializer -\u003e class org.apache.kafka.common.serialization.StringDeserializer, auto.offset.reset -\u003e latest, group.id -\u003e example, bootstrap.servers -\u003e kafka:9092, enable.auto.commit -\u003e false, value.deserializer -\u003e class org.apache.kafka.common.serialization.StringDeserializer)\n\nssc: org.apache.spark.streaming.StreamingContext \u003d org.apache.spark.streaming.StreamingContext@4ab30a9\n\ntopics: Array[String] \u003d Array(test)\n\nstream: org.apache.spark.streaming.dstream.InputDStream[org.apache.kafka.clients.consumer.ConsumerRecord[String,String]] \u003d org.apache.spark.streaming.kafka010.DirectKafkaInputDStream@27d1b71c\n\njsvals: org.apache.spark.streaming.dstream.DStream[net.liftweb.json.JValue] \u003d org.apache.spark.streaming.dstream.MappedDStream@32953c01\n\nerpstream: org.apache.spark.streaming.dstream.DStream[ERPData] \u003d org.apache.spark.streaming.dstream.MappedDStream@3f98a941\n\nspecstream: org.apache.spark.streaming.dstream.DStream[SpecData] \u003d org.apache.spark.streaming.dstream.MappedDStream@3a26d0c1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njava.lang.IllegalStateException: No current assignment for partition test-0\n  at org.apache.kafka.clients.consumer.internals.SubscriptionState.assignedState(SubscriptionState.java:251)\n  at org.apache.kafka.clients.consumer.internals.SubscriptionState.needOffsetReset(SubscriptionState.java:315)\n  at org.apache.kafka.clients.consumer.KafkaConsumer.seekToEnd(KafkaConsumer.java:1170)\n  at org.apache.spark.streaming.kafka010.DirectKafkaInputDStream.latestOffsets(DirectKafkaInputDStream.scala:179)\n  at org.apache.spark.streaming.kafka010.DirectKafkaInputDStream.compute(DirectKafkaInputDStream.scala:196)\n  at org.apache.spark.streaming.dstream.DStream$$anonfun$getOrCompute$1$$anonfun$1$$anonfun$apply$7.apply(DStream.scala:341)\n  at org.apache.spark.streaming.dstream.DStream$$anonfun$getOrCompute$1$$anonfun$1$$anonfun$apply$7.apply(DStream.scala:341)\n  at scala.util.DynamicVariable.withValue(DynamicVariable.scala:58)\n  at org.apache.spark.streaming.dstream.DStream$$anonfun$getOrCompute$1$$anonfun$1.apply(DStream.scala:340)\n  at org.apache.spark.streaming.dstream.DStream$$anonfun$getOrCompute$1$$anonfun$1.apply(DStream.scala:340)\n  at org.apache.spark.streaming.dstream.DStream.createRDDWithLocalProperties(DStream.scala:415)\n  at org.apache.spark.streaming.dstream.DStream$$anonfun$getOrCompute$1.apply(DStream.scala:335)\n  at org.apache.spark.streaming.dstream.DStream$$anonfun$getOrCompute$1.apply(DStream.scala:333)\n  at scala.Option.orElse(Option.scala:289)\n  at org.apache.spark.streaming.dstream.DStream.getOrCompute(DStream.scala:330)\n  at org.apache.spark.streaming.dstream.MappedDStream.compute(MappedDStream.scala:36)\n  at org.apache.spark.streaming.dstream.DStream$$anonfun$getOrCompute$1$$anonfun$1$$anonfun$apply$7.apply(DStream.scala:341)\n  at org.apache.spark.streaming.dstream.DStream$$anonfun$getOrCompute$1$$anonfun$1$$anonfun$apply$7.apply(DStream.scala:341)\n  at scala.util.DynamicVariable.withValue(DynamicVariable.scala:58)\n  at org.apache.spark.streaming.dstream.DStream$$anonfun$getOrCompute$1$$anonfun$1.apply(DStream.scala:340)\n  at org.apache.spark.streaming.dstream.DStream$$anonfun$getOrCompute$1$$anonfun$1.apply(DStream.scala:340)\n  at org.apache.spark.streaming.dstream.DStream.createRDDWithLocalProperties(DStream.scala:415)\n  at org.apache.spark.streaming.dstream.DStream$$anonfun$getOrCompute$1.apply(DStream.scala:335)\n  at org.apache.spark.streaming.dstream.DStream$$anonfun$getOrCompute$1.apply(DStream.scala:333)\n  at scala.Option.orElse(Option.scala:289)\n  at org.apache.spark.streaming.dstream.DStream.getOrCompute(DStream.scala:330)\n  at org.apache.spark.streaming.dstream.ForEachDStream.generateJob(ForEachDStream.scala:48)\n  at org.apache.spark.streaming.DStreamGraph$$anonfun$1.apply(DStreamGraph.scala:117)\n  at org.apache.spark.streaming.DStreamGraph$$anonfun$1.apply(DStreamGraph.scala:116)\n  at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:252)\n  at scala.collection.TraversableLike$$anonfun$flatMap$1.apply(TraversableLike.scala:252)\n  at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)\n  at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)\n  at scala.collection.TraversableLike$class.flatMap(TraversableLike.scala:252)\n  at scala.collection.AbstractTraversable.flatMap(Traversable.scala:104)\n  at org.apache.spark.streaming.DStreamGraph.generateJobs(DStreamGraph.scala:116)\n  at org.apache.spark.streaming.scheduler.JobGenerator$$anonfun$3.apply(JobGenerator.scala:248)\n  at org.apache.spark.streaming.scheduler.JobGenerator$$anonfun$3.apply(JobGenerator.scala:246)\n  at scala.util.Try$.apply(Try.scala:192)\n  at org.apache.spark.streaming.scheduler.JobGenerator.generateJobs(JobGenerator.scala:246)\n  at org.apache.spark.streaming.scheduler.JobGenerator.org$apache$spark$streaming$scheduler$JobGenerator$$processEvent(JobGenerator.scala:182)\n  at org.apache.spark.streaming.scheduler.JobGenerator$$anon$1.onReceive(JobGenerator.scala:88)\n  at org.apache.spark.streaming.scheduler.JobGenerator$$anon$1.onReceive(JobGenerator.scala:87)\n  at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)\n"
+      },
+      "dateCreated": "Nov 2, 2016 1:24:41 AM",
+      "dateStarted": "Nov 14, 2016 6:14:04 PM",
+      "dateFinished": "Nov 14, 2016 7:11:12 PM",
+      "status": "ERROR",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%spark\n\nstream.map(record \u003d\u003e asJson(record.value)).print()\n",
+      "dateUpdated": "Nov 14, 2016 3:54:47 AM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {},
+          "map": {
+            "baseMapType": "Streets",
+            "isOnline": true,
+            "pinCols": []
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1479133827785_1647706170",
+      "id": "20161114-143027_1701446691",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": ""
+      },
+      "dateCreated": "Nov 14, 2016 2:30:27 AM",
+      "dateStarted": "Nov 14, 2016 3:54:47 AM",
+      "dateFinished": "Nov 14, 2016 3:54:48 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%spark\n",
+      "dateUpdated": "Nov 14, 2016 3:54:21 AM",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1479138861065_-544419637",
+      "id": "20161114-155421_1379365295",
+      "dateCreated": "Nov 14, 2016 3:54:21 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "streaming",
+  "id": "2C2F2VSC2",
+  "angularObjects": {
+    "2BZQ5DT4V:shared_process": [],
+    "2BXMFZCAJ:shared_process": [],
+    "2BW89Y4UK:shared_process": [],
+    "2BZ9ZY71D:shared_process": [],
+    "2BYX4UNDQ:shared_process": [],
+    "2BWHF8GZR:shared_process": [],
+    "2BY9T52QY:shared_process": [],
+    "2BX4F4DBG:shared_process": [],
+    "2BW5AEJTQ:shared_process": [],
+    "2BW4Z1C24:shared_process": [],
+    "2BYV724CJ:shared_process": [],
+    "2BX5PB6ZW:shared_process": [],
+    "2BWRPAUMU:shared_process": [],
+    "2BY1QZ9ZG:shared_process": [],
+    "2BWQ9NG9N:shared_process": [],
+    "2BVY4TDC6:shared_process": [],
+    "2BVW2ABY5:shared_process": [],
+    "2BZCNUAXB:shared_process": []
+  },
+  "config": {},
+  "info": {}
+}

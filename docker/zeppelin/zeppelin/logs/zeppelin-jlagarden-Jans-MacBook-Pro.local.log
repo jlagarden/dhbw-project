@@ -1,0 +1,1181 @@
+ WARN [2016-09-27 17:43:37,865] ({main} ZeppelinConfiguration.java[create]:95) - Failed to load configuration, proceeding with a default
+ INFO [2016-09-27 17:43:37,983] ({main} ZeppelinConfiguration.java[create]:107) - Server Host: 0.0.0.0
+ INFO [2016-09-27 17:43:37,984] ({main} ZeppelinConfiguration.java[create]:108) - Server Port: 8080
+ INFO [2016-09-27 17:43:37,984] ({main} ZeppelinConfiguration.java[create]:109) - Context Path: /
+ INFO [2016-09-27 17:43:38,000] ({main} ZeppelinConfiguration.java[create]:110) - Zeppelin Version: 0.7.0-SNAPSHOT
+ INFO [2016-09-27 17:43:38,064] ({main} Log.java[initialized]:186) - Logging initialized @1084ms
+ INFO [2016-09-27 17:43:40,342] ({main} ZeppelinServer.java[main]:132) - Starting zeppelin server
+ INFO [2016-09-27 17:43:40,349] ({main} Server.java[doStart]:327) - jetty-9.2.15.v20160210
+ INFO [2016-09-27 17:43:40,574] ({main} StandardDescriptorProcessor.java[visitServlet]:297) - NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+ INFO [2016-09-27 17:43:40,597] ({main} ContextHandler.java[log]:2052) - Initializing Shiro environment
+ INFO [2016-09-27 17:43:40,598] ({main} EnvironmentLoader.java[initEnvironment]:128) - Starting Shiro environment initialization.
+ INFO [2016-09-27 17:43:40,740] ({main} EnvironmentLoader.java[initEnvironment]:141) - Shiro environment initialized in 142 ms.
+ WARN [2016-09-27 17:43:41,873] ({main} Helium.java[loadConf]:89) - /Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/conf/helium.json does not exists
+ WARN [2016-09-27 17:43:42,490] ({main} Interpreter.java[register]:347) - Static initialization is deprecated for interpreter angular, You should change it to use interpreter-setting.json in your jar or interpreter/{interpreter}/interpreter-setting.json
+ INFO [2016-09-27 17:43:42,490] ({main} InterpreterFactory.java[init]:204) - Interpreter angular.angular found. class=org.apache.zeppelin.angular.AngularInterpreter
+ INFO [2016-09-27 17:43:42,709] ({main} CassandraInterpreter.java[<clinit>]:155) - Bootstrapping Cassandra Interpreter
+ WARN [2016-09-27 17:43:42,713] ({main} Interpreter.java[register]:347) - Static initialization is deprecated for interpreter cassandra, You should change it to use interpreter-setting.json in your jar or interpreter/{interpreter}/interpreter-setting.json
+ INFO [2016-09-27 17:43:42,714] ({main} InterpreterFactory.java[init]:204) - Interpreter cassandra.cassandra found. class=org.apache.zeppelin.cassandra.CassandraInterpreter
+ WARN [2016-09-27 17:43:43,574] ({main} Interpreter.java[register]:347) - Static initialization is deprecated for interpreter ignite, You should change it to use interpreter-setting.json in your jar or interpreter/{interpreter}/interpreter-setting.json
+ INFO [2016-09-27 17:43:43,575] ({main} InterpreterFactory.java[init]:204) - Interpreter ignite.ignite found. class=org.apache.zeppelin.ignite.IgniteInterpreter
+ WARN [2016-09-27 17:43:43,578] ({main} Interpreter.java[register]:347) - Static initialization is deprecated for interpreter ignitesql, You should change it to use interpreter-setting.json in your jar or interpreter/{interpreter}/interpreter-setting.json
+ INFO [2016-09-27 17:43:43,578] ({main} InterpreterFactory.java[init]:204) - Interpreter ignite.ignitesql found. class=org.apache.zeppelin.ignite.IgniteSqlInterpreter
+ WARN [2016-09-27 17:43:43,645] ({main} Interpreter.java[register]:347) - Static initialization is deprecated for interpreter kylin, You should change it to use interpreter-setting.json in your jar or interpreter/{interpreter}/interpreter-setting.json
+ INFO [2016-09-27 17:43:43,646] ({main} InterpreterFactory.java[init]:204) - Interpreter kylin.kylin found. class=org.apache.zeppelin.kylin.KylinInterpreter
+ WARN [2016-09-27 17:43:43,938] ({main} Interpreter.java[register]:347) - Static initialization is deprecated for interpreter lens, You should change it to use interpreter-setting.json in your jar or interpreter/{interpreter}/interpreter-setting.json
+ INFO [2016-09-27 17:43:43,938] ({main} InterpreterFactory.java[init]:204) - Interpreter lens.lens found. class=org.apache.zeppelin.lens.LensInterpreter
+ WARN [2016-09-27 17:43:44,035] ({main} Interpreter.java[register]:347) - Static initialization is deprecated for interpreter sql, You should change it to use interpreter-setting.json in your jar or interpreter/{interpreter}/interpreter-setting.json
+ INFO [2016-09-27 17:43:44,036] ({main} InterpreterFactory.java[init]:204) - Interpreter psql.sql found. class=org.apache.zeppelin.postgresql.PostgreSqlInterpreter
+ INFO [2016-09-27 17:43:44,198] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name ignite
+ INFO [2016-09-27 17:43:44,198] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name python
+ INFO [2016-09-27 17:43:44,198] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name jdbc
+ INFO [2016-09-27 17:43:44,199] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name psql
+ INFO [2016-09-27 17:43:44,199] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name lens
+ INFO [2016-09-27 17:43:44,199] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name flink
+ INFO [2016-09-27 17:43:44,199] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name angular
+ INFO [2016-09-27 17:43:44,200] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name livy
+ INFO [2016-09-27 17:43:44,200] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name file
+ INFO [2016-09-27 17:43:44,201] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name elasticsearch
+ INFO [2016-09-27 17:43:44,201] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name sh
+ INFO [2016-09-27 17:43:44,202] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name spark
+ INFO [2016-09-27 17:43:44,202] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name cassandra
+ INFO [2016-09-27 17:43:44,203] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name md
+ INFO [2016-09-27 17:43:44,203] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name alluxio
+ INFO [2016-09-27 17:43:44,203] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name bigquery
+ INFO [2016-09-27 17:43:44,203] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name hbase
+ INFO [2016-09-27 17:43:44,203] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name kylin
+ INFO [2016-09-27 17:43:44,246] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group md : id=2BYXEBANE, name=md
+ INFO [2016-09-27 17:43:44,247] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group bigquery : id=2BYCV3AJ9, name=bigquery
+ INFO [2016-09-27 17:43:44,247] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group psql : id=2BVYX537N, name=psql
+ INFO [2016-09-27 17:43:44,247] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group elasticsearch : id=2BZNTQUU3, name=elasticsearch
+ INFO [2016-09-27 17:43:44,248] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group alluxio : id=2BX763G7S, name=alluxio
+ INFO [2016-09-27 17:43:44,248] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group python : id=2BZ977DVN, name=python
+ INFO [2016-09-27 17:43:44,250] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group jdbc : id=2BYPZP9QS, name=jdbc
+ INFO [2016-09-27 17:43:44,252] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group kylin : id=2BZNCJ364, name=kylin
+ INFO [2016-09-27 17:43:44,253] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group sh : id=2BZG6X2DB, name=sh
+ INFO [2016-09-27 17:43:44,253] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group cassandra : id=2BXJUEFXT, name=cassandra
+ INFO [2016-09-27 17:43:44,255] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group ignite : id=2BWVZ15D8, name=ignite
+ INFO [2016-09-27 17:43:44,255] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group livy : id=2BXFZ5VF1, name=livy
+ INFO [2016-09-27 17:43:44,256] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group file : id=2BXW1Q5YX, name=file
+ INFO [2016-09-27 17:43:44,260] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group lens : id=2BWK1UTRK, name=lens
+ INFO [2016-09-27 17:43:44,260] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group spark : id=2BWJ3Q3MT, name=spark
+ INFO [2016-09-27 17:43:44,260] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group flink : id=2BXF3DBX1, name=flink
+ INFO [2016-09-27 17:43:44,260] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group hbase : id=2BVVTXFHG, name=hbase
+ INFO [2016-09-27 17:43:44,261] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group angular : id=2BVYB5XG7, name=angular
+ INFO [2016-09-27 17:43:44,294] ({main} VfsLog.java[info]:138) - Using "/var/folders/zn/94z6lqqn2tx7_9kw24557wgh000101/T/vfs_cache" as temporary files store.
+ INFO [2016-09-27 17:43:44,650] ({main} NotebookAuthorization.java[loadFromFile]:58) - /Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/conf/notebook-authorization.json
+ INFO [2016-09-27 17:43:44,651] ({main} Credentials.java[loadFromFile]:95) - /Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/conf/credentials.json
+ INFO [2016-09-27 17:43:44,722] ({main} StdSchedulerFactory.java[instantiate]:1184) - Using default implementation for ThreadExecutor
+ INFO [2016-09-27 17:43:44,731] ({main} SimpleThreadPool.java[initialize]:268) - Job execution threads will use class loader of thread: main
+ INFO [2016-09-27 17:43:44,755] ({main} SchedulerSignalerImpl.java[<init>]:61) - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ INFO [2016-09-27 17:43:44,757] ({main} QuartzScheduler.java[<init>]:240) - Quartz Scheduler v.2.2.1 created.
+ INFO [2016-09-27 17:43:44,758] ({main} RAMJobStore.java[initialize]:155) - RAMJobStore initialized.
+ INFO [2016-09-27 17:43:44,759] ({main} QuartzScheduler.java[initialize]:305) - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+ INFO [2016-09-27 17:43:44,760] ({main} StdSchedulerFactory.java[instantiate]:1339) - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ INFO [2016-09-27 17:43:44,760] ({main} StdSchedulerFactory.java[instantiate]:1343) - Quartz scheduler version: 2.2.1
+ INFO [2016-09-27 17:43:44,760] ({main} QuartzScheduler.java[start]:575) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ INFO [2016-09-27 17:43:45,167] ({main} Notebook.java[<init>]:126) - Notebook indexing started...
+ INFO [2016-09-27 17:43:45,614] ({main} LuceneSearch.java[addIndexDocs]:305) - Indexing 3 notebooks took 446ms
+ INFO [2016-09-27 17:43:45,615] ({main} Notebook.java[<init>]:128) - Notebook indexing finished: 3 indexed in 0s
+ INFO [2016-09-27 17:43:45,885] ({main} ServerImpl.java[initDestination]:94) - Setting the server's publish address to be /
+ INFO [2016-09-27 17:43:47,324] ({main} ContextHandler.java[doStart]:744) - Started o.e.j.w.WebAppContext@41fbdac4{/,file:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-web/dist/,AVAILABLE}
+ WARN [2016-09-27 17:43:47,356] ({main} AbstractLifeCycle.java[setFailed]:212) - FAILED ServerConnector@78c1372d{HTTP/1.1}{0.0.0.0:8080}: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:321)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:236)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:366)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.apache.zeppelin.server.ZeppelinServer.main(ZeppelinServer.java:134)
+ WARN [2016-09-27 17:43:47,362] ({main} AbstractLifeCycle.java[setFailed]:212) - FAILED org.eclipse.jetty.server.Server@49ede9c7: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:321)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:236)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:366)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.apache.zeppelin.server.ZeppelinServer.main(ZeppelinServer.java:134)
+ERROR [2016-09-27 17:43:47,362] ({main} ZeppelinServer.java[main]:136) - Error while running jettyServer
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:321)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:236)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:366)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.apache.zeppelin.server.ZeppelinServer.main(ZeppelinServer.java:134)
+ INFO [2016-09-27 17:46:30,990] ({main} ZeppelinConfiguration.java[create]:99) - Load configuration from file:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/conf/zeppelin-site.xml
+ INFO [2016-09-27 17:46:31,105] ({main} ZeppelinConfiguration.java[create]:107) - Server Host: 0.0.0.0
+ INFO [2016-09-27 17:46:31,105] ({main} ZeppelinConfiguration.java[create]:108) - Server Port: 8000
+ INFO [2016-09-27 17:46:31,105] ({main} ZeppelinConfiguration.java[create]:109) - Context Path: /
+ INFO [2016-09-27 17:46:31,117] ({main} ZeppelinConfiguration.java[create]:110) - Zeppelin Version: 0.7.0-SNAPSHOT
+ INFO [2016-09-27 17:46:31,169] ({main} Log.java[initialized]:186) - Logging initialized @916ms
+ INFO [2016-09-27 17:46:32,442] ({main} ZeppelinServer.java[main]:132) - Starting zeppelin server
+ INFO [2016-09-27 17:46:32,450] ({main} Server.java[doStart]:327) - jetty-9.2.15.v20160210
+ INFO [2016-09-27 17:46:32,787] ({main} StandardDescriptorProcessor.java[visitServlet]:297) - NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+ INFO [2016-09-27 17:46:32,813] ({main} ContextHandler.java[log]:2052) - Initializing Shiro environment
+ INFO [2016-09-27 17:46:32,814] ({main} EnvironmentLoader.java[initEnvironment]:128) - Starting Shiro environment initialization.
+ INFO [2016-09-27 17:46:33,029] ({main} EnvironmentLoader.java[initEnvironment]:141) - Shiro environment initialized in 215 ms.
+ WARN [2016-09-27 17:46:33,480] ({main} Helium.java[loadConf]:89) - /Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/conf/helium.json does not exists
+ WARN [2016-09-27 17:46:33,712] ({main} Interpreter.java[register]:347) - Static initialization is deprecated for interpreter angular, You should change it to use interpreter-setting.json in your jar or interpreter/{interpreter}/interpreter-setting.json
+ INFO [2016-09-27 17:46:33,713] ({main} InterpreterFactory.java[init]:204) - Interpreter angular.angular found. class=org.apache.zeppelin.angular.AngularInterpreter
+ INFO [2016-09-27 17:46:33,896] ({main} CassandraInterpreter.java[<clinit>]:155) - Bootstrapping Cassandra Interpreter
+ WARN [2016-09-27 17:46:33,900] ({main} Interpreter.java[register]:347) - Static initialization is deprecated for interpreter cassandra, You should change it to use interpreter-setting.json in your jar or interpreter/{interpreter}/interpreter-setting.json
+ INFO [2016-09-27 17:46:33,900] ({main} InterpreterFactory.java[init]:204) - Interpreter cassandra.cassandra found. class=org.apache.zeppelin.cassandra.CassandraInterpreter
+ WARN [2016-09-27 17:46:34,310] ({main} Interpreter.java[register]:347) - Static initialization is deprecated for interpreter ignite, You should change it to use interpreter-setting.json in your jar or interpreter/{interpreter}/interpreter-setting.json
+ INFO [2016-09-27 17:46:34,311] ({main} InterpreterFactory.java[init]:204) - Interpreter ignite.ignite found. class=org.apache.zeppelin.ignite.IgniteInterpreter
+ WARN [2016-09-27 17:46:34,313] ({main} Interpreter.java[register]:347) - Static initialization is deprecated for interpreter ignitesql, You should change it to use interpreter-setting.json in your jar or interpreter/{interpreter}/interpreter-setting.json
+ INFO [2016-09-27 17:46:34,313] ({main} InterpreterFactory.java[init]:204) - Interpreter ignite.ignitesql found. class=org.apache.zeppelin.ignite.IgniteSqlInterpreter
+ WARN [2016-09-27 17:46:34,352] ({main} Interpreter.java[register]:347) - Static initialization is deprecated for interpreter kylin, You should change it to use interpreter-setting.json in your jar or interpreter/{interpreter}/interpreter-setting.json
+ INFO [2016-09-27 17:46:34,352] ({main} InterpreterFactory.java[init]:204) - Interpreter kylin.kylin found. class=org.apache.zeppelin.kylin.KylinInterpreter
+ WARN [2016-09-27 17:46:34,495] ({main} Interpreter.java[register]:347) - Static initialization is deprecated for interpreter lens, You should change it to use interpreter-setting.json in your jar or interpreter/{interpreter}/interpreter-setting.json
+ INFO [2016-09-27 17:46:34,495] ({main} InterpreterFactory.java[init]:204) - Interpreter lens.lens found. class=org.apache.zeppelin.lens.LensInterpreter
+ WARN [2016-09-27 17:46:34,557] ({main} Interpreter.java[register]:347) - Static initialization is deprecated for interpreter sql, You should change it to use interpreter-setting.json in your jar or interpreter/{interpreter}/interpreter-setting.json
+ INFO [2016-09-27 17:46:34,558] ({main} InterpreterFactory.java[init]:204) - Interpreter psql.sql found. class=org.apache.zeppelin.postgresql.PostgreSqlInterpreter
+ INFO [2016-09-27 17:46:34,649] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name ignite
+ INFO [2016-09-27 17:46:34,650] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name python
+ INFO [2016-09-27 17:46:34,650] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name jdbc
+ INFO [2016-09-27 17:46:34,650] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name psql
+ INFO [2016-09-27 17:46:34,650] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name lens
+ INFO [2016-09-27 17:46:34,650] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name flink
+ INFO [2016-09-27 17:46:34,650] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name angular
+ INFO [2016-09-27 17:46:34,651] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name livy
+ INFO [2016-09-27 17:46:34,651] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name file
+ INFO [2016-09-27 17:46:34,651] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name elasticsearch
+ INFO [2016-09-27 17:46:34,651] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name sh
+ INFO [2016-09-27 17:46:34,651] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name spark
+ INFO [2016-09-27 17:46:34,651] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name cassandra
+ INFO [2016-09-27 17:46:34,651] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name md
+ INFO [2016-09-27 17:46:34,651] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name alluxio
+ INFO [2016-09-27 17:46:34,651] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name bigquery
+ INFO [2016-09-27 17:46:34,652] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name hbase
+ INFO [2016-09-27 17:46:34,652] ({main} InterpreterFactory.java[init]:236) - InterpreterSettingRef name kylin
+ INFO [2016-09-27 17:46:34,678] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group md : id=2BYXEBANE, name=md
+ INFO [2016-09-27 17:46:34,678] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group bigquery : id=2BYCV3AJ9, name=bigquery
+ INFO [2016-09-27 17:46:34,679] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group psql : id=2BVYX537N, name=psql
+ INFO [2016-09-27 17:46:34,679] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group elasticsearch : id=2BZNTQUU3, name=elasticsearch
+ INFO [2016-09-27 17:46:34,679] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group alluxio : id=2BX763G7S, name=alluxio
+ INFO [2016-09-27 17:46:34,679] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group python : id=2BZ977DVN, name=python
+ INFO [2016-09-27 17:46:34,679] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group jdbc : id=2BYPZP9QS, name=jdbc
+ INFO [2016-09-27 17:46:34,680] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group kylin : id=2BZNCJ364, name=kylin
+ INFO [2016-09-27 17:46:34,680] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group sh : id=2BZG6X2DB, name=sh
+ INFO [2016-09-27 17:46:34,680] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group cassandra : id=2BXJUEFXT, name=cassandra
+ INFO [2016-09-27 17:46:34,680] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group ignite : id=2BWVZ15D8, name=ignite
+ INFO [2016-09-27 17:46:34,680] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group livy : id=2BXFZ5VF1, name=livy
+ INFO [2016-09-27 17:46:34,680] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group file : id=2BXW1Q5YX, name=file
+ INFO [2016-09-27 17:46:34,681] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group lens : id=2BWK1UTRK, name=lens
+ INFO [2016-09-27 17:46:34,681] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group spark : id=2BWJ3Q3MT, name=spark
+ INFO [2016-09-27 17:46:34,682] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group flink : id=2BXF3DBX1, name=flink
+ INFO [2016-09-27 17:46:34,683] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group hbase : id=2BVVTXFHG, name=hbase
+ INFO [2016-09-27 17:46:34,683] ({main} InterpreterFactory.java[init]:266) - InterpreterSetting group angular : id=2BVYB5XG7, name=angular
+ INFO [2016-09-27 17:46:34,717] ({main} VfsLog.java[info]:138) - Using "/var/folders/zn/94z6lqqn2tx7_9kw24557wgh000101/T/vfs_cache" as temporary files store.
+ INFO [2016-09-27 17:46:35,013] ({main} NotebookAuthorization.java[loadFromFile]:58) - /Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/conf/notebook-authorization.json
+ INFO [2016-09-27 17:46:35,015] ({main} Credentials.java[loadFromFile]:95) - /Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/conf/credentials.json
+ INFO [2016-09-27 17:46:35,090] ({main} StdSchedulerFactory.java[instantiate]:1184) - Using default implementation for ThreadExecutor
+ INFO [2016-09-27 17:46:35,100] ({main} SimpleThreadPool.java[initialize]:268) - Job execution threads will use class loader of thread: main
+ INFO [2016-09-27 17:46:35,122] ({main} SchedulerSignalerImpl.java[<init>]:61) - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ INFO [2016-09-27 17:46:35,124] ({main} QuartzScheduler.java[<init>]:240) - Quartz Scheduler v.2.2.1 created.
+ INFO [2016-09-27 17:46:35,125] ({main} RAMJobStore.java[initialize]:155) - RAMJobStore initialized.
+ INFO [2016-09-27 17:46:35,127] ({main} QuartzScheduler.java[initialize]:305) - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+ INFO [2016-09-27 17:46:35,127] ({main} StdSchedulerFactory.java[instantiate]:1339) - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+ INFO [2016-09-27 17:46:35,127] ({main} StdSchedulerFactory.java[instantiate]:1343) - Quartz scheduler version: 2.2.1
+ INFO [2016-09-27 17:46:35,128] ({main} QuartzScheduler.java[start]:575) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+ INFO [2016-09-27 17:46:35,460] ({main} Notebook.java[<init>]:126) - Notebook indexing started...
+ INFO [2016-09-27 17:46:35,787] ({main} LuceneSearch.java[addIndexDocs]:305) - Indexing 3 notebooks took 326ms
+ INFO [2016-09-27 17:46:35,787] ({main} Notebook.java[<init>]:128) - Notebook indexing finished: 3 indexed in 0s
+ INFO [2016-09-27 17:46:35,969] ({main} ServerImpl.java[initDestination]:94) - Setting the server's publish address to be /
+ INFO [2016-09-27 17:46:37,112] ({main} ContextHandler.java[doStart]:744) - Started o.e.j.w.WebAppContext@41fbdac4{/,file:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-web/dist/,AVAILABLE}
+ INFO [2016-09-27 17:46:37,155] ({main} AbstractConnector.java[doStart]:266) - Started ServerConnector@22a0d4ea{HTTP/1.1}{0.0.0.0:8000}
+ INFO [2016-09-27 17:46:37,156] ({main} Server.java[doStart]:379) - Started @6912ms
+ INFO [2016-09-27 17:46:37,156] ({main} ZeppelinServer.java[main]:139) - Done, zeppelin server started
+ INFO [2016-09-27 17:46:39,392] ({qtp1860944798-17} AbstractValidatingSessionManager.java[enableSessionValidation]:230) - Enabling session validation scheduler...
+ WARN [2016-09-27 17:46:39,443] ({qtp1860944798-17} SecurityRestApi.java[ticket]:86) - {"status":"OK","message":"","body":{"principal":"anonymous","ticket":"anonymous","roles":"[]"}}
+ WARN [2016-09-27 17:46:52,261] ({qtp1860944798-56} SecurityRestApi.java[ticket]:86) - {"status":"OK","message":"","body":{"principal":"anonymous","ticket":"anonymous","roles":"[]"}}
+ INFO [2016-09-27 17:47:01,556] ({qtp1860944798-18} NotebookServer.java[onOpen]:115) - New connection from 0:0:0:0:0:0:0:1 : 59865
+ INFO [2016-09-27 17:47:01,563] ({qtp1860944798-18} NotebookServer.java[onClose]:266) - Closed connection to 0:0:0:0:0:0:0:1 : 59865. (1006) WebSocket Read EOF
+ INFO [2016-09-27 17:47:26,882] ({qtp1860944798-57} NotebookServer.java[onOpen]:115) - New connection from 0:0:0:0:0:0:0:1 : 59873
+ INFO [2016-09-27 17:47:37,009] ({qtp1860944798-58} NotebookServer.java[onOpen]:115) - New connection from 0:0:0:0:0:0:0:1 : 59878
+ INFO [2016-09-27 17:47:37,013] ({qtp1860944798-56} NotebookServer.java[sendNote]:536) - New operation from 0:0:0:0:0:0:0:1 : 59878 : anonymous : GET_NOTE : 2A94M5J1Z
+ INFO [2016-09-27 17:47:37,021] ({qtp1860944798-56} NotebookServer.java[sendNote]:536) - New operation from 0:0:0:0:0:0:0:1 : 59878 : anonymous : GET_NOTE : 2A94M5J1Z
+ INFO [2016-09-27 17:47:43,034] ({qtp1860944798-57} InterpreterRestApi.java[updateSetting]:114) - Update interpreterSetting 2BWJ3Q3MT
+ INFO [2016-09-27 17:47:46,101] ({qtp1860944798-59} NotebookServer.java[sendNote]:536) - New operation from 0:0:0:0:0:0:0:1 : 59873 : anonymous : GET_NOTE : 2A94M5J1Z
+ERROR [2016-09-27 17:47:46,901] ({qtp1860944798-15} NotebookServer.java[onMessage]:260) - Can't handle message
+java.lang.NullPointerException
+	at org.apache.zeppelin.interpreter.InterpreterFactory.getEditorSetting(InterpreterFactory.java:1334)
+	at org.apache.zeppelin.socket.NotebookServer.getEditorSetting(NotebookServer.java:1589)
+	at org.apache.zeppelin.socket.NotebookServer.onMessage(NotebookServer.java:254)
+	at org.apache.zeppelin.socket.NotebookSocket.onWebSocketText(NotebookSocket.java:56)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextMessage(JettyListenerEventDriver.java:128)
+	at org.eclipse.jetty.websocket.common.message.SimpleTextMessage.messageComplete(SimpleTextMessage.java:69)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.appendMessage(AbstractEventDriver.java:65)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextFrame(JettyListenerEventDriver.java:122)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.incomingFrame(AbstractEventDriver.java:161)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.incomingFrame(WebSocketSession.java:309)
+	at org.eclipse.jetty.websocket.common.extensions.ExtensionStack.incomingFrame(ExtensionStack.java:214)
+	at org.eclipse.jetty.websocket.common.Parser.notifyFrame(Parser.java:220)
+	at org.eclipse.jetty.websocket.common.Parser.parse(Parser.java:258)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.readParse(AbstractWebSocketConnection.java:632)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:480)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [2016-09-27 17:47:46,948] ({qtp1860944798-58} NotebookServer.java[onMessage]:260) - Can't handle message
+java.lang.NullPointerException
+	at org.apache.zeppelin.interpreter.InterpreterFactory.getEditorSetting(InterpreterFactory.java:1334)
+	at org.apache.zeppelin.socket.NotebookServer.getEditorSetting(NotebookServer.java:1589)
+	at org.apache.zeppelin.socket.NotebookServer.onMessage(NotebookServer.java:254)
+	at org.apache.zeppelin.socket.NotebookSocket.onWebSocketText(NotebookSocket.java:56)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextMessage(JettyListenerEventDriver.java:128)
+	at org.eclipse.jetty.websocket.common.message.SimpleTextMessage.messageComplete(SimpleTextMessage.java:69)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.appendMessage(AbstractEventDriver.java:65)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextFrame(JettyListenerEventDriver.java:122)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.incomingFrame(AbstractEventDriver.java:161)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.incomingFrame(WebSocketSession.java:309)
+	at org.eclipse.jetty.websocket.common.extensions.ExtensionStack.incomingFrame(ExtensionStack.java:214)
+	at org.eclipse.jetty.websocket.common.Parser.notifyFrame(Parser.java:220)
+	at org.eclipse.jetty.websocket.common.Parser.parse(Parser.java:258)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.readParse(AbstractWebSocketConnection.java:632)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:480)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [2016-09-27 17:47:46,983] ({qtp1860944798-56} NotebookServer.java[onMessage]:260) - Can't handle message
+java.lang.NullPointerException
+	at org.apache.zeppelin.interpreter.InterpreterFactory.getEditorSetting(InterpreterFactory.java:1334)
+	at org.apache.zeppelin.socket.NotebookServer.getEditorSetting(NotebookServer.java:1589)
+	at org.apache.zeppelin.socket.NotebookServer.onMessage(NotebookServer.java:254)
+	at org.apache.zeppelin.socket.NotebookSocket.onWebSocketText(NotebookSocket.java:56)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextMessage(JettyListenerEventDriver.java:128)
+	at org.eclipse.jetty.websocket.common.message.SimpleTextMessage.messageComplete(SimpleTextMessage.java:69)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.appendMessage(AbstractEventDriver.java:65)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextFrame(JettyListenerEventDriver.java:122)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.incomingFrame(AbstractEventDriver.java:161)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.incomingFrame(WebSocketSession.java:309)
+	at org.eclipse.jetty.websocket.common.extensions.ExtensionStack.incomingFrame(ExtensionStack.java:214)
+	at org.eclipse.jetty.websocket.common.Parser.notifyFrame(Parser.java:220)
+	at org.eclipse.jetty.websocket.common.Parser.parse(Parser.java:258)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.readParse(AbstractWebSocketConnection.java:632)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:480)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [2016-09-27 17:47:47,004] ({qtp1860944798-16} NotebookServer.java[onMessage]:260) - Can't handle message
+java.lang.NullPointerException
+	at org.apache.zeppelin.interpreter.InterpreterFactory.getEditorSetting(InterpreterFactory.java:1334)
+	at org.apache.zeppelin.socket.NotebookServer.getEditorSetting(NotebookServer.java:1589)
+	at org.apache.zeppelin.socket.NotebookServer.onMessage(NotebookServer.java:254)
+	at org.apache.zeppelin.socket.NotebookSocket.onWebSocketText(NotebookSocket.java:56)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextMessage(JettyListenerEventDriver.java:128)
+	at org.eclipse.jetty.websocket.common.message.SimpleTextMessage.messageComplete(SimpleTextMessage.java:69)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.appendMessage(AbstractEventDriver.java:65)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextFrame(JettyListenerEventDriver.java:122)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.incomingFrame(AbstractEventDriver.java:161)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.incomingFrame(WebSocketSession.java:309)
+	at org.eclipse.jetty.websocket.common.extensions.ExtensionStack.incomingFrame(ExtensionStack.java:214)
+	at org.eclipse.jetty.websocket.common.Parser.notifyFrame(Parser.java:220)
+	at org.eclipse.jetty.websocket.common.Parser.parse(Parser.java:258)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.readParse(AbstractWebSocketConnection.java:632)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:480)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [2016-09-27 17:47:47,027] ({qtp1860944798-57} NotebookServer.java[onMessage]:260) - Can't handle message
+java.lang.NullPointerException
+	at org.apache.zeppelin.interpreter.InterpreterFactory.getEditorSetting(InterpreterFactory.java:1334)
+	at org.apache.zeppelin.socket.NotebookServer.getEditorSetting(NotebookServer.java:1589)
+	at org.apache.zeppelin.socket.NotebookServer.onMessage(NotebookServer.java:254)
+	at org.apache.zeppelin.socket.NotebookSocket.onWebSocketText(NotebookSocket.java:56)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextMessage(JettyListenerEventDriver.java:128)
+	at org.eclipse.jetty.websocket.common.message.SimpleTextMessage.messageComplete(SimpleTextMessage.java:69)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.appendMessage(AbstractEventDriver.java:65)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextFrame(JettyListenerEventDriver.java:122)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.incomingFrame(AbstractEventDriver.java:161)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.incomingFrame(WebSocketSession.java:309)
+	at org.eclipse.jetty.websocket.common.extensions.ExtensionStack.incomingFrame(ExtensionStack.java:214)
+	at org.eclipse.jetty.websocket.common.Parser.notifyFrame(Parser.java:220)
+	at org.eclipse.jetty.websocket.common.Parser.parse(Parser.java:258)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.readParse(AbstractWebSocketConnection.java:632)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:480)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [2016-09-27 17:47:47,049] ({qtp1860944798-59} NotebookServer.java[onMessage]:260) - Can't handle message
+java.lang.NullPointerException
+	at org.apache.zeppelin.interpreter.InterpreterFactory.getEditorSetting(InterpreterFactory.java:1334)
+	at org.apache.zeppelin.socket.NotebookServer.getEditorSetting(NotebookServer.java:1589)
+	at org.apache.zeppelin.socket.NotebookServer.onMessage(NotebookServer.java:254)
+	at org.apache.zeppelin.socket.NotebookSocket.onWebSocketText(NotebookSocket.java:56)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextMessage(JettyListenerEventDriver.java:128)
+	at org.eclipse.jetty.websocket.common.message.SimpleTextMessage.messageComplete(SimpleTextMessage.java:69)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.appendMessage(AbstractEventDriver.java:65)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextFrame(JettyListenerEventDriver.java:122)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.incomingFrame(AbstractEventDriver.java:161)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.incomingFrame(WebSocketSession.java:309)
+	at org.eclipse.jetty.websocket.common.extensions.ExtensionStack.incomingFrame(ExtensionStack.java:214)
+	at org.eclipse.jetty.websocket.common.Parser.notifyFrame(Parser.java:220)
+	at org.eclipse.jetty.websocket.common.Parser.parse(Parser.java:258)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.readParse(AbstractWebSocketConnection.java:632)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:480)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [2016-09-27 17:47:47,075] ({qtp1860944798-55} NotebookServer.java[onMessage]:260) - Can't handle message
+java.lang.NullPointerException
+	at org.apache.zeppelin.interpreter.InterpreterFactory.getEditorSetting(InterpreterFactory.java:1334)
+	at org.apache.zeppelin.socket.NotebookServer.getEditorSetting(NotebookServer.java:1589)
+	at org.apache.zeppelin.socket.NotebookServer.onMessage(NotebookServer.java:254)
+	at org.apache.zeppelin.socket.NotebookSocket.onWebSocketText(NotebookSocket.java:56)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextMessage(JettyListenerEventDriver.java:128)
+	at org.eclipse.jetty.websocket.common.message.SimpleTextMessage.messageComplete(SimpleTextMessage.java:69)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.appendMessage(AbstractEventDriver.java:65)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextFrame(JettyListenerEventDriver.java:122)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.incomingFrame(AbstractEventDriver.java:161)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.incomingFrame(WebSocketSession.java:309)
+	at org.eclipse.jetty.websocket.common.extensions.ExtensionStack.incomingFrame(ExtensionStack.java:214)
+	at org.eclipse.jetty.websocket.common.Parser.notifyFrame(Parser.java:220)
+	at org.eclipse.jetty.websocket.common.Parser.parse(Parser.java:258)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.readParse(AbstractWebSocketConnection.java:632)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:480)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [2016-09-27 17:47:47,883] ({qtp1860944798-58} NotebookServer.java[onMessage]:260) - Can't handle message
+java.lang.NullPointerException
+	at org.apache.zeppelin.interpreter.InterpreterFactory.getEditorSetting(InterpreterFactory.java:1334)
+	at org.apache.zeppelin.socket.NotebookServer.getEditorSetting(NotebookServer.java:1589)
+	at org.apache.zeppelin.socket.NotebookServer.onMessage(NotebookServer.java:254)
+	at org.apache.zeppelin.socket.NotebookSocket.onWebSocketText(NotebookSocket.java:56)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextMessage(JettyListenerEventDriver.java:128)
+	at org.eclipse.jetty.websocket.common.message.SimpleTextMessage.messageComplete(SimpleTextMessage.java:69)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.appendMessage(AbstractEventDriver.java:65)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextFrame(JettyListenerEventDriver.java:122)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.incomingFrame(AbstractEventDriver.java:161)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.incomingFrame(WebSocketSession.java:309)
+	at org.eclipse.jetty.websocket.common.extensions.ExtensionStack.incomingFrame(ExtensionStack.java:214)
+	at org.eclipse.jetty.websocket.common.Parser.notifyFrame(Parser.java:220)
+	at org.eclipse.jetty.websocket.common.Parser.parse(Parser.java:258)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.readParse(AbstractWebSocketConnection.java:632)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:480)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [2016-09-27 17:47:47,887] ({qtp1860944798-58} NotebookServer.java[onMessage]:260) - Can't handle message
+java.lang.NullPointerException
+	at org.apache.zeppelin.interpreter.InterpreterFactory.getEditorSetting(InterpreterFactory.java:1334)
+	at org.apache.zeppelin.socket.NotebookServer.getEditorSetting(NotebookServer.java:1589)
+	at org.apache.zeppelin.socket.NotebookServer.onMessage(NotebookServer.java:254)
+	at org.apache.zeppelin.socket.NotebookSocket.onWebSocketText(NotebookSocket.java:56)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextMessage(JettyListenerEventDriver.java:128)
+	at org.eclipse.jetty.websocket.common.message.SimpleTextMessage.messageComplete(SimpleTextMessage.java:69)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.appendMessage(AbstractEventDriver.java:65)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextFrame(JettyListenerEventDriver.java:122)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.incomingFrame(AbstractEventDriver.java:161)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.incomingFrame(WebSocketSession.java:309)
+	at org.eclipse.jetty.websocket.common.extensions.ExtensionStack.incomingFrame(ExtensionStack.java:214)
+	at org.eclipse.jetty.websocket.common.Parser.notifyFrame(Parser.java:220)
+	at org.eclipse.jetty.websocket.common.Parser.parse(Parser.java:258)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.readParse(AbstractWebSocketConnection.java:632)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:480)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [2016-09-27 17:47:47,890] ({qtp1860944798-58} NotebookServer.java[onMessage]:260) - Can't handle message
+java.lang.NullPointerException
+	at org.apache.zeppelin.interpreter.InterpreterFactory.getEditorSetting(InterpreterFactory.java:1334)
+	at org.apache.zeppelin.socket.NotebookServer.getEditorSetting(NotebookServer.java:1589)
+	at org.apache.zeppelin.socket.NotebookServer.onMessage(NotebookServer.java:254)
+	at org.apache.zeppelin.socket.NotebookSocket.onWebSocketText(NotebookSocket.java:56)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextMessage(JettyListenerEventDriver.java:128)
+	at org.eclipse.jetty.websocket.common.message.SimpleTextMessage.messageComplete(SimpleTextMessage.java:69)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.appendMessage(AbstractEventDriver.java:65)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextFrame(JettyListenerEventDriver.java:122)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.incomingFrame(AbstractEventDriver.java:161)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.incomingFrame(WebSocketSession.java:309)
+	at org.eclipse.jetty.websocket.common.extensions.ExtensionStack.incomingFrame(ExtensionStack.java:214)
+	at org.eclipse.jetty.websocket.common.Parser.notifyFrame(Parser.java:220)
+	at org.eclipse.jetty.websocket.common.Parser.parse(Parser.java:258)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.readParse(AbstractWebSocketConnection.java:632)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:480)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [2016-09-27 17:47:47,893] ({qtp1860944798-58} NotebookServer.java[onMessage]:260) - Can't handle message
+java.lang.NullPointerException
+	at org.apache.zeppelin.interpreter.InterpreterFactory.getEditorSetting(InterpreterFactory.java:1334)
+	at org.apache.zeppelin.socket.NotebookServer.getEditorSetting(NotebookServer.java:1589)
+	at org.apache.zeppelin.socket.NotebookServer.onMessage(NotebookServer.java:254)
+	at org.apache.zeppelin.socket.NotebookSocket.onWebSocketText(NotebookSocket.java:56)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextMessage(JettyListenerEventDriver.java:128)
+	at org.eclipse.jetty.websocket.common.message.SimpleTextMessage.messageComplete(SimpleTextMessage.java:69)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.appendMessage(AbstractEventDriver.java:65)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextFrame(JettyListenerEventDriver.java:122)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.incomingFrame(AbstractEventDriver.java:161)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.incomingFrame(WebSocketSession.java:309)
+	at org.eclipse.jetty.websocket.common.extensions.ExtensionStack.incomingFrame(ExtensionStack.java:214)
+	at org.eclipse.jetty.websocket.common.Parser.notifyFrame(Parser.java:220)
+	at org.eclipse.jetty.websocket.common.Parser.parse(Parser.java:258)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.readParse(AbstractWebSocketConnection.java:632)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:480)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [2016-09-27 17:47:47,900] ({qtp1860944798-58} NotebookServer.java[onMessage]:260) - Can't handle message
+java.lang.NullPointerException
+	at org.apache.zeppelin.interpreter.InterpreterFactory.getEditorSetting(InterpreterFactory.java:1334)
+	at org.apache.zeppelin.socket.NotebookServer.getEditorSetting(NotebookServer.java:1589)
+	at org.apache.zeppelin.socket.NotebookServer.onMessage(NotebookServer.java:254)
+	at org.apache.zeppelin.socket.NotebookSocket.onWebSocketText(NotebookSocket.java:56)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextMessage(JettyListenerEventDriver.java:128)
+	at org.eclipse.jetty.websocket.common.message.SimpleTextMessage.messageComplete(SimpleTextMessage.java:69)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.appendMessage(AbstractEventDriver.java:65)
+	at org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextFrame(JettyListenerEventDriver.java:122)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.incomingFrame(AbstractEventDriver.java:161)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.incomingFrame(WebSocketSession.java:309)
+	at org.eclipse.jetty.websocket.common.extensions.ExtensionStack.incomingFrame(ExtensionStack.java:214)
+	at org.eclipse.jetty.websocket.common.Parser.notifyFrame(Parser.java:220)
+	at org.eclipse.jetty.websocket.common.Parser.parse(Parser.java:258)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.readParse(AbstractWebSocketConnection.java:632)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:480)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+ INFO [2016-09-27 17:47:54,644] ({qtp1860944798-16} InterpreterFactory.java[createInterpretersForNote]:744) - Create interpreter instance spark for note 2A94M5J1Z
+ INFO [2016-09-27 17:47:54,651] ({qtp1860944798-16} InterpreterFactory.java[createInterpretersForNote]:775) - Interpreter org.apache.zeppelin.spark.SparkInterpreter 1102254043 created
+ INFO [2016-09-27 17:47:54,651] ({qtp1860944798-16} InterpreterFactory.java[createInterpretersForNote]:775) - Interpreter org.apache.zeppelin.spark.SparkSqlInterpreter 1519084437 created
+ INFO [2016-09-27 17:47:54,652] ({qtp1860944798-16} InterpreterFactory.java[createInterpretersForNote]:775) - Interpreter org.apache.zeppelin.spark.DepInterpreter 765716493 created
+ INFO [2016-09-27 17:47:54,652] ({qtp1860944798-16} InterpreterFactory.java[createInterpretersForNote]:775) - Interpreter org.apache.zeppelin.spark.PySparkInterpreter 1158133063 created
+ INFO [2016-09-27 17:47:54,677] ({pool-2-thread-2} SchedulerFactory.java[jobStarted]:131) - Job paragraph_1423500779206_-1502780787 started by scheduler org.apache.zeppelin.interpreter.remote.RemoteInterpretershared_session1398142177
+ INFO [2016-09-27 17:47:54,679] ({pool-2-thread-2} Paragraph.java[jobRun]:287) - run paragraph 20150210-015259_1403135953 using null org.apache.zeppelin.interpreter.LazyOpenInterpreter@41b30fdb
+ INFO [2016-09-27 17:47:54,724] ({qtp1860944798-59} InterpreterFactory.java[createInterpretersForNote]:744) - Create interpreter instance md for note 2A94M5J1Z
+ INFO [2016-09-27 17:47:54,724] ({qtp1860944798-59} InterpreterFactory.java[createInterpretersForNote]:775) - Interpreter org.apache.zeppelin.markdown.MarkdownInterpreter 1393083512 created
+ INFO [2016-09-27 17:47:54,756] ({pool-2-thread-2} RemoteInterpreterManagedProcess.java[start]:116) - Run interpreter process [/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/bin/interpreter.sh, -d, /Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/interpreter/spark, -p, 59914, -l, /Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/local-repo/2BWJ3Q3MT]
+ERROR [2016-09-27 17:47:54,777] ({qtp1860944798-57} ResourcePoolUtils.java[getAllResourcesExcept]:64) - 
+java.lang.NullPointerException
+	at org.apache.zeppelin.resource.ResourcePoolUtils.getAllResourcesExcept(ResourcePoolUtils.java:58)
+	at org.apache.zeppelin.resource.ResourcePoolUtils.getAllResources(ResourcePoolUtils.java:36)
+	at org.apache.zeppelin.helium.Helium.suggestApp(Helium.java:153)
+	at org.apache.zeppelin.rest.HeliumRestApi.suggest(HeliumRestApi.java:83)
+	at sun.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:192)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:100)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:57)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:93)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:272)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:239)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:248)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:222)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:153)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:167)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:286)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doGet(AbstractHTTPServlet.java:211)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:575)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:262)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:812)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.apache.zeppelin.server.CorsFilter.doFilter(CorsFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:311)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [2016-09-27 17:47:54,777] ({qtp1860944798-59} ResourcePoolUtils.java[getAllResourcesExcept]:64) - 
+java.lang.NullPointerException
+	at org.apache.zeppelin.resource.ResourcePoolUtils.getAllResourcesExcept(ResourcePoolUtils.java:58)
+	at org.apache.zeppelin.resource.ResourcePoolUtils.getAllResources(ResourcePoolUtils.java:36)
+	at org.apache.zeppelin.helium.Helium.suggestApp(Helium.java:153)
+	at org.apache.zeppelin.rest.HeliumRestApi.suggest(HeliumRestApi.java:83)
+	at sun.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:192)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:100)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:57)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:93)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:272)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:239)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:248)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:222)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:153)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:167)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:286)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doGet(AbstractHTTPServlet.java:211)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:575)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:262)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:812)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.apache.zeppelin.server.CorsFilter.doFilter(CorsFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:311)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [2016-09-27 17:47:54,965] ({qtp1860944798-56} ResourcePoolUtils.java[getAllResourcesExcept]:64) - 
+java.lang.NullPointerException
+	at org.apache.zeppelin.resource.ResourcePoolUtils.getAllResourcesExcept(ResourcePoolUtils.java:58)
+	at org.apache.zeppelin.resource.ResourcePoolUtils.getAllResources(ResourcePoolUtils.java:36)
+	at org.apache.zeppelin.helium.Helium.suggestApp(Helium.java:153)
+	at org.apache.zeppelin.rest.HeliumRestApi.suggest(HeliumRestApi.java:83)
+	at sun.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:192)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:100)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:57)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:93)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:272)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:239)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:248)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:222)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:153)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:167)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:286)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doGet(AbstractHTTPServlet.java:211)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:575)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:262)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:812)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.apache.zeppelin.server.CorsFilter.doFilter(CorsFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:311)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [2016-09-27 17:47:54,967] ({qtp1860944798-55} ResourcePoolUtils.java[getAllResourcesExcept]:64) - 
+java.lang.NullPointerException
+	at org.apache.zeppelin.resource.ResourcePoolUtils.getAllResourcesExcept(ResourcePoolUtils.java:58)
+	at org.apache.zeppelin.resource.ResourcePoolUtils.getAllResources(ResourcePoolUtils.java:36)
+	at org.apache.zeppelin.helium.Helium.suggestApp(Helium.java:153)
+	at org.apache.zeppelin.rest.HeliumRestApi.suggest(HeliumRestApi.java:83)
+	at sun.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:192)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:100)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:57)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:93)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:272)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:239)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:248)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:222)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:153)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:167)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:286)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doGet(AbstractHTTPServlet.java:211)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:575)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:262)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:812)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.apache.zeppelin.server.CorsFilter.doFilter(CorsFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:311)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [2016-09-27 17:47:54,980] ({qtp1860944798-58} ResourcePoolUtils.java[getAllResourcesExcept]:64) - 
+java.lang.NullPointerException
+	at org.apache.zeppelin.resource.ResourcePoolUtils.getAllResourcesExcept(ResourcePoolUtils.java:58)
+	at org.apache.zeppelin.resource.ResourcePoolUtils.getAllResources(ResourcePoolUtils.java:36)
+	at org.apache.zeppelin.helium.Helium.suggestApp(Helium.java:153)
+	at org.apache.zeppelin.rest.HeliumRestApi.suggest(HeliumRestApi.java:83)
+	at sun.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:192)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:100)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:57)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:93)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:272)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:239)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:248)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:222)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:153)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:167)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:286)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doGet(AbstractHTTPServlet.java:211)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:575)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:262)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:812)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.apache.zeppelin.server.CorsFilter.doFilter(CorsFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:311)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [2016-09-27 17:47:54,983] ({qtp1860944798-17} ResourcePoolUtils.java[getAllResourcesExcept]:64) - 
+java.lang.NullPointerException
+	at org.apache.zeppelin.resource.ResourcePoolUtils.getAllResourcesExcept(ResourcePoolUtils.java:58)
+	at org.apache.zeppelin.resource.ResourcePoolUtils.getAllResources(ResourcePoolUtils.java:36)
+	at org.apache.zeppelin.helium.Helium.suggestApp(Helium.java:153)
+	at org.apache.zeppelin.rest.HeliumRestApi.suggest(HeliumRestApi.java:83)
+	at sun.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:192)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:100)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:57)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:93)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:272)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:239)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:248)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:222)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:153)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:167)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:286)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doGet(AbstractHTTPServlet.java:211)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:575)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:262)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:812)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.apache.zeppelin.server.CorsFilter.doFilter(CorsFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:311)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [2016-09-27 17:47:55,002] ({qtp1860944798-58} ResourcePoolUtils.java[getAllResourcesExcept]:64) - 
+java.lang.NullPointerException
+	at org.apache.zeppelin.resource.ResourcePoolUtils.getAllResourcesExcept(ResourcePoolUtils.java:58)
+	at org.apache.zeppelin.resource.ResourcePoolUtils.getAllResources(ResourcePoolUtils.java:36)
+	at org.apache.zeppelin.helium.Helium.suggestApp(Helium.java:153)
+	at org.apache.zeppelin.rest.HeliumRestApi.suggest(HeliumRestApi.java:83)
+	at sun.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:192)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:100)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:57)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:93)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:272)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:239)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:248)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:222)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:153)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:167)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:286)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doGet(AbstractHTTPServlet.java:211)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:575)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:262)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:812)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.apache.zeppelin.server.CorsFilter.doFilter(CorsFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:311)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [2016-09-27 17:47:55,005] ({qtp1860944798-57} ResourcePoolUtils.java[getAllResourcesExcept]:64) - 
+java.lang.NullPointerException
+	at org.apache.zeppelin.resource.ResourcePoolUtils.getAllResourcesExcept(ResourcePoolUtils.java:58)
+	at org.apache.zeppelin.resource.ResourcePoolUtils.getAllResources(ResourcePoolUtils.java:36)
+	at org.apache.zeppelin.helium.Helium.suggestApp(Helium.java:153)
+	at org.apache.zeppelin.rest.HeliumRestApi.suggest(HeliumRestApi.java:83)
+	at sun.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:192)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:100)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:57)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:93)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:272)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:239)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:248)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:222)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:153)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:167)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:286)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doGet(AbstractHTTPServlet.java:211)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:575)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:262)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:812)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.apache.zeppelin.server.CorsFilter.doFilter(CorsFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:311)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [2016-09-27 17:47:55,016] ({qtp1860944798-58} ResourcePoolUtils.java[getAllResourcesExcept]:64) - 
+java.lang.NullPointerException
+	at org.apache.zeppelin.resource.ResourcePoolUtils.getAllResourcesExcept(ResourcePoolUtils.java:58)
+	at org.apache.zeppelin.resource.ResourcePoolUtils.getAllResources(ResourcePoolUtils.java:36)
+	at org.apache.zeppelin.helium.Helium.suggestApp(Helium.java:153)
+	at org.apache.zeppelin.rest.HeliumRestApi.suggest(HeliumRestApi.java:83)
+	at sun.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:192)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:100)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:57)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:93)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:272)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:239)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:248)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:222)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:153)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:167)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:286)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doGet(AbstractHTTPServlet.java:211)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:575)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:262)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:812)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.apache.zeppelin.server.CorsFilter.doFilter(CorsFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:311)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR [2016-09-27 17:47:55,035] ({qtp1860944798-59} ResourcePoolUtils.java[getAllResourcesExcept]:64) - 
+java.lang.NullPointerException
+	at org.apache.zeppelin.resource.ResourcePoolUtils.getAllResourcesExcept(ResourcePoolUtils.java:58)
+	at org.apache.zeppelin.resource.ResourcePoolUtils.getAllResources(ResourcePoolUtils.java:36)
+	at org.apache.zeppelin.helium.Helium.suggestApp(Helium.java:153)
+	at org.apache.zeppelin.rest.HeliumRestApi.suggest(HeliumRestApi.java:83)
+	at sun.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:192)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:100)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:57)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:93)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:272)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:239)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:248)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:222)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:153)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:167)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:286)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doGet(AbstractHTTPServlet.java:211)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:575)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:262)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:812)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.apache.zeppelin.server.CorsFilter.doFilter(CorsFilter.java:72)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:311)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+ INFO [2016-09-27 17:47:56,438] ({pool-2-thread-2} RemoteInterpreter.java[init]:223) - Create remote interpreter org.apache.zeppelin.spark.SparkInterpreter
+ INFO [2016-09-27 17:47:56,720] ({pool-2-thread-2} RemoteInterpreter.java[pushAngularObjectRegistryToRemote]:512) - Push local angular object registry from ZeppelinServer to remote interpreter group 2BWJ3Q3MT:shared_process
+ INFO [2016-09-27 17:47:56,786] ({pool-2-thread-2} RemoteInterpreter.java[init]:223) - Create remote interpreter org.apache.zeppelin.spark.SparkSqlInterpreter
+ INFO [2016-09-27 17:47:56,794] ({pool-2-thread-2} RemoteInterpreter.java[init]:223) - Create remote interpreter org.apache.zeppelin.spark.DepInterpreter
+ INFO [2016-09-27 17:47:56,802] ({pool-2-thread-2} RemoteInterpreter.java[init]:223) - Create remote interpreter org.apache.zeppelin.spark.PySparkInterpreter
+ INFO [2016-09-27 17:49:17,278] ({pool-2-thread-2} NotebookServer.java[afterStatusChange]:1445) - Job 20150210-015259_1403135953 is finished
+ INFO [2016-09-27 17:49:17,547] ({pool-2-thread-2} SchedulerFactory.java[jobFinished]:137) - Job paragraph_1423500779206_-1502780787 finished by scheduler org.apache.zeppelin.interpreter.remote.RemoteInterpretershared_session1398142177
+ERROR [2016-09-27 17:50:19,460] ({Thread-58} JobProgressPoller.java[run]:54) - Can not get or update progress
+org.apache.zeppelin.interpreter.InterpreterException: org.apache.thrift.transport.TTransportException
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreter.getProgress(RemoteInterpreter.java:430)
+	at org.apache.zeppelin.interpreter.LazyOpenInterpreter.getProgress(LazyOpenInterpreter.java:111)
+	at org.apache.zeppelin.notebook.Paragraph.progress(Paragraph.java:259)
+	at org.apache.zeppelin.scheduler.JobProgressPoller.run(JobProgressPoller.java:51)
+Caused by: org.apache.thrift.transport.TTransportException
+	at org.apache.thrift.transport.TIOStreamTransport.read(TIOStreamTransport.java:132)
+	at org.apache.thrift.transport.TTransport.readAll(TTransport.java:86)
+	at org.apache.thrift.protocol.TBinaryProtocol.readAll(TBinaryProtocol.java:429)
+	at org.apache.thrift.protocol.TBinaryProtocol.readI32(TBinaryProtocol.java:318)
+	at org.apache.thrift.protocol.TBinaryProtocol.readMessageBegin(TBinaryProtocol.java:219)
+	at org.apache.thrift.TServiceClient.receiveBase(TServiceClient.java:69)
+	at org.apache.zeppelin.interpreter.thrift.RemoteInterpreterService$Client.recv_getProgress(RemoteInterpreterService.java:308)
+	at org.apache.zeppelin.interpreter.thrift.RemoteInterpreterService$Client.getProgress(RemoteInterpreterService.java:293)
+	at org.apache.zeppelin.interpreter.remote.RemoteInterpreter.getProgress(RemoteInterpreter.java:427)
+	... 3 more
+ INFO [2016-09-27 17:58:24,174] ({qtp1860944798-15} NotebookServer.java[onClose]:266) - Closed connection to 0:0:0:0:0:0:0:1 : 59878. (1001) Idle Timeout
+ INFO [2016-09-27 18:01:14,964] ({qtp1860944798-56} NotebookServer.java[onOpen]:115) - New connection from 0:0:0:0:0:0:0:1 : 60573
+ INFO [2016-09-27 18:01:14,967] ({qtp1860944798-15} NotebookServer.java[sendNote]:536) - New operation from 0:0:0:0:0:0:0:1 : 60573 : anonymous : GET_NOTE : 2A94M5J1Z
+ INFO [2016-09-27 18:01:14,972] ({qtp1860944798-15} NotebookServer.java[sendNote]:536) - New operation from 0:0:0:0:0:0:0:1 : 60573 : anonymous : GET_NOTE : 2A94M5J1Z
+ INFO [2016-09-27 18:04:37,704] ({Thread-30} ZeppelinServer.java[run]:143) - Shutting down Zeppelin Server ... 
+ INFO [2016-09-27 18:04:37,717] ({qtp1860944798-56} NotebookServer.java[onClose]:266) - Closed connection to 0:0:0:0:0:0:0:1 : 60573. (1005) null
+ INFO [2016-09-27 18:04:37,719] ({qtp1860944798-18} NotebookServer.java[onClose]:266) - Closed connection to 0:0:0:0:0:0:0:1 : 59873. (1005) null
+ INFO [2016-09-27 18:04:37,722] ({Thread-30} AbstractConnector.java[doStop]:306) - Stopped ServerConnector@22a0d4ea{HTTP/1.1}{0.0.0.0:8000}
+ INFO [2016-09-27 18:04:37,736] ({Thread-30} ContextHandler.java[log]:2052) - Cleaning up Shiro Environment
+ INFO [2016-09-27 18:04:37,737] ({Thread-30} AbstractValidatingSessionManager.java[disableSessionValidation]:246) - Disabled session validation scheduler.
+ INFO [2016-09-27 18:04:37,738] ({Thread-30} ContextHandler.java[doStop]:865) - Stopped o.e.j.w.WebAppContext@41fbdac4{/,file:/Users/jlagarden/Desktop/projekt/zeppelin/zeppelin/zeppelin-web/dist/,UNAVAILABLE}
+ INFO [2016-09-27 18:04:37,741] ({Thread-65} InterpreterGroup.java[close]:140) - Close interpreter group 2BYCV3AJ9:shared_process
+ INFO [2016-09-27 18:04:37,741] ({Thread-64} InterpreterGroup.java[close]:140) - Close interpreter group 2BYXEBANE:shared_process
+ INFO [2016-09-27 18:04:37,741] ({Thread-65} InterpreterGroup.java[destroy]:204) - Destroy interpreter group 2BYCV3AJ9:shared_process
+ INFO [2016-09-27 18:04:37,741] ({Thread-66} InterpreterGroup.java[close]:140) - Close interpreter group 2BVYX537N:shared_process
+ INFO [2016-09-27 18:04:37,742] ({Thread-66} InterpreterGroup.java[destroy]:204) - Destroy interpreter group 2BVYX537N:shared_process
+ INFO [2016-09-27 18:04:37,741] ({Thread-67} InterpreterGroup.java[close]:140) - Close interpreter group 2BZNTQUU3:shared_process
+ INFO [2016-09-27 18:04:37,742] ({Thread-70} InterpreterGroup.java[close]:140) - Close interpreter group 2BYPZP9QS:shared_process
+ INFO [2016-09-27 18:04:37,742] ({Thread-70} InterpreterGroup.java[destroy]:204) - Destroy interpreter group 2BYPZP9QS:shared_process
+ INFO [2016-09-27 18:04:37,742] ({Thread-69} InterpreterGroup.java[close]:140) - Close interpreter group 2BZ977DVN:shared_process
+ INFO [2016-09-27 18:04:37,742] ({Thread-68} InterpreterGroup.java[close]:140) - Close interpreter group 2BX763G7S:shared_process
+ INFO [2016-09-27 18:04:37,742] ({Thread-68} InterpreterGroup.java[destroy]:204) - Destroy interpreter group 2BX763G7S:shared_process
+ INFO [2016-09-27 18:04:37,742] ({Thread-74} InterpreterGroup.java[close]:140) - Close interpreter group 2BXJUEFXT:shared_process
+ INFO [2016-09-27 18:04:37,742] ({Thread-74} InterpreterGroup.java[destroy]:204) - Destroy interpreter group 2BXJUEFXT:shared_process
+ INFO [2016-09-27 18:04:37,743] ({Thread-77} InterpreterGroup.java[close]:140) - Close interpreter group 2BXW1Q5YX:shared_process
+ INFO [2016-09-27 18:04:37,743] ({Thread-77} InterpreterGroup.java[destroy]:204) - Destroy interpreter group 2BXW1Q5YX:shared_process
+ INFO [2016-09-27 18:04:37,742] ({Thread-69} InterpreterGroup.java[destroy]:204) - Destroy interpreter group 2BZ977DVN:shared_process
+ INFO [2016-09-27 18:04:37,743] ({Thread-80} InterpreterGroup.java[close]:140) - Close interpreter group 2BXF3DBX1:shared_process
+ INFO [2016-09-27 18:04:37,743] ({Thread-80} InterpreterGroup.java[destroy]:204) - Destroy interpreter group 2BXF3DBX1:shared_process
+ INFO [2016-09-27 18:04:37,742] ({Thread-73} InterpreterGroup.java[close]:140) - Close interpreter group 2BZG6X2DB:shared_process
+ INFO [2016-09-27 18:04:37,743] ({Thread-73} InterpreterGroup.java[destroy]:204) - Destroy interpreter group 2BZG6X2DB:shared_process
+ INFO [2016-09-27 18:04:37,742] ({Thread-72} InterpreterGroup.java[close]:140) - Close interpreter group 2BZNCJ364:shared_process
+ INFO [2016-09-27 18:04:37,744] ({Thread-72} InterpreterGroup.java[destroy]:204) - Destroy interpreter group 2BZNCJ364:shared_process
+ INFO [2016-09-27 18:04:37,742] ({Thread-67} InterpreterGroup.java[destroy]:204) - Destroy interpreter group 2BZNTQUU3:shared_process
+ INFO [2016-09-27 18:04:37,743] ({Thread-81} InterpreterGroup.java[close]:140) - Close interpreter group 2BVVTXFHG:shared_process
+ INFO [2016-09-27 18:04:37,744] ({Thread-81} InterpreterGroup.java[destroy]:204) - Destroy interpreter group 2BVVTXFHG:shared_process
+ INFO [2016-09-27 18:04:37,743] ({Thread-79} InterpreterGroup.java[close]:140) - Close interpreter group 2BWJ3Q3MT:shared_process
+ INFO [2016-09-27 18:04:37,743] ({Thread-78} InterpreterGroup.java[close]:140) - Close interpreter group 2BWK1UTRK:shared_process
+ INFO [2016-09-27 18:04:37,744] ({Thread-78} InterpreterGroup.java[destroy]:204) - Destroy interpreter group 2BWK1UTRK:shared_process
+ INFO [2016-09-27 18:04:37,742] ({Thread-76} InterpreterGroup.java[close]:140) - Close interpreter group 2BXFZ5VF1:shared_process
+ INFO [2016-09-27 18:04:37,745] ({Thread-76} InterpreterGroup.java[destroy]:204) - Destroy interpreter group 2BXFZ5VF1:shared_process
+ INFO [2016-09-27 18:04:37,742] ({Thread-75} InterpreterGroup.java[close]:140) - Close interpreter group 2BWVZ15D8:shared_process
+ INFO [2016-09-27 18:04:37,744] ({Thread-82} InterpreterGroup.java[close]:140) - Close interpreter group 2BVYB5XG7:shared_process
+ INFO [2016-09-27 18:04:37,745] ({Thread-82} InterpreterGroup.java[destroy]:204) - Destroy interpreter group 2BVYB5XG7:shared_process
+ INFO [2016-09-27 18:04:37,745] ({Thread-75} InterpreterGroup.java[destroy]:204) - Destroy interpreter group 2BWVZ15D8:shared_process
+ INFO [2016-09-27 18:04:37,748] ({Thread-64} InterpreterGroup.java[destroy]:204) - Destroy interpreter group 2BYXEBANE:shared_process
+ INFO [2016-09-27 18:04:37,773] ({Thread-79} InterpreterGroup.java[destroy]:204) - Destroy interpreter group 2BWJ3Q3MT:shared_process
+ INFO [2016-09-27 18:04:37,774] ({Thread-79} RemoteInterpreterProcess.java[dereference]:127) - shutdown interpreter process
+ERROR [2016-09-27 18:04:37,933] ({pool-4-thread-1} AppendOutputRunner.java[run]:68) - Wait for OutputBuffer queue interrupted: null
+ INFO [2016-09-27 18:04:40,336] ({Thread-79} RemoteInterpreterProcess.java[dereference]:137) - Exception in RemoteInterpreterProcess while synchronized dereference, can safely ignore exception while client.shutdown() may terminates remote process
+ INFO [2016-09-27 18:04:40,339] ({Exec Default Executor} RemoteInterpreterManagedProcess.java[onProcessComplete]:154) - Interpreter process exited 0
+ INFO [2016-09-27 18:04:40,838] ({Thread-30} NotebookRepoSync.java[close]:353) - Closing all notebook storages
+ INFO [2016-09-27 18:04:40,843] ({Thread-30} ZeppelinServer.java[run]:151) - Bye

@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Code Pro Light'), local('SourceCodePro-Light'), url(../fonts/Source-Code-Pro-Light.ttf) format('truetype'), url(../fonts/Source-Code-Pro-Light.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Source-Code-Pro.eot);
+  src: local('Source Code Pro'), local('SourceCodePro-Regular'), url(../fonts/Source-Code-Pro.ttf) format('truetype'), url(../fonts/Source-Code-Pro.woff) format('woff'), url(../fonts/Source-Code-Pro.eot?#iefix) format('embedded-opentype'), url(../fonts/Source-Code-Pro.svg#SourceCodePro) format('svg');
+}
+
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlNvdXJjZS1Db2RlLVByby5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwrQkFBK0I7RUFDL0IsbUJBQW1CO0VBQ25CLGlCQUFpQjtFQUNqQix1TEFBdUw7Q0FDeEw7O0FBRUQ7RUFDRSwrQkFBK0I7RUFDL0IsbUJBQW1CO0VBQ25CLGlCQUFpQjtFQUNqQix1Q0FBdUM7RUFDdkMsNFNBQTRTO0NBQzdTIiwiZmlsZSI6IlNvdXJjZS1Db2RlLVByby5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6ICdTb3VyY2UgQ29kZSBQcm8nO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG4gIGZvbnQtd2VpZ2h0OiAzMDA7XG4gIHNyYzogbG9jYWwoJ1NvdXJjZSBDb2RlIFBybyBMaWdodCcpLCBsb2NhbCgnU291cmNlQ29kZVByby1MaWdodCcpLCB1cmwoLi4vZm9udHMvU291cmNlLUNvZGUtUHJvLUxpZ2h0LnR0ZikgZm9ybWF0KCd0cnVldHlwZScpLCB1cmwoLi4vZm9udHMvU291cmNlLUNvZGUtUHJvLUxpZ2h0LndvZmYpIGZvcm1hdCgnd29mZicpO1xufVxuXG5AZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6ICdTb3VyY2UgQ29kZSBQcm8nO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG4gIGZvbnQtd2VpZ2h0OiA0MDA7XG4gIHNyYzogdXJsKC4uL2ZvbnRzL1NvdXJjZS1Db2RlLVByby5lb3QpO1xuICBzcmM6IGxvY2FsKCdTb3VyY2UgQ29kZSBQcm8nKSwgbG9jYWwoJ1NvdXJjZUNvZGVQcm8tUmVndWxhcicpLCB1cmwoLi4vZm9udHMvU291cmNlLUNvZGUtUHJvLnR0ZikgZm9ybWF0KCd0cnVldHlwZScpLCB1cmwoLi4vZm9udHMvU291cmNlLUNvZGUtUHJvLndvZmYpIGZvcm1hdCgnd29mZicpLCB1cmwoLi4vZm9udHMvU291cmNlLUNvZGUtUHJvLmVvdD8jaWVmaXgpIGZvcm1hdCgnZW1iZWRkZWQtb3BlbnR5cGUnKSwgdXJsKC4uL2ZvbnRzL1NvdXJjZS1Db2RlLVByby5zdmcjU291cmNlQ29kZVBybykgZm9ybWF0KCdzdmcnKTtcbn1cblxuIl19 */

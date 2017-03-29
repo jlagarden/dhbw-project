@@ -1,0 +1,131 @@
+<h1 class="page-header down">Dashboard</h1>
+<br/>
+<div class="row">
+  <div class="col-lg-3 col-md-6 col-xs-12">
+    <front>
+        <div class = "row">
+          <div class="col-xs-6">
+            <i class="material-icons md-light dashboard">trending_up</i>
+          </div>
+          <div class="col-xs-6 text-xs-right">
+            <div class="title" ng-bind="rcvdData.counter"></div>
+            <div class="comment">Counter</div>
+          </div>
+        </div>
+    </front>
+  </div>
+  <div class="col-lg-3 col-md-6 col-xs-12">
+    <front>
+        <div class = "row">
+          <div class="col-xs-6">
+            <i class="material-icons md-light dashboard">input</i>
+          </div>
+          <div class="col-xs-6 text-xs-right">
+            <div class="title text" ng-bind="rcvdData.current_action"></div>
+            <div class="comment">Current Action</div>
+          </div>
+        </div>
+    </front>
+  </div>
+  <div class="col-lg-3 col-md-6 col-xs-12">
+    <front>
+        <div class = "row">
+          <div class="col-xs-6">
+            <i class="material-icons md-light dashboard">whatshot</i>
+          </div>
+          <div class="col-xs-6 text-xs-right">
+            <div class="title" ng-model="rcvdData.temperature_drilling">{{rcvdData.temperature_drilling}}</div>
+            <div class="comment">Temperature Drilling (°C)</div>
+          </div>
+        </div>
+    </front>
+  </div>
+  <div class="col-lg-3 col-md-6 col-xs-12">
+    <front>
+        <div class = "row">
+          <div class="col-xs-6">
+            <i class="material-icons md-light dashboard">network_check</i> <!--build-->
+          </div>
+          <div class="col-xs-6 text-xs-right">
+            <div class="title" ng-model="rcvdData.speed_drilling">{{rcvdData.speed_drilling}}</div>
+            <div class="comment">Current Speed Drilling (RPM)</div>
+          </div>
+        </div>
+    </front>
+  </div>
+
+</div>
+<br/>
+<br/>
+
+<div layout="row">
+  <div flex="50">
+    <div class="chartbox" ng-init="showGraph()">
+      <div id='chart3' ></div>
+    </div>
+    </div>
+    <div flex="5"> </div>
+    <div flex="50">
+      <div class="chartbox">
+          <div id='chart4'></div>
+      </div>
+    </div>
+</div>
+<br />
+<br/>
+
+<div class="row">
+  <div class="col-lg-3 col-md-6 col-xs-12">
+    <front>
+        <div class = "row">
+          <div class="col-xs-6">
+            <i class="material-icons md-light dashboard">trending_down</i>
+          </div>
+          <div class="col-xs-6 text-xs-right">
+            <div class="title" ng-model="rcvdData.counter_rejects">{{rcvdData.counter_rejects}}</div>
+            <div class="comment">Rejections</div>
+          </div>
+        </div>
+    </front>
+  </div>
+  <div class="col-lg-3 col-md-6 col-xs-12">
+    <front>
+        <div class = "row">
+          <div class="col-xs-6">
+            <i class="material-icons md-light dashboard">build</i>
+          </div>
+          <div class="col-xs-6 text-xs-right">
+            <div class="title" >1</div>
+            <div class="comment">Current Amount in Production</div>
+          </div>
+        </div>
+    </front>
+  </div>
+  <div class="col-lg-3 col-md-6 col-xs-12">
+    <front>
+        <div class = "row">
+          <div class="col-xs-6">
+            <i class="material-icons md-light dashboard">whatshot</i>
+          </div>
+          <div class="col-xs-6 text-xs-right">
+            <div class="title" ng-model="rcvdData.temperature_milling">{{rcvdData.temperature_milling}}</div>
+            <div class="comment">Temperature Milling (°C)</div>
+          </div>
+        </div>
+    </front>
+  </div>
+  <div class="col-lg-3 col-md-6 col-xs-12">
+    <front>
+        <div class = "row">
+          <div class="col-xs-6">
+            <i class="material-icons md-light dashboard">network_check</i> <!--build-->
+          </div>
+          <div class="col-xs-6 text-xs-right">
+            <div class="title" ng-model="rcvdData.speed_milling">{{rcvdData.speed_milling}}</div>
+            <div class="comment">Current Speed Milling (RPM)</div>
+          </div>
+        </div>
+    </front>
+  </div>
+
+</div>
